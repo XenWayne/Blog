@@ -2,9 +2,9 @@
 Thumbs.db
 db.json
 *.log
+!node_modules/hexo-theme-butterfly
+!node_modules/hexo-theme-butterfly/**
 node_modules/
 public/
 .deploy*/
 _multiconfig.yml
-!node_modules/.modules.yaml
-!node_modules/hexo-theme-butterfly/** */
