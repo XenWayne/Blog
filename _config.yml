@@ -4,8 +4,8 @@
 
 # Site
 title: XenWayne's Blog
-subtitle: '鸽子的自我修养'
-description: "XenWayne's Blog"
+subtitle: '鸽子の自我修养。'
+description: '鸽子の自我修养。'
 keywords: XenWayne,Blog,Mevisual,LightZone
 author: XenWayne
 language: zh-CN
@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://xenwayne.github.io/Blog/
+url: https://xenwayne.github.io/Blog/ #!当前URL测试用
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:

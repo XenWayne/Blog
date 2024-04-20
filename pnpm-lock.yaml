@@ -26,6 +26,9 @@ importers:
       hexo-generator-index:
         specifier: ^3.0.0
         version: 3.0.0
+      hexo-generator-search:
+        specifier: ^2.4.3
+        version: 2.4.3(chokidar@3.6.0)
       hexo-generator-tag:
         specifier: ^2.0.0
         version: 2.0.0
@@ -47,9 +50,6 @@ importers:
       hexo-theme-butterfly:
         specifier: ^4.13.0
         version: 4.13.0
-      hexo-theme-landscape:
-        specifier: ^1.0.0
-        version: 1.0.0
 
 packages:
 
@@ -639,6 +639,10 @@ packages:
     resolution: {integrity: sha512-83AuNN4cWdLVi//3ugR8E3kR6rrOwhXZt+hOCm1IjtIGj353/GlrtpMHpqZHU5kqipzj4miy9dweVdukXglVWw==}
     engines: {node: '>=14'}
 
+  hexo-generator-search@2.4.3:
+    resolution: {integrity: sha512-Z5hfZq2g3np/Tgdp2q9HobfIvU6Pdz89tnTurc1IIq/vW0MHgDynk0Aiv6kvMtKWthnZ5l0iEMT3YLN35NdYwQ==}
+    engines: {node: '>= 0.10.0'}
+
   hexo-generator-tag@2.0.0:
     resolution: {integrity: sha512-1px/hF3veEohWDN8jjzchQhaiz+uOStUvvMaBJC9vWOlALh30UFcapL8IrvAwwJZjFRVA+WqGgDRqoQ8+yaaFw==}
     engines: {node: '>=14'}
@@ -677,9 +681,6 @@ packages:
 
   hexo-theme-butterfly@4.13.0:
     resolution: {integrity: sha512-k4ufTKDrvfer0EI1E6xU5JTgS471KRyXRgRBxoUdqpTVvtY8CUnFrzh0qcxjb5WMPOark8sTCgHn/sEDIaG3Kw==}
-
-  hexo-theme-landscape@1.0.0:
-    resolution: {integrity: sha512-bWQJWMqQI78wWiJPQZq5pJBH20TM442ShCaHGRetuEgMraxH0OKxB3NTupJzNEkzEk8DV2yrdizkXdKN6i501A==}
 
   hexo-util@2.7.0:
     resolution: {integrity: sha512-hQM3h34nhDg0bSe/Tg1lnpODvNkz7h2u0+lZGzlKL0Oufp+5KCAEUX9wal7/xC7ax3/cwEn8IuoU75kNpZLpJQ==}
@@ -2095,6 +2096,13 @@ snapshots:
     dependencies:
       hexo-pagination: 3.0.0
 
+  hexo-generator-search@2.4.3(chokidar@3.6.0):
+    dependencies:
+      nunjucks: 3.2.4(chokidar@3.6.0)
+      utils-merge: 1.0.1
+    transitivePeerDependencies:
+      - chokidar
+
   hexo-generator-tag@2.0.0:
     dependencies:
       hexo-pagination: 3.0.0
@@ -2155,8 +2163,6 @@ snapshots:
       hexo-renderer-stylus: 3.0.1
     transitivePeerDependencies:
       - supports-color
-
-  hexo-theme-landscape@1.0.0: {}
 
   hexo-util@2.7.0:
     dependencies:
