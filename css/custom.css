@@ -45,7 +45,6 @@
             rgba(7, 179, 155, 0.1) 86%,
             rgba(109, 186, 130, 0.1) 100%);
 }
-}
 
 /* 文章页背景 */
 .layout>div:first-child:not(.recent-posts) {
