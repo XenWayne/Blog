@@ -1,3 +1,45 @@
+更新备份主题包里的_config.yml文件
+
+* 1.自定义css和js存在github仓库sitefile/blog_custom中，在主题包中的_config.yml文件中引用
+```yml
+# Inject
+# Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
+# 插入代码到头部 </head> 之前 和 底部 </body> 之前
+inject:
+  head:
+    -
+  bottom:
+    # Butterfly自定义样式美化
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/XenWayne/sitefile@latest/blog_custom/custom.css">
+    - <script src="https://cdn.jsdelivr.net/gh/XenWayne/sitefile@latest/blog_custom/custom.js"></script>
+```
+
+* 2.footer模板略有修改
+node_modules/hexo-theme-butterfly/layout/includes/footer.pug
+```pug
+#footer-wrap
+  if theme.footer.owner.enable
+    - var now = new Date()
+    - var nowYear = now.getFullYear()
+    if theme.footer.owner.since && theme.footer.owner.since != nowYear
+      .copyright!= `&copy;${theme.footer.owner.since} - ${nowYear} Copyright ${config.author}`
+    else
+      .copyright!= `&copy;${nowYear} Copyright ${config.author}`
+  if theme.footer.copyright
+    .framework-info
+      //- span= _p('footer.framework') + ' '
+      span= 'Powered by' + ' '
+      a(href='https://hexo.io')= 'Hexo'
+      span.footer-separator |
+      //- span= _p('footer.theme') + ' '
+      span= 'Theme' + ' '
+      a(href='https://github.com/jerryc127/hexo-theme-butterfly')= 'Butterfly'
+  if theme.footer.custom_text
+    .footer_custom_text!=`${theme.footer.custom_text}`
+```
+* 3.header模板略有修改(增加wave样式)
+node_modules/hexo-theme-butterfly/layout/includes/header/index.pug
+```pug
 if !theme.disable_top_img && page.top_img !== false
   if is_post()
     - var top_img = page.top_img || page.cover || theme.default_top_img
@@ -59,3 +101,15 @@ header#page-header(class=`${isHomeClass+isFixedClass}` style=bg_img)
     else
       #page-site-info
         h1#site-title=site_title
+```
+TODO:
+1.github hexo-artitalk-static √
+2.文章导入
+3.Twikoo后端
+4.hexo-bilibili-bangumi
+
+----------
+标签外挂文档:
+https://butterfly.js.org/posts/4aa8abbe/#label
+https://butterfly.js.org/posts/4073eda/#%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%96%A6
+https://github.com/Android-KitKat/twikoo-import-tools-typecho

@@ -5,7 +5,7 @@
 # Site
 title: XenWayne's Blog
 subtitle: '鸽子の自我修养。'
-description: '鸽子の自我修养。'
+description: 'Web/摄影/网络工程/平面设计/技术宅/LLer/假的车万人/柚子厨/人形自走废萌Galgame百科全书'
 keywords: XenWayne,Blog,Mevisual,LightZone
 author: XenWayne
 language: zh-CN
@@ -104,3 +104,16 @@ deploy:
   type: git
   repo: https://github.com/XenWayne/Blog
   branch: pages
+artitalk:
+  enable: true
+  title: Artitalk ## 标题
+  path: artitalk/index.html ## 生成路径
+  pageSize: 7 ## 显示几条说说
+  avatar: "https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/avatar.webp" ## 说说头像
+  plugins: [] ## 插件，具体请看下文
+  template: ## 说说模板，可查看仓库中的 main.ejs
+  imports: ## 在说说模板的开头和结尾处插入内容
+    before:
+      -
+    after:
+      -
