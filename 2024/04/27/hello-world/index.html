@@ -222,8 +222,8 @@ document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-
   const loadArtalk = async () => {
     if (typeof Artalk === 'object') initArtalk()
     else {
-      await getCSS('https://unpkg.com/artalk@latest/dist/Artalk.css')
-      await getScript('https://unpkg.com/artalk@latest/dist/Artalk.js')
+      await getCSS('https://unpkg.com/artalk@2.8.2/dist/Artalk.css')
+      await getScript('https://unpkg.com/artalk@2.8.2/dist/Artalk.js')
       initArtalk()
     }
   }
