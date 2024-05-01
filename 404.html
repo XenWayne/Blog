@@ -54,7 +54,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2024-04-30 12:49:23'
+  postUpdate: '2024-05-01 15:16:10'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -191,6 +191,39 @@ document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-
     return content
   }
 
+  const getComment = () => {
+    const runTwikoo = () => {
+      twikoo.getRecentComments({
+        envId: 'https://comment.xenwayne.top',
+        region: '',
+        pageSize: 6,
+        includeReply: true
+      }).then(function (res) {
+        const twikooArray = res.map(e => {
+          return {
+            'content': changeContent(e.comment),
+            'avatar': e.avatar,
+            'nick': e.nick,
+            'url': e.url + '#' + e.id,
+            'date': new Date(e.created).toISOString()
+          }
+        })
+
+        saveToLocal.set('twikoo-newest-comments', JSON.stringify(twikooArray), 10/(60*24))
+        generateHtml(twikooArray)
+      }).catch(function (err) {
+        const $dom = document.querySelector('#card-newest-comments .aside-list')
+        $dom.textContent= "无法获取评论，请确认相关配置是否正确"
+      })
+    }
+
+    if (typeof twikoo === 'object') {
+      runTwikoo()
+    } else {
+      getScript('https://unpkg.com/twikoo@1.6.31/dist/twikoo.all.min.js').then(runTwikoo)
+    }
+  }
+
   const generateHtml = array => {
     let result = ''
 
@@ -202,7 +235,7 @@ document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-
           const name = 'data-lazy-src'
           result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'></a>`
         }
-
+        
         result += `<div class='content'>
         <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
         <div class='name'><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
@@ -213,59 +246,14 @@ document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-
     }
 
     let $dom = document.querySelector('#card-newest-comments .aside-list')
-    $dom && ($dom && ($dom.innerHTML= result))
+    $dom && ($dom.innerHTML= result)
     window.lazyLoadInstance && window.lazyLoadInstance.update()
     window.pjax && window.pjax.refresh($dom)
   }
 
-  const getSetting = async () => {
-    try {
-      const res = await fetch('https://artalk.xenwayne.top/api/v2/conf', { method: 'GET' })
-      return await res.json()
-    } catch (e) {
-      console.log(e)
-    }
-  }
-
-  const headerList = {
-    method: 'GET',
-  }
-
-  const searchParams = new URLSearchParams({
-    'site_name': 'XenWayneBlog',
-    'limit': '6',
-  })
-
-  const getComment = async () => {
-    try {
-      const res = await fetch(`https://artalk.xenwayne.top/api/v2/stats/latest_comments?${searchParams}`, headerList)
-      const result = await res.json()
-      const avatarStr = await getSetting()
-      const { mirror, params, default:defaults } = avatarStr.frontend_conf.gravatar
-      const avatarCdn = false || mirror
-      let avatarDefault = false || params || defaults
-      avatarDefault = avatarDefault.startsWith('d=') ? avatarDefault : `d=${avatarDefault}`
-      const artalk = result.data.map(function (e) {
-        return {
-          'avatar': `${avatarCdn}${e.email_encrypted}?${avatarDefault}`,
-          'content': changeContent(e.content_marked),
-          'nick': e.nick,
-          'url': e.page_url,
-          'date': e.date,
-        }
-      })
-      saveToLocal.set('artalk-newest-comments', JSON.stringify(artalk), 10/(60*24))
-      generateHtml(artalk)
-    } catch (e) {
-      console.log(e)
-      const $dom = document.querySelector('#card-newest-comments .aside-list')
-      $dom.textContent= "无法获取评论，请确认相关配置是否正确"
-    }
-  }
-
   const newestCommentInit = () => {
     if (document.querySelector('#card-newest-comments .aside-list')) {
-      const data = saveToLocal.get('artalk-newest-comments')
+      const data = saveToLocal.get('twikoo-newest-comments')
       if (data) {
         generateHtml(JSON.parse(data))
       } else {
