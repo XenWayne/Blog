@@ -4,6 +4,320 @@
   
     
     <entry>
+      <title>QMK/VIA固件键盘无需调整Layer实现锁win键</title>
+      <link href="/posts/87210117/"/>
+      <url>/posts/87210117/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本文假设你已经能够使得viaapp连接上你的设备，如果你刚刚接触QMK&#x2F;VIA，推荐<em>风尘小沙弥</em>大佬的<a href="https://zhuanlan.zhihu.com/p/557005056">入门教程</a>。</p><h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>笔者目前手持Nuphy Air96 V2，它哪里都好，就是原厂固件竟然没做Fn+win触发锁win键&#x3D; &#x3D;，不过貌似很多做了VIA的键盘都没做这个功能，很神奇吧，可能这就是伟大的DIY世界观(。・∀・)ノ。</p><p>其实QMK键值是有相关定义的，详见<a href="https://docs.qmk.fm/#/zh-cn/keycodes_magic">QMK Firmware- Magic Keyccodes</a>。但是截至本文写作时，VIA尚未支持这些键值，只能另寻他法了。</p><table><thead><tr><th align="left">QK_MAGIC_TOGGLE_GUI</th><th align="left">GU_TOGG</th><th align="left">Toggles the status of the GUI keys</th></tr></thead><tbody><tr><td align="left">QK_MAGIC_GUI_ON</td><td align="left">GU_ON</td><td align="left">Enable the GUI keys</td></tr><tr><td align="left">QK_MAGIC_GUI_OFF</td><td align="left">GU_OFF</td><td align="left">Disable the GUI keys</td></tr></tbody></table><p>网上搜了搜大伙第一反应都能想到的都是切Layer，但是为了一个锁win键，切Layer有点大材小用了，虽说Nuphy原厂给了8个Layer(,最后我还是在<a href="https://www.keychron.com/blogs/archived/how-to-lock-the-windows-key-on-a-keychron-qmk-via-keyboard">keychron的博客</a>里看到的相关键值&#x3D; &#x3D;。</p><h1 id="修改Fn层win键的键值"><a href="#修改Fn层win键的键值" class="headerlink" title="修改Fn层win键的键值"></a>修改Fn层win键的键值</h1><p>我手里的Nuphy Air96 V2导入json之后默认用到了前五个层，Layer0、1是mac模式下的，Layer2、3是win模式下的，Layer4是额外功能层，1、3层是长按Fn后切换到的层，这里我们要修改win模式下Fn层，也就是Layer3的键值，记得找到自己键盘对应的Layer。<br>切换到对应Layer后，选择win键位置，在列表中选择<em>Special-&gt;Any</em>，然后在弹出的窗口中手动输入16进制的键值<code>0x5d61</code>或<code>0x700b</code>，按照Keychron的说法，具体哪个键值生效貌似与QMK固件版本有关，笔者生效的是<code>0x700b</code>。<br><img src="https://s11.ax1x.com/2024/03/03/pFBQFij.png" alt="1"><br><img src="https://s11.ax1x.com/2024/03/03/pFBQPoQ.png" alt="2"></p><p>如果一切顺利，在Confirm后你的键盘现在应该能够通过Fn+win键锁定win键了。</p><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><a href="https://docs.qmk.fm/#/zh-cn/keycodes_magic">QMK Firmware- Magic Keyccodes</a></li><li><a href="https://www.keychron.com/blogs/archived/how-to-lock-the-windows-key-on-a-keychron-qmk-via-keyboard">How to lock the Windows key on a Keychron QMK&#x2F;VIA keyboard</a></li><li><a href="https://www.zfrontier.com/app/flow/DrZBMYJBGy5V">分享关于使用via实现锁win键功能的方法</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> QMK </tag>
+            
+            <tag> VIA </tag>
+            
+            <tag> 键盘 </tag>
+            
+            <tag> 外设 </tag>
+            
+            <tag> Nuphy </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>浏览器跨域问题-CORS</title>
+      <link href="/posts/d651e145/"/>
+      <url>/posts/d651e145/</url>
+      
+        <content type="html"><![CDATA[<h1 id="浏览器报错案例"><a href="#浏览器报错案例" class="headerlink" title="浏览器报错案例"></a>浏览器报错案例</h1><p>前段时间写LightZone网站调用api的时候遇到了跨域问题，今天来唠唠。浏览器报错:<br><img src="https://z1.ax1x.com/2023/09/20/pPIC5b8.png" alt="pPIC5b8.png"></p><p>要明白跨域报错的原因，首先要了解一下什么是跨域。</p><blockquote><p>跨域是指浏览器不能执行其他网站的脚本。它是由浏览器的同源策略造成的，是浏览器对JavaScript施加的安全限制。所谓同源是指，域名，协议，端口相同。同源策略限制从一个源加载的文档或脚本如何与来自另一个源的资源进行交互。这是一个用于隔离潜在恶意文件的关键的安全机制。</p></blockquote><p>“域名”、”协议”、”端口”三者有一个不同就会产生跨域问题。值得一提的是，即使两个域名解析到同一个ip，也是跨域的。这里我们就要抛出一个疑问:既然调用不同源的资源会产生跨域问题，那么在html中调用第三方css、js不也算作跨域吗？为什么不会报错呢？这是因为浏览器对部分场景允许跨域调用。但是对于ajax、fetch等请求，浏览器就会做限制，不允许跨域调用。以下几种情况是浏览器允许跨域调用的(不全面，仅供参考):</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;...&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;...&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">link</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;...&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">img</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">&quot;...&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">src</span>=<span class="string">&quot;...&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">src</span>=<span class="string">&quot;...&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br><span class="line">@font-face引入的字体</span><br><span class="line">more...</span><br></pre></td></tr></table></figure><p>上述案例中我使用js调用外源api返回的json请求被浏览器拦截。这里调用的api.lightzone.top显然与当前域名不同，所以会产生跨域问题。</p><h1 id="CORS-跨域资源共享"><a href="#CORS-跨域资源共享" class="headerlink" title="CORS 跨域资源共享"></a>CORS 跨域资源共享</h1><p>CORS是一个W3C标准，全称是”跨域资源共享”（Cross-origin resource sharing）。它允许浏览器向跨源服务器，发出XMLHttpRequest请求。CORS需要浏览器和服务器同时支持。目前，所有浏览器都支持该功能，IE10以上版本支持。</p><p>在该案例中，我们只需在api的响应头中添加<code>Access-Control-Allow-Origin: *</code>即可解决跨域问题。这里的<code>*</code>表示允许任意域名跨域调用，也可以指定域名，例如<code>Access-Control-Allow-Origin: http://www.lightzone.top</code>。</p><p>[note type&#x3D;”warning flat”]<br>值得一提的是，直接设置<code>Access-Control-Allow-Origin: *</code>会导致api所有的请求都允许跨域调用，这样做会存在安全问题，即<strong>任何一个前端程序都能调用该api的数据</strong>。所以我们最好是将<code>*</code>替换成具体的服务域名。至少在生产环境，请铭记这一点。<br>[&#x2F;note]</p><h2 id="服务器端配置-Nginx"><a href="#服务器端配置-Nginx" class="headerlink" title="服务器端配置(Nginx)"></a>服务器端配置(Nginx)</h2><p>在Nginx中配置CORS，只需要在nginx.conf中添加以下内容即可:</p><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">location</span> / &#123;</span><br><span class="line">    <span class="attribute">add_header</span> Access-Control-Allow-Origin your_host;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>对于多域名的情况，可以使用<code>$http_origin</code>变量加正则表达式判断:</p><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">location</span> / &#123;</span><br><span class="line">    <span class="attribute">if</span> (<span class="variable">$http_origin</span> <span class="regexp">~* &quot;^https?://(your_host_1|your_host_2)$&quot;)</span> &#123;</span><br><span class="line">        <span class="attribute">add_header</span> Access-Control-Allow-Origin <span class="string">&quot;<span class="variable">$http_origin</span>&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="使用CloudFlare修改响应头"><a href="#使用CloudFlare修改响应头" class="headerlink" title="使用CloudFlare修改响应头"></a>使用CloudFlare修改响应头</h2><p>我的站点使用了CloudFlare，那么也可以在CloudFlare中修改响应头，导航到<code>规则-&gt;转换规则-&gt;修改响应头-&gt;创建规则</code>,添加以下内容即可:</p><p><img src="https://z1.ax1x.com/2023/09/20/pPIC4Df.png" alt="pPIC4Df.png"><br><img src="https://z1.ax1x.com/2023/09/20/pPICWvt.png" alt="pPICWvt.png"></p><h1 id="验证响应头"><a href="#验证响应头" class="headerlink" title="验证响应头"></a>验证响应头</h1><p>正确配置后的响应头应该如下图所示:<br><img src="https://z1.ax1x.com/2023/09/20/pPIChKP.png" alt="pPIChKP.png"></p><blockquote><p>参考文献<br><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS">MDN: 跨域资源共享 CORS 详解</a><br><a href="https://www.ruanyifeng.com/blog/2016/04/cors.html">跨域资源共享 CORS 详解-阮一峰的网络日志</a><br><a href="https://blog.csdn.net/baijiafan/article/details/126501682">正确配置Access-Control-Allow-Origin</a><br><a href="https://blog.csdn.net/sinat_34798463/article/details/114928477">解决跨域问题的n种办法</a></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Nginx </tag>
+            
+            <tag> CORS </tag>
+            
+            <tag> 前端 </tag>
+            
+            <tag> 跨域 </tag>
+            
+            <tag> API </tag>
+            
+            <tag> CloudFlare </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Nginx子目录反代</title>
+      <link href="/posts/2ca49b12/"/>
+      <url>/posts/2ca49b12/</url>
+      
+        <content type="html"><![CDATA[<h2 id="站点配置文件"><a href="#站点配置文件" class="headerlink" title="站点配置文件:"></a>站点配置文件:</h2><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#PROXY-START/</span></span><br><span class="line">    <span class="section">location</span><span class="regexp"> ^~</span> /map/</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attribute">rewrite</span><span class="regexp"> ^/map/(.*)$</span> /<span class="variable">$1</span> <span class="literal">break</span>;</span><br><span class="line">        <span class="attribute">proxy_pass</span> http://127.0.0.1:8100;</span><br><span class="line">        <span class="attribute">proxy_set_header</span> Host <span class="variable">$host</span>;</span><br><span class="line">        <span class="attribute">proxy_set_header</span> X-Real-IP <span class="variable">$remote_addr</span>;</span><br><span class="line">        <span class="attribute">proxy_set_header</span> X-Forwarded-For <span class="variable">$proxy_add_x_forwarded_for</span>;</span><br><span class="line">        <span class="attribute">proxy_set_header</span> REMOTE-HOST <span class="variable">$remote_addr</span>;</span><br><span class="line">        <span class="attribute">proxy_set_header</span> Upgrade <span class="variable">$http_upgrade</span>;</span><br><span class="line">        <span class="attribute">proxy_set_header</span> Connection <span class="variable">$connection_upgrade</span>;</span><br><span class="line">        <span class="comment"># proxy_hide_header Upgrade;</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="comment">#PROXY-END/</span></span><br></pre></td></tr></table></figure><h2 id="具体剖析"><a href="#具体剖析" class="headerlink" title="具体剖析:"></a>具体剖析:</h2><ul><li><p><code>location ^~ /map/</code>：这是一个Nginx <code>location</code> 指令，用于匹配以<code>/map/</code>开头的请求路径。</p></li><li><p><code>rewrite ^/map/(.*)$ /$1 break;</code>：将请求URL中的<code>/map/</code>前缀去除，并使用 <code>rewrite</code> 指令进行重写。以便能以正确路径正确访问到源站点的资源。</p></li><li><p><code>proxy_pass http://127.0.0.1:8100;</code>：将匹配的请求代理转发到<code>http://127.0.0.1:8100</code>服务器。</p></li><li><p><code>proxy_set_header</code>：一系列指令，用于设置HTTP请求头信息，包括：</p><ul><li><code>Host $host;</code>：传递客户端请求的<code>Host</code>头信息。</li><li><code>X-Real-IP $remote_addr;</code>：传递客户端真实IP地址。</li><li><code>X-Forwarded-For $proxy_add_x_forwarded_for;</code>：将客户端原始IP地址添加到<code>X-Forwarded-For</code>头信息中。</li><li><code>REMOTE-HOST $remote_addr;</code>：传递客户端IP地址。</li><li><code>Upgrade $http_upgrade;</code>：传递<code>Upgrade</code>头信息，通常用于WebSocket等协议升级。</li><li><code>Connection $connection_upgrade;</code>：传递<code>Connection</code>头信息，通常用于WebSocket等协议升级。</li></ul></li><li><p><code># proxy_hide_header Upgrade;</code>：这行注释掉的指令是可选的，用于隐藏特定的响应头信息（<code>Upgrade</code>头信息）。</p></li></ul><p>该配置文件实现反向代理以<code>/map/</code>开头的请求到<code>http://127.0.0.1:8100</code>服务器，并在代理过程中传递必要的HTTP头信息，以确保目标服务器正确处理这些请求。  </p><p>实际上该案例所使用的服务只设置<code>proxy_pass</code>和<code>rewrite</code>即可正确实现访问，其他的HTTP头信息可以根据实际情况进行调整。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Nginx </tag>
+            
+            <tag> 反向代理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>非想天则窗口化补丁</title>
+      <link href="/posts/c57e2d45/"/>
+      <url>/posts/c57e2d45/</url>
+      
+        <content type="html"><![CDATA[<p>众所周知你游窗口化不能缩放，对于高分屏十分不友好。<br>这里介绍一个<a href="https://hisouten.koumakan.jp/wiki/Misc_tools">补丁</a>,在这里查阅SWRSToys模块，下载对应的则的版本，解压后放到则的目录里（保证d3d9.dll和th123.exe在同一个目录下）。  </p><p>参考目录结构:</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">./</span><br><span class="line">│  SWRSToys.ini</span><br><span class="line">│  SWRSToys.txt</span><br><span class="line">│  th123.exe</span><br><span class="line">|  d3d9.dll</span><br><span class="line">│  <span class="built_in">more</span>...</span><br><span class="line">├─Modules</span><br><span class="line">│  ├─BGMChanger</span><br><span class="line">│  ├─MemoryPatch</span><br><span class="line">│  ├─NetBattleCounter</span><br><span class="line">│  ├─NetBellChanger</span><br><span class="line">│  ├─NetProfileView</span><br><span class="line">│  ├─ReplayDnD</span><br><span class="line">│  ├─ReplayInputView</span><br><span class="line">│  └─WindowResizer</span><br><span class="line">│          WindowResizer (simple engrish instructions).txt</span><br><span class="line">│          WindowResizer.dll</span><br><span class="line">│          WindowResizer.ini</span><br><span class="line">│</span><br><span class="line">└─<span class="built_in">more</span>...</span><br></pre></td></tr></table></figure><p>用记事本打开SWRSToys.ini，将含有WindowResizer的那一行开头的分号去掉，保存，启动游戏即可。  </p><p>SWRSToys.ini</p><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[Module]</span></span><br><span class="line"><span class="comment">; MemoryPatch=Modules/MemoryPatch/MemoryPatch.dll</span></span><br><span class="line"><span class="comment">; NetBattleCounter=Modules/NetBattleCounter/NetBattleCounter.dll</span></span><br><span class="line"><span class="comment">; NetProfileView=Modules/NetProfileView/NetProfileView.dll</span></span><br><span class="line"><span class="comment">;  ReplayInputView=Modules/ReplayInputView/ReplayInputView.dll</span></span><br><span class="line">  <span class="attr">WindowResizer</span>=Modules/WindowResizer/WindowResizer.dll</span><br><span class="line"><span class="comment">; BGMChanger=Modules/BGMChanger/BGMChanger.dll</span></span><br><span class="line"><span class="comment">; NetBellChanger=Modules/NetBellChanger/NetBellChanger.dll</span></span><br><span class="line"><span class="comment">; ReplayDnD=Modules/ReplayDnD/ReplayDnD.dll</span></span><br></pre></td></tr></table></figure><p>除此之外SWRSToys还有很多实用功能，可自行阅读文档。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 游戏 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 非想天则 </tag>
+            
+            <tag> 车万 </tag>
+            
+            <tag> Touhou Project </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Linux内核调优——内存回收</title>
+      <link href="/posts/8306fea3/"/>
+      <url>/posts/8306fea3/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>笔者之前在UbuntuServer搭建了<u>Minecaft</u>的服务端,这个架构过于无厘头XD,Ubuntu是一个Unraid(基于Slackware发行版的NAS系统)的KVM虚拟机,我很清楚这个不是什么高性能的用法&#x3D;V&#x3D;,莫名其妙的是Minecraft只要涉及到大范围跑图之类的会让I&#x2F;O暴涨的操作,底层Unraid这边RAM占用就会boom,然后Ubuntu虚拟机也顺带着一起去世。此时<code>free -h</code>查看<code>buff/cache</code>巨高无比，大约占了整机RAM一半左右。</p><h2 id="内核调优"><a href="#内核调优" class="headerlink" title="内核调优"></a>内核调优</h2><p>既然buff&#x2F;cache巨高,那就先查查Linux的读写缓存。</p><blockquote><p>Linux文件缓存是一项重要的性能改进，在大多数情况下，读缓存在绝大多数情况下是有益无害的（程序可以直接从RAM中读取数据）。写缓存比较复杂，Linux内核将磁盘写入缓存，过段时间再异步将它们刷新到磁盘。这对加速磁盘I&#x2F;O有很好的效果，但是当数据未写入磁盘时，丢失数据的可能性会增加。</p></blockquote><p>问题在于,当前的kernel貌似不能很好的处理读写脏数据缓存——他们大多都留在了RAM cache里,而并没有被内核及时回收。看起来好像有程序导致内存泄漏一样。</p><h3 id="调整脏数据回收参数"><a href="#调整脏数据回收参数" class="headerlink" title="调整脏数据回收参数"></a>调整脏数据回收参数</h3><p>文件缓存本意是好的,但是或许我们环境的RAM捉襟见肘,亦或是我们的硬盘性能不需要太多外置缓存,下述参数旨在告诉内核让更少的数据进入缓存,催促其更快的回收脏数据。</p><blockquote><p>写在缓存中的数据被修改时,该页就被标记为脏数据。</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sysctl -w vm.dirty_background_ratio = 3 </span><br></pre></td></tr></table></figure><p>可以填充的脏数据占可用RAM的百分比。该参数指定当文件缓存脏页数量达到何值时,触发pdflush&#x2F;flush&#x2F;kdmflush回写进程运行,将缓存写回硬盘,此过程是异步的。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sysctl -w vm.dirty_ratio = 5</span><br></pre></td></tr></table></figure><p>写缓冲区占RAM的百分比。指定写缓冲达到何值时,开始将缓存写回硬盘,此过程是阻塞式的,在此缓存写回完成之前新的I&#x2F;O请求都会被阻塞。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sysctl -w vm.dirty_expire_centisecs = 600</span><br></pre></td></tr></table></figure><p>指定脏数据存活时间,单位 秒1&#x2F;100。超过存活时间的页会触发脏页写回。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sysctl -w vm.vfs_cache_pressure = 900</span><br></pre></td></tr></table></figure><p>定义VFS清理缓存的”努力程度”,越大内核越频繁回收cache。</p><h3 id="手动强制回收内存"><a href="#手动强制回收内存" class="headerlink" title="手动强制回收内存"></a>手动强制回收内存</h3><p>比较粗暴的做法,通常是不推荐的,可能会引起I&#x2F;O”尖峰”。</p><blockquote><p>使用<code>sync</code>命令以确保清除前,缓存被写回硬盘。</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sync</span></span><br><span class="line"><span class="built_in">echo</span> 3 &gt; /proc/sys/vm/drop_caches</span><br><span class="line"><span class="built_in">sync</span></span><br></pre></td></tr></table></figure><h2 id="在Unraid宿主机上的实现"><a href="#在Unraid宿主机上的实现" class="headerlink" title="在Unraid宿主机上的实现"></a>在Unraid宿主机上的实现</h2><p>众所周知Unraid作为一个运行在RAM中的系统,数据持久化是个令人头疼的问题。可以通过<code>UserScripts</code>来实现开机脚本或定时回收内存或者把配置写进flash的”go”文件中,这里笔者使用前者。</p><p><img src="https://s1.ax1x.com/2022/09/27/xeAyCV.png" alt="Unraid实现"></p><p>参考资料 | Reference</p><blockquote><p><a href="https://zhuanlan.zhihu.com/p/136237953">https://zhuanlan.zhihu.com/p/136237953</a><br><a href="https://www.jianshu.com/p/2398ec6e99a1">https://www.jianshu.com/p/2398ec6e99a1</a><br><a href="https://blog.csdn.net/weixin_45413603/article/details/123311250">https://blog.csdn.net/weixin_45413603/article/details/123311250</a></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> unraid </tag>
+            
+            <tag> Linux </tag>
+            
+            <tag> 内核调优 </tag>
+            
+            <tag> 内存回收 </tag>
+            
+            <tag> buff/cache </tag>
+            
+            <tag> RAM </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>通过启动项优雅的暂时禁用HyperV</title>
+      <link href="/posts/7834b51/"/>
+      <url>/posts/7834b51/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>折腾这个是因为让我又爱又恨的Windows11， 一方面WSL、WSA安卓子系统等基于HyperV引擎的功能确实很方便，另一方面作为一个<del>苦逼</del>网工人，ensp、eveng模拟器又不得不让我使用VMware和VirtualBox，众所周知HyperV和他们两位水土不服（VMware还好，只是不能开硬件虚拟化）。而模拟器什么的也不是每天都用，所以我需要一个能方便切换的暂时关闭HyperV的方法。</p><h1 id="在启动项上做文章"><a href="#在启动项上做文章" class="headerlink" title="在启动项上做文章"></a>在启动项上做文章</h1><h2 id="1-镜像一份当前的启动项配置"><a href="#1-镜像一份当前的启动项配置" class="headerlink" title="1.镜像一份当前的启动项配置"></a>1.镜像一份当前的启动项配置</h2><blockquote><p>PS:这里的命令仅作参考 本质上是修改BCD引导项，使用easybcd等工具修改也可。另外Powershell以及WindowsTerminal与CMD语法有些许出入，可能需要将{XXXXX}内容外用引号<code>&quot;&quot;</code>括起来。</p></blockquote><p>管理员运行</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bcdedit /copy &#123;current&#125; /d &quot;Windows No HyperV&quot;</span><br></pre></td></tr></table></figure><p>此处”Windows No HyperV”为启动项的自定义名称，<del>你甚至能输中文，虽然我不建议你这么干</del>。</p><p>之后会提示已经创建了一个启动项，并返回一串ID，我们复制<code>&#123;&#125;</code>中的内容。</p><h2 id="2-设置新启动项关闭HyperV驱动加载"><a href="#2-设置新启动项关闭HyperV驱动加载" class="headerlink" title="2.设置新启动项关闭HyperV驱动加载"></a>2.设置新启动项关闭HyperV驱动加载</h2><p>管理员运行</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bcdedit /set &#123;XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX&#125; hypervisorlaunchtype OFF</span><br></pre></td></tr></table></figure><p>其中<code>XXXX</code>使用上述ID替换。</p><p>上述步骤完成后，应该有类似以下两项启动项:<br><img src="https://s1.ax1x.com/2022/08/16/v0rcxf.png" alt="v0rcxf.png"></p><h2 id="3-检查启动项，设置等待时间"><a href="#3-检查启动项，设置等待时间" class="headerlink" title="3.检查启动项，设置等待时间"></a>3.检查启动项，设置等待时间</h2><p>Win+R运行msconfig，进入”引导”选项卡，你可以看到刚刚修改的启动项出现在引导项中，在此处你可以修改在进入默认OS前给予选择启动项多长的等待时间，当然也可以把NoHyperV的启动项设为默认值，然后重启看效果。<br><img src="https://s1.ax1x.com/2022/08/16/v0r6RP.png" alt="v0r6RP.png"><br><img src="https://s1.ax1x.com/2022/08/16/v0ryGt.jpg" alt="v0ryGt.jpg"></p><p>大功告成。</p><p>2022&#x2F;09&#x2F;22 Update:<br>今天更了一下Windows11 22H2<br>不是很清楚微软在更新过程干了什么<br>总之就是第二启动项被WindowsBootManager搞了个残废<br>删掉启动项重新走一遍流程就好了 &#x3D; &#x3D;</p><blockquote><p>Reference:</p><p><a href="https://www.cnblogs.com/Ray898/p/8455393.html">https://www.cnblogs.com/Ray898/p/8455393.html</a></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
+            
+            <tag> HyperV </tag>
+            
+            <tag> Win11 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于11代以上英特尔新平台PE找不到硬盘的问题</title>
+      <link href="/posts/2fe1b2e5/"/>
+      <url>/posts/2fe1b2e5/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>今天给一台天选2重装Win11，因为想重新分个区，就图省事直接进PE了，进PE之后就傻眼了，我常用的Edgeless和WEPE(V2.1)全都找不到盘。</p><p>一开始还以为是BitLocker的事，还特意去花时间关掉了原厂的BitLocker🤣，无果之后去BIOS设置里翻翻，也没看到什么和AHCI、RAID相关的东西，倒是看到了一个陌生的名词：Intel® VMD，我一个AMD用户自然是不曾见过的（，搜了搜，很多老PE，包括微软自己的windows安装程序貌似也没有附带VMD驱动。</p><p>所以，解决方案就两个：</p><ol><li>给PE打驱动，从PE里启动安装程序。</li><li>在Windows安装程序中加载VMD驱动程序。</li></ol><h1 id="加载驱动"><a href="#加载驱动" class="headerlink" title="加载驱动"></a>加载驱动</h1><p> 可以前往<a href="https://www.intel.cn/content/www/cn/zh/download/19512/intel-rapid-storage-technology-driver-installation-software-with-intel-optane-memory-10th-and-11th-gen-platforms.html?v=t">英特尔官网</a>下载相关驱动。</p><h2 id="PE安装驱动"><a href="#PE安装驱动" class="headerlink" title="PE安装驱动"></a>PE安装驱动</h2><p> 一般来讲，在PE环境使用官网下载的exe即可。</p><p> 值得一提的是，WEPEV2.2经实测已经可以检测到VMD下的硬盘。</p><p> 笔者常用的EdgelessPE可以通过在系统内使用驱动总裁在线安装或通过插件包的方式引入，详见<a href="https://wiki.edgeless.top/v2/playground/driver.html">https://wiki.edgeless.top/v2/playground/driver.html</a>。</p><h2 id="Windows安装环境加载驱动"><a href="#Windows安装环境加载驱动" class="headerlink" title="Windows安装环境加载驱动"></a>Windows安装环境加载驱动</h2><p>将官网的压缩包解压好放进移动介质，在安装过程中使用”加载驱动程序”即可。<br> <img src="https://s1.ax1x.com/2022/05/04/OVygQs.png" alt="OVygQs.png"></p><p>参考 | Reference</p><blockquote><p><a href="https://blog.csdn.net/Junson142099/article/details/110851569">https://blog.csdn.net/Junson142099/article/details/110851569</a></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
+            
+            <tag> PE </tag>
+            
+            <tag> 英特尔 </tag>
+            
+            <tag> intel </tag>
+            
+            <tag> VMD </tag>
+            
+            <tag> 11代CPU </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>OpenWRT vsftpd监听公网ip的问题</title>
+      <link href="/posts/606c9d02/"/>
+      <url>/posts/606c9d02/</url>
+      
+        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>一个很久之前的问题，因为不是很急就搁置了。在软路由的OpenWRT上用vsftpd搭建FTP服务器，因为我的环境只有IPv6公网ip，还是动态的（淦，所以勾上了vsftpd的ipv6监听，监听地址是 [label color&#x3D;”blue”] [::] [&#x2F;label] ，本来想着和ipv4的 [label color&#x3D;”blue”]0.0.0.0[&#x2F;label] 一样监听所有来源IP，结果只要通过ipv6访问，它就毫无疑问的会罢工，但是只要我将IPv6的监听地址换为准确的软路由当前公网地址，就又能正常连接了。<br><img src="https://s1.ax1x.com/2022/04/14/L12sW8.png" alt="L12sW8.png"><br>离谱归离谱，想解决倒是简单，我也不深究问题来源，总之想办法让这个监听地址的配置像DDNS一样跟着当前公网IPv6地址变动就行了。脚本改vsftpd配置的过程在OpenWRT伟大的UCI (Unified Configuration Interface，统一配置接口)加持下显得尤为简单，问题集中在轻量化的获取公网IP上。</p><h1 id="脚本"><a href="#脚本" class="headerlink" title="脚本"></a>脚本</h1><p>在查问题的时候看到了CSDN有人做过了类似的shell，看起来用得上，在其基础上小改了一下，原脚本贴在下面。</p><blockquote><p><a href="https://blog.csdn.net/weixin_44148981/article/details/115429974">openwrt vsftpd ipv6 地址更新脚本</a></p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line">myipv6=$(<span class="built_in">cat</span> /proc/net/if_inet6)</span><br><span class="line"><span class="keyword">for</span> var <span class="keyword">in</span> <span class="variable">$myipv6</span>; <span class="keyword">do</span></span><br><span class="line">    <span class="built_in">let</span> i+=1</span><br><span class="line">    <span class="keyword">if</span> [<span class="variable">$i</span> =1 ]; <span class="keyword">then</span></span><br><span class="line">        str=<span class="variable">$&#123;var:0:4&#125;</span>:<span class="variable">$&#123;var:4:4&#125;</span>:<span class="variable">$&#123;var:8:4&#125;</span>:<span class="variable">$&#123;var:12:4&#125;</span>:<span class="variable">$&#123;var:20:4&#125;</span>:<span class="variable">$&#123;var:24:4&#125;</span>:<span class="variable">$&#123;var:28:4&#125;</span></span><br><span class="line">        o_str=$(uci get vsftpd.@listen[0].ipv6)</span><br><span class="line">        <span class="keyword">if</span> [<span class="variable">$o_str</span> !=<span class="variable">$str</span> ]; <span class="keyword">then</span></span><br><span class="line">            uci <span class="built_in">set</span> vsftpd.@listen[0].ipv6=<span class="variable">$str</span></span><br><span class="line">            uci commit</span><br><span class="line">            <span class="built_in">sleep</span> 1</span><br><span class="line">            /etc/init.d/vsftpd restart</span><br><span class="line">        <span class="keyword">fi</span></span><br><span class="line">    <span class="keyword">fi</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure><p>这个脚本是通过读取&#x2F;proc&#x2F;net&#x2F;if_inet6的前28个字符来获取IP地址的，但是网络环境很复杂，文件第一行未必是真正的公网IP，以我的环境来说，最后一行的地址才为我需要的公网地址，所以可以结合实际情况做一点修改。</p><blockquote><p>图：&#x2F;proc&#x2F;net&#x2F;if_inet6文件内容<br><img src="https://s1.ax1x.com/2022/04/14/L120ot.png" alt="L120ot.png"></p></blockquote><p>另外删除了意义不明的循环，打算用crontab做定时任务。</p><h2 id="1-通过读取-proc-net-if-inet6文件获取IP"><a href="#1-通过读取-proc-net-if-inet6文件获取IP" class="headerlink" title="1.通过读取&#x2F;proc&#x2F;net&#x2F;if_inet6文件获取IP"></a>1.通过读取&#x2F;proc&#x2F;net&#x2F;if_inet6文件获取IP</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#[按需]取文件的倒数第一行，获取需要的ipv6地址</span></span><br><span class="line">myipv6=$(<span class="built_in">tail</span> /proc/net/if_inet6 -n 1)</span><br><span class="line"></span><br><span class="line"><span class="comment">#文件中的ip地址无冒号，需要做规范化</span></span><br><span class="line">var = <span class="variable">$myipv6</span></span><br><span class="line">str=<span class="variable">$&#123;var:0:4&#125;</span>:<span class="variable">$&#123;var:4:4&#125;</span>:<span class="variable">$&#123;var:8:4&#125;</span>:<span class="variable">$&#123;var:12:4&#125;</span>:<span class="variable">$&#123;var:20:4&#125;</span>:<span class="variable">$&#123;var:24:4&#125;</span>:<span class="variable">$&#123;var:28:4&#125;</span></span><br><span class="line">o_str=$(uci get vsftpd.@listen[0].ipv6)</span><br><span class="line"><span class="comment">#str:获取到的ipv6地址</span></span><br><span class="line"><span class="comment">#o_str:vsftpd当前监听的的ipv6地址</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$o_str</span>&quot;</span> != <span class="string">&quot;<span class="variable">$str</span>&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line">        uci <span class="built_in">set</span> vsftpd.@listen[0].ipv6=<span class="variable">$str</span></span><br><span class="line">        uci commit vsftpd</span><br><span class="line">        <span class="built_in">sleep</span> 1</span><br><span class="line">        /etc/init.d/vsftpd restart <span class="comment">#重启vsftpd</span></span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure><p>关于对文件中IP地址的规范化，对于完整长度的IPv6地址，整理结果应当如下:<br><img src="https://s1.ax1x.com/2022/04/14/L12wdI.png" alt="L12wdI.png"></p><p>该段应根据具体情况修改。</p><h2 id="2-通过第三方api获取IP"><a href="#2-通过第三方api获取IP" class="headerlink" title="2.通过第三方api获取IP"></a>2.通过第三方api获取IP</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#从api获取ipv6地址</span></span><br><span class="line">myipv6=$(curl http://v6.meibu.com/ips.asp)</span><br><span class="line"></span><br><span class="line">str=<span class="variable">$myipv6</span></span><br><span class="line">o_str=$(uci get vsftpd.@listen[0].ipv6)</span><br><span class="line"><span class="comment">#str:获取到的ipv6地址</span></span><br><span class="line"><span class="comment">#o_str:vsftpd当前监听的的ipv6地址</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$o_str</span>&quot;</span> != <span class="string">&quot;<span class="variable">$str</span>&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line">        uci <span class="built_in">set</span> vsftpd.@listen[0].ipv6=<span class="variable">$str</span></span><br><span class="line">        uci commit vsftpd</span><br><span class="line">        <span class="built_in">sleep</span> 1</span><br><span class="line">        /etc/init.d/vsftpd restart <span class="comment">#重启vsftpd</span></span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure><p>这里列举两个返回IPv6地址的API</p><ul><li><a href="http://v6.meibu.com/ips.asp">http://v6.meibu.com/ips.asp</a></li><li><a href="https://api-ipv6.ip.sb/ip">https://api-ipv6.ip.sb/ip</a></li></ul><h1 id="设置crontab定时任务"><a href="#设置crontab定时任务" class="headerlink" title="设置crontab定时任务"></a>设置crontab定时任务</h1><p>找个目录存放脚本，在OpenWRT设置计划任务即可，vsftpd监听地址应当会在脚本运行时自动更新。<br><img src="https://s1.ax1x.com/2022/04/14/L12DFP.png" alt="L12DFP.png"><br><img src="https://s1.ax1x.com/2022/04/14/L12rJf.png" alt="L12rJf.png"></p><blockquote><p>参考文献<br><a href="https://blog.51cto.com/u_15127628/4227810">shell 取文件第 N 行方法 https://blog.51cto.com/u_15127628&#x2F;4227810</a><br><a href="https://www.jianshu.com/p/48f18552be04">crontab 定时写法整理 https://www.jianshu.com/p/48f18552be04</a><br><a href="https://blog.csdn.net/weixin_44148981/article/details/115429974">openwrt vsftpd ipv6 地址更新脚本 https://blog.csdn.net/weixin_44148981&#x2F;article&#x2F;details&#x2F;115429974</a></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> OpenWRT </tag>
+            
+            <tag> vsftpd </tag>
+            
+            <tag> FTP </tag>
+            
+            <tag> 软路由 </tag>
+            
+            <tag> IPv6 </tag>
+            
+            <tag> bash </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>UTF-8&amp;Unicode&amp;二进制——浅谈字符编码转换</title>
+      <link href="/posts/296aa3cb/"/>
+      <url>/posts/296aa3cb/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一个巧合"><a href="#一个巧合" class="headerlink" title="一个巧合"></a>一个巧合</h1><p>一个朋友在玩打AVG的时候给我抛过来一张图：<br><img src="https://s1.ax1x.com/2022/03/13/bbZt29.png" alt="1"><br>这兴趣瞬间就涌上来了嗷，作者贴心的把三个字节分为一组，这让我立马就想到了UTF-8,因为我是清楚中文字符在UTF8中占三个字节的。尝试过直接换算Unicode，得到的是乱码，我对UTF-8的编码规则一窍不通（，看来还得去查查UTF-8的编码规则才行。</p><h1 id="UTF-8编码规则"><a href="#UTF-8编码规则" class="headerlink" title="UTF-8编码规则"></a>UTF-8编码规则</h1><p>最后找到了阮一峰大佬在2007年的文章:</p><blockquote><p><a href="https://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html">阮一峰-字符编码笔记：ASCII，Unicode 和 UTF-8</a></p></blockquote><h2 id="简单的介绍UTF-8的编码规则："><a href="#简单的介绍UTF-8的编码规则：" class="headerlink" title="简单的介绍UTF-8的编码规则："></a>简单的介绍UTF-8的编码规则：</h2><p>一个重要的前提”UTF-8是Unicode的实现方式之一”，它最大的特点就是实现了变长编码，根据不同字符从1-4字节间变换，分两种情况讨论其编码形式：</p><h3 id="1-对于单字节的符号"><a href="#1-对于单字节的符号" class="headerlink" title="1.对于单字节的符号"></a>1.对于单字节的符号</h3><p>单字节符号，例如英文字母，将字节的第一位设为0，后面7位对应该字符的Unicode码，空位前补0。因此对于英文字符，UTF-8与ASCII码在二进制表现上是相同的。</p><h3 id="2-对于多字节的符号"><a href="#2-对于多字节的符号" class="headerlink" title="2.对于多字节的符号"></a>2.对于多字节的符号</h3><p>对于  [label color&#x3D;”blue”]n[&#x2F;label] 字节的符号 [label color&#x3D;”blue”] ( n &gt; 1 ) [&#x2F;label] ，第一个字节的前  [label color&#x3D;”blue”]n[&#x2F;label]  位都设为1，第  [label color&#x3D;”blue”]n + 1[&#x2F;label]  位设为  [label color&#x3D;”blue”]0[&#x2F;label]  ，后面字节的前两位一律设为 [label color&#x3D;”blue”]10[&#x2F;label] 。剩下的没有提及的二进制位，全部为这个符号的 Unicode 码。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">下表总结了编码规则，字母x表示可用编码的位。</span><br><span class="line"></span><br><span class="line">Unicode符号范围      |      UTF-8编码方式</span><br><span class="line">(十六进制)           |     （二进制）</span><br><span class="line">--------------------+---------------------------------------------</span><br><span class="line">0000 0000-0000 007F | 0xxxxxxx</span><br><span class="line">0000 0080-0000 07FF | 110xxxxx 10xxxxxx</span><br><span class="line">0000 0800-0000 FFFF | 1110xxxx 10xxxxxx 10xxxxxx</span><br><span class="line">0001 0000-0010 FFFF | 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx</span><br></pre></td></tr></table></figure><hr><p>据此，如果字节第一位是0,则这一个字节表示一个单独的字符；如果第一位是一，则继续向下看该字节有多少个1，直到第一个0出现之前，有几个1则代表该字符占几个字节。</p><h2 id="具体举两个例子："><a href="#具体举两个例子：" class="headerlink" title="具体举两个例子："></a>具体举两个例子：</h2><h3 id="1-例如我们要编码”你好世界”四个字符，要经过以下步骤"><a href="#1-例如我们要编码”你好世界”四个字符，要经过以下步骤" class="headerlink" title="1.例如我们要编码”你好世界”四个字符，要经过以下步骤:"></a>1.例如我们要编码”你好世界”四个字符，要经过以下步骤:</h3><p>1)找到四个字符对应的Unicode: [label color&#x3D;”default”]\u4f60\u597d\u4e16\u754c[&#x2F;label]<br>2)将Unicode转换为二进制(16转2对应四位，不够前补0)<br>(这里仅以”你”字做演示)</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> 4     f     6     0</span><br><span class="line"> ↓     ↓     ↓     ↓</span><br><span class="line">0100  1111  0110  0000</span><br></pre></td></tr></table></figure><p>3)根据Unicode确定对应UTF-8编码形式<br>“你”对应Unicode 4F60在符号范围的第三行，则其UTF-8编码形式应该是:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1110xxxx 10xxxxxx 10xxxxxx</span><br></pre></td></tr></table></figure><p>4)从后向前对应填入二进制，缺位补0，有:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">11100100 10111101 10100000</span><br></pre></td></tr></table></figure><p>5)以此类推，得到”你好世界”的实际UTF-8编码:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">11100100 10111101 10100000</span><br><span class="line">11100101 10100101 10111101</span><br><span class="line">11100100 10111000 10010110</span><br><span class="line">11100111 10010101 10001100</span><br></pre></td></tr></table></figure><h3 id="2-转换已知UTF-8编码"><a href="#2-转换已知UTF-8编码" class="headerlink" title="2.转换已知UTF-8编码"></a>2.转换已知UTF-8编码</h3><p>对于给定的UTF-8编码，看一个实际例子：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">01001000 </span><br><span class="line">01000101</span><br><span class="line">01001100 </span><br><span class="line">01001100</span><br><span class="line">01001111</span><br><span class="line">01010111</span><br><span class="line">01001111</span><br><span class="line">01010010</span><br><span class="line">01001100</span><br><span class="line">01000100</span><br></pre></td></tr></table></figure><p>从0开头则知晓该UTF-8编码一个字节表示一个字符，则0后七位全部为该字符的 Unicode 码，对应关系如下:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">BIN          HEX   CHARACTER</span><br><span class="line">0100 1000 →  48 →     H</span><br><span class="line">0100 0101 →  45 →     E</span><br><span class="line">0100 1100 →  4C →     L  </span><br><span class="line">0100 1100 →  4C →     L</span><br><span class="line">0100 1111 →  4F →     O</span><br><span class="line">0101 0111 →  57 →     W</span><br><span class="line">0100 1111 →  4F →     O</span><br><span class="line">0101 0010 →  52 →     R</span><br><span class="line">0100 1100 →  4C →     L</span><br><span class="line">0100 0100 →  44 →     D</span><br></pre></td></tr></table></figure><h1 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h1><p>这件事其实已经过去很久了，最近才有工夫整理出来。<br>查阅Unicode标准的时候由衷的感觉万国码真的在尽量照顾到每个语言的需求，真心敬佩。</p><p>至于开头的图片…..游戏内容有那么一点NSFW，交给读者自行探索吧XD</p><h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><blockquote><p><a href="http://unicode.org/versions/Unicode4.0.0/ch11.pdf">Unicode标准——东亚部分 http://unicode.org/versions/Unicode4.0.0/ch11.pdf</a></p></blockquote><blockquote><p><a href="https://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html">阮一峰——字符编码笔记：ASCII，Unicode 和 UTF-8 https://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html</a></p></blockquote><blockquote><p><a href="https://www.qqxiuzi.cn/">千千秀字 https://www.qqxiuzi.cn/</a></p></blockquote><blockquote><p><a href="https://www.habaijian.com/">ASCII码对照表 https://www.habaijian.com/</a></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> UTF-8 </tag>
+            
+            <tag> Unicode </tag>
+            
+            <tag> 字符编码 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>解决Win10文件改动不自动刷新的问题</title>
+      <link href="/posts/b339dc67/"/>
+      <url>/posts/b339dc67/</url>
+      
+        <content type="html"><![CDATA[<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;今天搁寝室里搞表格，新建&#x2F;删除&#x2F;剪切&#x2F;复制&#x2F;重命名等操作都需要手动刷新一下才能看到文件更改，就连桌面的回收站图标都需要刷新一下才改变状态，网上的教程实在是有点杂，现综合多方解决方案如下（按推荐优先级排序）：</p><h2 id="1-更改注册表"><a href="#1-更改注册表" class="headerlink" title="1.更改注册表"></a>1.更改注册表</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">打开注册表编辑器后，在左侧项目中依次展开HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control</span><br><span class="line">在Control项上右键选择新建“项”，将项的名称修改为“Update”</span><br><span class="line">在 Update 点击右键，新建，选 DWORD（<span class="number">32</span>位），重命名为 UpdateMode，把值修改为<span class="number">0</span></span><br><span class="line">重启</span><br></pre></td></tr></table></figure><h2 id="2-检查失效网络路径"><a href="#2-检查失效网络路径" class="headerlink" title="2.检查失效网络路径"></a>2.检查失效网络路径</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  检查你的资源管理器中所有的网络驱动器是否可用，例如FTP路径等，如不可用，请将其删除。</p><h2 id="3-排查小螃蟹声卡"><a href="#3-排查小螃蟹声卡" class="headerlink" title="3.排查小螃蟹声卡"></a>3.排查小螃蟹声卡</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;根据很多人的经验，在关闭Realtek声卡面板的“前面板插口检测”后问题解决.</p><h2 id="4-尝试清理图标缓存"><a href="#4-尝试清理图标缓存" class="headerlink" title="4.尝试清理图标缓存"></a>4.尝试清理图标缓存</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本文不作展开，网络流传着很多清理缓存的脚本.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
+            
+            <tag> Win10 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>记一次与小米路由IPV6防火墙的折腾经历</title>
       <link href="/posts/133a89d9/"/>
       <url>/posts/133a89d9/</url>
