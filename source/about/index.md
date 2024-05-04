@@ -1,5 +1,5 @@
 ---
-title: about | 关于
+title: 关于 | About
 date: 2024-04-27 21:22:57
 ---
 来听首歌吧~

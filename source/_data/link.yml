@@ -1,23 +1,47 @@
-- class_name: 友情链接
-  class_desc: 那些人，那些事
+- class_name: 友人帐
+  class_desc: 
   link_list:
-    - name: Hexo
-      link: https://hexo.io/zh-tw/
-      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
-      descr: 快速、简单且强大的网志框架
-
-- class_name: 网站
-  class_desc: 值得推荐的网站
-  link_list:
-    - name: Youtube
-      link: https://www.youtube.com/
-      avatar: https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png
-      descr: 视频网站
-    - name: Weibo
-      link: https://www.weibo.com/
-      avatar: https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png
-      descr: 中国最大社交分享平台
-    - name: Twitter
-      link: https://twitter.com/
-      avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png
-      descr: 社交分享平台
+    - name: Nero978 的日记
+      link: https://nero978.top
+      avatar: https://nero978.top/wp-content/uploads/2023/07/logo.jpg
+      descr: Brave yourself, brave the world.
+    - name: 云游君的小站
+      link: https://www.yunyoujun.cn
+      avatar: https://yunyoujun.cn/images/avatar.jpg
+      descr: 希望能成为一个有趣的人
+    - name: 孟坤博客
+      link: https://mkblog.cn/
+      avatar: https://s2.ax1x.com/2020/01/24/1ZgEuQ.jpg
+      descr: 互联网+分享+科技+吐槽=孟坤博客
+    - name: Lao's Blog
+      link: https://laoooo.cn/
+      avatar: https://s3.bmp.ovh/imgs/2021/11/4ac63e6220d204f1.jpg
+      descr: 练习Bug时长两年半的程序员
+    - name: 9527’s Blog
+      link: https://9527dhx.top
+      avatar: https://i.loli.net/2019/05/26/5cea282e596b167848.png
+      descr: 跌倒了，站起来，换个姿势，再跌倒。
+    - name: Lazy's Blog
+      link: https://blog.imlazy.ink:233/
+      avatar: https://i.zerodream.net/86b5133c13a7e7109b89f8d24fc0b746.jpg
+      descr: Share somethings with you
+    - name: 某酱の博客
+      link: http://blog.fxit.top
+      avatar: http://out.fxit.top/ITlogo.png
+      descr: 为逐梦努力~
+    - name: Bhao's Blog
+      link: https://dwd.moe/
+      avatar: https://dwd.moe/logo.png
+      descr: 世间无田螺，世间多田螺。
+    - name: Phoenix's island
+      link: https://blog.phoenixlzx.com/
+      avatar: https://blog.phoenixlzx.com/static/img/avatar/avatar.jpg
+      descr: 是巨佬
+    - name: 羽榊
+      link: http://loli.moe.sx/
+      avatar: http://loli.moe.sx/wp-content/themes/Variant/images/zztx.jpg
+      descr: 一个很懒的在欧程序猿
+    - name: ZeroDream 零梦博客
+      link: https://lo-li.cn/
+      avatar: https://cdn.zerodream.net/images/gravatar/?id=525c10789e06ce71e23b47dcc289c475&s=512&d=mm&r=g
+      descr: 一个喜欢东方和游戏的宅 phper

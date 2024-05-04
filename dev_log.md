@@ -105,13 +105,12 @@ header#page-header(class=`${isHomeClass+isFixedClass}` style=bg_img)
 TODO:
 1.主题_config搞好之后放外面持久化。
 Backup文件夹都更新
-2.文章、页面导入
 3.Twikoo后端配置，评论导入时手动编辑json对齐URL
 4.hexo-bilibili-bangumi
 5.beta.xenwayne.top->xenwayne.top
   xenwayne.top->archive.xenwayne.top
-6.调查footer pjax后底部莫名其妙多出来的空间（确定了这个问题只会在artitalk页切回去出现)  ，solution: artitalk对pjax的适配/替代品 即刻短文:（https://meuicat.com/blog/67/）
-7.oh-my-live2d
+6.替代品 即刻短文:（https://meuicat.com/blog/67/）
+
 ----------
 标签外挂文档:
 https://butterfly.js.org/posts/4aa8abbe/#label

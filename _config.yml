@@ -212,3 +212,26 @@ OhMyLive2d:
   #    oml2d.onStageSlideIn(() => {
   #    oml2d.tipsMessage('Oh My Live2D !!!', 3000, 10);
   #    });
+
+# hexo-generator-sitemap
+sitemap:
+  path: 
+    - sitemap.xml
+    - sitemap.txt
+  template: ./sitemap_template/sitemap_template.xml
+  template_txt: ./sitemap_template/sitemap_template.txt
+  rel: false
+  tags: true
+  categories: true
+
+# hexo-filter-nofollow
+nofollow:
+  enable: true
+  field: site
+  exclude:
+    - 'xenwayne.top'
+    - 'www.xenwayne.top'
+    - 'beta.xenwayne.top'
+    - 'lightzone.mevisual.com'
+    - 'mevisual.com'
+    - 'www.mevisual.com'

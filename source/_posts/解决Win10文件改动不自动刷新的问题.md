@@ -1,0 +1,47 @@
+---
+title: 解决Win10文件改动不自动刷新的问题
+tags:
+  - Win10
+  - Windows
+categories:
+  - 技术分享
+abbrlink: b339dc67
+date: 2021-09-18 21:39:00
+---
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;今天搁寝室里搞表格，新建/删除/剪切/复制/重命名等操作都需要手动刷新一下才能看到文件更改，就连桌面的回收站图标都需要刷新一下才改变状态，网上的教程实在是有点杂，现综合多方解决方案如下（按推荐优先级排序）：
+
+
+1.更改注册表
+-------
+
+
+```CMD
+打开注册表编辑器后，在左侧项目中依次展开HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control
+在Control项上右键选择新建“项”，将项的名称修改为“Update”
+在 Update 点击右键，新建，选 DWORD（32位），重命名为 UpdateMode，把值修改为0
+重启
+```
+
+
+2.检查失效网络路径
+----------
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  检查你的资源管理器中所有的网络驱动器是否可用，例如FTP路径等，如不可用，请将其删除。
+
+
+
+
+3.排查小螃蟹声卡
+---------
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;根据很多人的经验，在关闭Realtek声卡面板的“前面板插口检测”后问题解决.
+
+
+4.尝试清理图标缓存
+----------
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本文不作展开，网络流传着很多清理缓存的脚本.
