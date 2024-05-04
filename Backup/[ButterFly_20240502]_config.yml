@@ -857,7 +857,8 @@ note:
 pjax:
   enable: true
   exclude:
-    #  - /artitalk/
+    #!排除artitalk页面
+    - /artitalk/
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
@@ -939,11 +940,6 @@ inject:
       </style>
     - | # !ButterFly Custom CSS
       <style>
-        /* 文章页标题躲避波浪 */
-        div#post-info {
-          margin-bottom: 60px;
-        }
-
         #web_bg {
           background: -webkit-linear-gradient(0deg,
                   rgba(247, 149, 51, 0.1) 0,
@@ -990,15 +986,6 @@ inject:
                   rgba(16, 152, 173, 0.1) 72%,
                   rgba(7, 179, 155, 0.1) 86%,
                   rgba(109, 186, 130, 0.1) 100%);
-      }
-      /* 导航栏 homepage标题阴影 */
-      #nav .site-page,#page-header #scroll-down .scroll-down-effects,
-      #page-header #site-subtitle,#page-header #site-title,#nav .site-name {
-          text-shadow: 3px -1px 5px #39c5bb, -2px 3px 5px #66ccff;
-      }
-
-      #page-header #site_social_icons .social-icon {
-          text-shadow: 3px -1px 5px #fff, -2px 3px 5px #fff;
       }
 
       /* 文章页背景 */
@@ -1072,6 +1059,12 @@ inject:
           --wave-color4: #00000022;
       }
       /*!Headerwave End*/
+
+      /*Nprogress进度条额外样式*/
+      #nprogress .bar {
+          background: #66ccff !important;
+          height: 5px !important;
+        }
 
       /*!灯笼 START*/
         .deng-box {
@@ -1249,6 +1242,8 @@ inject:
       /*!灯笼 END*/
       </style>
   bottom:
+    # live2d
+    # - <script src="https://gcore.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
     - | # !灯笼 注释开启
       <!--
       <div class="deng-box">
