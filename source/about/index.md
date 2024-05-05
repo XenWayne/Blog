@@ -34,9 +34,8 @@ Mandarin Chinese Native | English CET-6 | Japanese learning
  - -自信音游人 Phigros | PJSK | VOEZ | LL | OSU mania>std | Maimai | Chunithm
  - -前中期圆锥角膜患者
  - -重重重重度散光人
-
- [label color="green"]另:欢迎圆锥角膜患者任何对我任何形式的咨询，我很乐意帮忙。[/label] 
-
+ - 
+{% label 另:欢迎圆锥角膜患者任何对我任何形式的咨询，我很乐意分享经验。 green %}
 
 ![osu][1]
 
@@ -87,18 +86,28 @@ GPG ID: `395F 13FC 1EF4 49E0 4175 7CE5 F41A 0509 0C79 69C9`
 
 关于这个Blog
 ====
-框架前前后后折腾过WordPress、Hexo，最后还是喜欢Typecho的开箱即用和简单纯粹。
-上云负担不起，而且也并没有觉得方便到哪里去，就只能自己给自己当运维这样子= =，有的时候抽风站点可能会很慢，给你带来了不好的浏览体验还请见谅 =V=。
-主题基于[Typecho-Butterfly](https://github.com/wehaox/Typecho-Butterfly)魔改。
+~~框架前前后后折腾过WordPress、Hexo，最后还是喜欢Typecho的开箱即用和简单纯粹。~~ 
+
+~~上云负担不起，而且也并没有觉得方便到哪里去，就只能自己给自己当运维这样子= =，有的时候抽风站点可能会很慢，给你带来了不好的浏览体验还请见谅 =V=。~~
+
+~~主题基于[Typecho-Butterfly](https://github.com/wehaox/Typecho-Butterfly)魔改。~~
+
+~~由Typecho驱动，主题信息见页脚。程序托管在自己搭建的服务器，DNS解析来自阿里云，CDN来自Cloudflare.~~
+
+↑这些已经是旧时代的事情了( ；∀；)
+
+{%label '2024.5.5 更新' blue%} ： 
+已经重新迁移至[Hexo](https://hexo.io/)，主题基于[hexo-theme-butterfly](https://butterfly.js.org/)魔改，评论系统来自[Twikoo](https://twikoo.js.org/)。站点托管在Github Pages，CDN来自jsDelivr/Cloudflare/npmmirror/unpkg。
+
 Header头图:[@あい.miapi](https://www.pixiv.net/artworks/76191507)
 
 本站所有内容在未特殊说明的前提下均采用
 
 > 署名 - 非商业性使用 - 相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议
 
-![CC][11]
-由Typecho驱动，主题信息见页脚。程序托管在自己搭建的服务器，DNS解析来自阿里云，CDN来自Cloudflare.
-  That's all.请多指教w。
+![CC][11] 
+
+That's all.请多指教w。
 
 
   [1]: https://osusig.lolicon.app/sig.php?colour=hex66ccff&uname=XenWayne&mode=3&pp=2&removeavmargin&flagshadow&flagstroke&darktriangles&xpbar&xpbarhex

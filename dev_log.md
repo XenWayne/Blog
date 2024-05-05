@@ -106,12 +106,14 @@ header#page-header(class=`${isHomeClass+isFixedClass}` style=bg_img)
 
 
 TODO:
-3.Twikoo邮件和反垃圾配置
+1.关于页 模板语法 和 博客相关信息 camera
+
 
 ----------
 标签外挂文档:
 https://butterfly.js.org/posts/4aa8abbe/#label
 https://butterfly.js.org/posts/4073eda/#%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%96%A6
+https://butterfly.js.org/posts/4aa8abbe/#%E6%A8%99%E7%B1%A4%E5%A4%96%E6%8E%9B%EF%BC%88Tag-Plugins%EF%BC%89
 
 Twikoo评论插件相关文档:
 https://github.com/Android-KitKat/twikoo-import-tools-typecho
