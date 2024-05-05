@@ -106,7 +106,6 @@ header#page-header(class=`${isHomeClass+isFixedClass}` style=bg_img)
 
 
 TODO:
-1.关于页 camera
 
 
 ----------
