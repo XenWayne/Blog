@@ -102,19 +102,15 @@ header#page-header(class=`${isHomeClass+isFixedClass}` style=bg_img)
       #page-site-info
         h1#site-title=site_title
 ```
-4.说说Essay相关https://meuicat.com/blog/67/
+
 
 
 TODO:
-1.主题_config搞好之后放外面持久化。
-Backup文件夹都更新
 3.Twikoo邮件和反垃圾配置
-4.hexo-bilibili-bangumi
-5.beta.xenwayne.top->xenwayne.top
-  xenwayne.top->archive.xenwayne.top
 
 ----------
 标签外挂文档:
 https://butterfly.js.org/posts/4aa8abbe/#label
 https://butterfly.js.org/posts/4073eda/#%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%96%A6
+
 https://github.com/Android-KitKat/twikoo-import-tools-typecho
