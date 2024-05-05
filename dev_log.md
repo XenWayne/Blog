@@ -106,7 +106,7 @@ header#page-header(class=`${isHomeClass+isFixedClass}` style=bg_img)
 
 
 TODO:
-1.关于页 模板语法 和 博客相关信息 camera
+1.关于页 camera
 
 
 ----------
