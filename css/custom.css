@@ -316,3 +316,10 @@ div#footer-wrap * {
       }
   }
 /*!灯笼 END*/
+
+/* pjax progress bar */
+.pace-progress {
+    background: #66ccff;
+    box-shadow: 0 5px 10px #fff, 0 0 5px #66ccff;
+    min-height: 3px;
+}
