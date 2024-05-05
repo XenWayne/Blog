@@ -113,4 +113,10 @@ TODO:
 https://butterfly.js.org/posts/4aa8abbe/#label
 https://butterfly.js.org/posts/4073eda/#%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%96%A6
 
+Twikoo评论插件相关文档:
 https://github.com/Android-KitKat/twikoo-import-tools-typecho
+
+hexo-bilibili-bangumi插件相关文档:
+https://github.com/HCLonely/hexo-bilibili-bangumi
+在hexo generate或hexo deploy之前使用hexo bangumi -u命令更新追番数据，使用hexo cinema -u命令更新追剧数据！(追剧bangumi api不可用)
+删除数据命令:hexo bangumi -d/hexo cinema -d
