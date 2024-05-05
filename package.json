@@ -14,6 +14,7 @@
   "dependencies": {
     "hexo": "^7.0.0",
     "hexo-abbrlink": "^2.2.1",
+    "hexo-artitalk-static": "^0.0.5",
     "hexo-browsersync": "^0.3.0",
     "hexo-deployer-git": "^4.0.0",
     "hexo-filter-nofollow": "^2.0.2",
