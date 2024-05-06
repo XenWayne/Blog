@@ -323,3 +323,11 @@ div#footer-wrap * {
     box-shadow: 0 5px 10px #fff, 0 0 5px #66ccff;
     min-height: 3px;
 }
+
+/* ?实验性修复整体页面*/
+:root{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
