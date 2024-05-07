@@ -4,7 +4,7 @@
 
 # Site
 title: XenWayne's Blog
-subtitle: '鸽子の自我修养。'
+subtitle: '寸进欢喜，无限热爱'
 description: 'Web/摄影/网络工程/平面设计/技术宅/LLer/假的车万人/柚子厨/人形自走废萌Galgame百科全书'
 keywords: XenWayne,Blog,Mevisual,LightZone
 author: XenWayne
@@ -218,8 +218,8 @@ sitemap:
   path: 
     - sitemap.xml
     - sitemap.txt
-  template: ./sitemap_template/sitemap_template.xml
-  template_txt: ./sitemap_template/sitemap_template.txt
+  template: ./template_sitemap/sitemaptemp.xml
+  template_txt: ./template_sitemap/sitemaptemp.txt
   rel: false
   tags: true
   categories: true
@@ -308,3 +308,20 @@ cinema: # 追剧设置
   extra_options:
     key: value
 
+# Feed
+feed:
+  enable: true
+  type: 
+    - atom
+    - rss2
+  path: 
+    - feed/atom.xml
+    - feed/rss2.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  autodiscovery: true
+  template: 

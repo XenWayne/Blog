@@ -14,6 +14,7 @@ menu:
   说说|Essay: /essay/ || fas fa-message
   关于|About: /about/ || fas fa-user
   实验室|Lab: /lab/ || fas fa-flask
+  追番|Bangumi: /bangumi/ || fas fa-tv
   目录|Catalog || fas fa-list:
     归档|Archives: /archives/ || fas fa-archive
     标签|Tags: /tags/ || fas fa-tags
@@ -33,9 +34,12 @@ code_word_wrap: false
 # formal:
 #   icon: link || the description || color
 social:
-  fab fa-twitter: https://github.com/XenWayne || Github || '#24292e'
-  fab fa-github: https://github.com/XenWayne || Github || '#24292e'
-  fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
+  fab fa-twitter: https://twitter.com/xenwayne || Twitter || '#fff'
+  fab fa-github: https://github.com/XenWayne || Github || '#fff'
+  fas fa-envelope: mailto:xenwayne@mevisual.top || Email || '#fff'
+  fab fa-weibo: https://weibo.com/xenwayne || Weibo || '#fff'
+  fa-solid fa-image: https://xenwayne.tuchong.com || Tuchong || '#fff'
+  fa-brands fa-qq: https://user.qzone.qq.com/1695140113/ || QQ || '#fff'
 
 # Image (圖片設置)
 # --------------------------------------

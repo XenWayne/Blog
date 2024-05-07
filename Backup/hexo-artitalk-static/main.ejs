@@ -114,43 +114,47 @@
   </div>
   
   <script data-pjax="">
-    function initPage() {
-      var pageSize = <%= data.pageSize %>;
-      var artitalk = <%-JSON.stringify(items)%>;
-      
-      var at_more = document.querySelector('.at_more');
-      if (at_more) { // 确保at_more元素存在
-        at_more.style.display = artitalk.length ? '' : 'none';
-      }
-      
-      var avatar = document.querySelectorAll('.at_avatar');
+  var pjaxFlag = false; //pjax加载标识
+  var at_more_btn_click; // 在全局作用域声明 at_more_btn_click
+
+  function initPage() {
+    var pageSize = <%= data.pageSize %>;
+    var artitalk = <%-JSON.stringify(items)%>;
+    
+    var at_more = document.querySelector('.at_more');
+    if (at_more) { // 确保at_more元素存在
+      at_more.style.display = artitalk.length ? '' : 'none';
+    }
+    
+    var avatar = document.querySelectorAll('.at_avatar');
+    avatar.forEach((el) => {
+      el.src = '<%-data.logo%>';
+    });
+    
+    <%if(data.avatar){%>
+    var img = new Image();
+    img.src = '<%= data.avatar %>';
+    img.style.display = 'none';
+    document.body.appendChild(img);
+    img.onload = function() {
+      document.body.removeChild(img);
       avatar.forEach((el) => {
-        el.src = '<%-data.logo%>';
+        el.src = img.src;
       });
+    };
+    <%}%>
+    
+    var endLi = document.querySelectorAll('.at_item');
+    endLi = endLi[endLi.length - 1];
+    
+    var at_more_btn = document.querySelector('.at_more_btn');
+    if (at_more_btn) { // 确保at_more_btn元素存在
+      var at_more_btn_text = at_more_btn.textContent;
+      var at_more_loading = document.querySelector('.at_more_loading').cloneNode(true);
+      at_more_loading.style.display = 'unset';
       
-      <%if(data.avatar){%>
-      var img = new Image();
-      img.src = '<%= data.avatar %>';
-      img.style.display = 'none';
-      document.body.appendChild(img);
-      img.onload = function() {
-        document.body.removeChild(img);
-        avatar.forEach((el) => {
-          el.src = img.src;
-        });
-      };
-      <%}%>
-      
-      var endLi = document.querySelectorAll('.at_item');
-      endLi = endLi[endLi.length - 1];
-      
-      var at_more_btn = document.querySelector('.at_more_btn');
-      if (at_more_btn) { // 确保at_more_btn元素存在
-        var at_more_btn_text = at_more_btn.textContent;
-        var at_more_loading = document.querySelector('.at_more_loading').cloneNode(true);
-        at_more_loading.style.display = 'unset';
-        
-        at_more_btn.addEventListener('click', function() {
+      at_more_btn_click = function() { // 在这里定义 at_more_btn_click
+        if (at_more_btn) {
           at_more_btn.setAttribute('disabled', '');
           at_more_btn.innerHTML = at_more_loading.outerHTML;
           setTimeout(() => {
@@ -169,12 +173,16 @@
               at_more.style.display = artitalk.length ? '' : 'none';
             }
           }, 500);
-        });
+        }
+      }
+      if(at_more_btn){
+        at_more_btn.addEventListener('click', at_more_btn_click);
       }
     }
+  }
 
-    //适配pjax
     document.addEventListener('pjax:success', function() {
+      pjaxFlag = true;
       //应用样式表
       let styleContent = `
           .at_items {
@@ -289,9 +297,18 @@
         // 添加新的样式
         customStyleTag.appendChild(document.createTextNode(styleContent));
       }
+      //清除监听器，避免重复绑定
+      var at_more_btn = document.querySelector('.at_more_btn');
+      if(at_more_btn){
+        at_more_btn.removeEventListener('click', at_more_btn_click);
+      }
+
       initPage();
     });
-    initPage();
+    //未通过pjax加载时初始化
+    if (!pjaxFlag) {
+      initPage();
+    }
   </script>
   <% (Array.isArray(data.imports.after) ? data.imports.after : []).forEach(function(bottom, i){ %>
   <%- bottom %>

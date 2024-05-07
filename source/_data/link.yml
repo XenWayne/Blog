@@ -1,6 +1,10 @@
 - class_name: 友人帐
   class_desc: 
   link_list:
+    - name: 风记星辰
+      link: https://www.thyuu.com
+      avatar: https://std.thyuu.com/logo.svg
+      descr: 热爱你来过的每度温暖
     - name: Nero978 的日记
       link: https://nero978.top
       avatar: https://nero978.top/wp-content/uploads/2023/07/logo.jpg

@@ -51,8 +51,11 @@ type: "link"
 ## 本站信息 ##  
 > 网站地址:https://xenwayne.top
 > 网站名称:XenWayne's Blog
-> 网站描述：鸽子的自我修养
-> 网站图标：
+> 网站描述：寸进欢喜，无限热爱
+> **订阅Feed**:
+> 【RSS】[https://xenwayne.top/feed/rss2.xml](/feed/rss2.xml)
+> 【ATOM】[https://xenwayne.top/feed/atom.xml](/feed/atom.xml)
+> **网站图标**：
 > 圆形:
 > 【png】https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/avatar.png
 > 【WebP】https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/avatar.webp
