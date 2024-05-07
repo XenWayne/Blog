@@ -261,8 +261,8 @@ artitalk:
 # hexo-bilibili-bangumi
 bangumi: # 追番设置
   enable: true
-  source: bangumi
-  bgmInfoSource: 'bgmApi'
+  source: bgm
+  bgmInfoSource: 'bgmSub'
   path: /bangumi/index.html
   vmid: 519493
   title: '追番 | Bangumi'
