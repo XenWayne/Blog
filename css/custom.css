@@ -102,6 +102,12 @@ div#footer-wrap * {
     color: var(--font-color);
 }
 
+/*sidebar 按钮*/
+#card-info-btn {
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
 /*!Headerwave Start*/
 :root {
     --wave-color1: rgba(255,255,255,0.7);
