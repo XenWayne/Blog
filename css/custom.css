@@ -337,3 +337,93 @@ div#footer-wrap * {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
+/* !tag/linkcard 外挂标签CSS START */
+.tag-Link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border-radius: 10px; /* 添加了卡片的圆角 */
+}
+
+.tag-Link:hover {
+    transform: scale(1.05);
+}
+
+.tag-link-tips {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tag-Link:hover .tag-link-tips {
+    opacity: 0;
+}
+
+.tag-link-bottom {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-top-left-radius: 10px; /* 修改卡片底部左上角的圆角 */
+    border-top-right-radius: 10px; /* 修改卡片底部右上角的圆角 */
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tag-link-bottom:hover {
+    background-color: rgba(0, 0, 0, 0.1)!important;
+}
+
+.tag-link-left {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-right: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tag-link-right {
+    flex: 1;
+}
+
+.tag-link-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: inherit;
+}
+
+.tag-link-sitename {
+    font-size: 16px;
+    color: #666;
+}
+
+.fa-angle-right {
+    margin-left: auto;
+    color: #666;
+}
+
+[data-theme="light"] .tag-link-bottom {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .tag-link-bottom {
+    background-color: rgba(44, 44, 44, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+/* tag/linkcard 外挂标签CSS END */

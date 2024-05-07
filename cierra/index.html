@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cierra Count.</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--<link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">-->
+	<!--引用Jquery-->
+	
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/TimeCircles.js"></script>
+    <script type="text/javascript" src="js/backstretch.js"></script>    
+    <script type="text/javascript" src="js/main.js"></script>
+	
+	<!--BGM-->
+	<iframe  frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=60
+	 src="https://music.163.com/outchain/player?type=3&id=2060556243&auto=1&height=32">
+		</iframe>	 
+</head>
+<body>
+	<!--背景自适应 路过图床 对应css web_bg-->
+	<div id="web_bg" style="background-image:
+	 url(https://s2.ax1x.com/2019/12/28/leCoa8.md.jpg);"></div>
+	 
+	 
+	 
+
+	
+	
+	<section class="content wrapper">
+		<div class="counter clear" data-date="2019-12-16 01:21:00"></div>		
+	</section>
+		<script src="https://cdn.bootcss.com/sweetalert/2.1.0/sweetalert.min.js"></script>
+		<script>
+		swal('一些事情','\n来访本站的访客们好，这里是森稳XenWayne，高考完之后，总算是有时间回来看看这个地方了。这个页面是谢拉毕业当天我乱搞的，就纯粹为了给自己留个念想，嘛，网站托管在自己的服务器上，所以你看见503、404、502都是常事=V= 我会看到的，别慌.jpg以后也可能迁移到githubpages，我一直看到有人来访，所以也决定维护下去，如果域名变了，我会在博客里的实验室板块改的.一开始想做个留言板来着，奈何静态页评论组件就那么几个，实在是有心无力。最近有空再写写吧，也许也不应该加上留言板打扰此处的清净吧(笑）,另外WallpaperEngine搜索Cierra Count就能找到本页了（如果你想整天对着桌面刀自己的话）。如果同好们愿意帮助完善此页，可以来页脚的博客链接留言. 希望有一天我能把页面上的separate换成return吧,哈哈.\n\n另外BGM加了个大号催泪弹，对不住了各位.\n\n以上.\n20210614|XenWayne\n To be continue... \n\n20220510更新：做了一点小修改，只留时间线了。'); 
+		function AddFavorite(title, url) {
+		  try {
+			  window.external.addFavorite(url, title);
+		  }
+		catch (e) {
+			 try {
+			   window.sidebar.addPanel(title, url,);
+			}
+			 catch (e) {
+				 alert("抱歉，您所使用的浏览器无法完成此操作。");
+			 }
+		  }
+		}
+		</script>	
+</body>
+
+<!--创建footer（固定页底居中）-->
+
+   <div id=divfoot class="text" style="position:fixed;bottom:50px;"}>
+		 	   
+<!--超链接-->		
+ 
+		 <a href="https://xenwayne.top" target="_blank"
+		 face=Microsoft JhengHei color=#000000 style="font-weight: bolder;">
+		 Designed by 森稳XenWayne——假冒的谢拉单推人XD
+		 </a> 
+		 
+		 &nbsp;&nbsp;&nbsp;
+		 
+		 <a href="https://zh.moegirl.org/%E8%B0%A2%E6%8B%89%C2%B7%E9%9C%B2%E5%A6%AE%E4%B8%9D#" 
+		 target="_blank" face=Microsoft JhengHei color=#000000>
+		 萌娘百科-Cierra
+		 </a>
+		 
+		 <br/>
+		 
+		 <FONT face=Microsoft JhengHei color=#000000 style="color:#fff;">基准时：北京时间2019年12月15日00:21<FONT>
+		 <FONT face=Microsoft JhengHei color=#000000 style="color:#fff;">（UTC/GMT+08:00    2019/12/15 00:21）<FONT>
+		  
+		 <br/>
+		 
+		 <a>友情链接:&nbsp;&nbsp;</a>
+		 <a href="https://github.com/RnEric/Cyralive" target="_blank"
+		 face=Microsoft JhengHei color=#000000 style="font-weight: bolder;">Cyralive</a> 
+		 </div>
+<!--footer结束-->
+
+
+<!--下雪-->
+<script src="js/snowy.js"></script>
+<style type="text/css">
+.snow-container{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:100001;}
+</style>
+<div class="snow-container">
+</div>
+
+
+</html>
