@@ -341,7 +341,7 @@ div#footer-wrap * {
 /* !tag/linkcard 外挂标签CSS START */
 .tag-Link {
     display: block;
-    text-decoration: none;
+    text-decoration: none!important;
     color: inherit;
     width: 100%;
     position: relative;
@@ -389,11 +389,17 @@ div#footer-wrap * {
 .tag-link-left {
     width: 80px;
     height: 80px;
-    background-size: cover;
-    background-position: center;
     border-radius: 10px;
     margin-right: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tag-link-left i{
+    font-size: 30px;
+    line-height: 80px;
+    color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tag-link-right {
@@ -418,7 +424,7 @@ div#footer-wrap * {
 
 [data-theme="light"] .tag-link-bottom {
     background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 [data-theme="dark"] .tag-link-bottom {
