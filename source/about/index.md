@@ -101,6 +101,8 @@ GPG ID: `395F 13FC 1EF4 49E0 4175 7CE5 F41A 0509 0C79 69C9`
 {%label '2024.5.5 更新' blue%} ： 
 已经重新迁移至[Hexo](https://hexo.io/)，主题基于[hexo-theme-butterfly](https://butterfly.js.org/)魔改，评论系统来自[Twikoo](https://twikoo.js.org/)。站点托管在Github Pages，CDN来自jsDelivr/Cloudflare/npmmirror/unpkg。
 
+关于站点subtitle，灵感原文出自《进一寸有一寸的欢喜：胡适谈读书》: “怕什么真理无穷，进一寸有进一寸的欢喜”。
+
 Header头图:[@あい.miapi](https://www.pixiv.net/artworks/76191507)
 
 本站所有内容在未特殊说明的前提下均采用

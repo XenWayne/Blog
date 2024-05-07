@@ -27,13 +27,13 @@ cover: https://s1.ax1x.com/2022/03/13/bbZt29.png
 单字节符号，例如英文字母，将字节的第一位设为0，后面7位对应该字符的Unicode码，空位前补0。因此对于英文字符，UTF-8与ASCII码在二进制表现上是相同的。
 
 ### 2.对于多字节的符号
-对于  [label color="blue"]n[/label] 字节的符号 [label color="blue"] ( n > 1 ) [/label] ，第一个字节的前  [label color="blue"]n[/label]  位都设为1，第  [label color="blue"]n + 1[/label]  位设为  [label color="blue"]0[/label]  ，后面字节的前两位一律设为 [label color="blue"]10[/label] 。剩下的没有提及的二进制位，全部为这个符号的 Unicode 码。
+对于  {% label "n" blue %}字节的符号 {% label "( n > 1 )" blue %} ，第一个字节的前  {% label "n" blue %}  位都设为1，第  {% label "n + 1" blue %}  位设为  {% label "0" blue %}  ，后面字节的前两位一律设为 {% label "10" blue %} 。剩下的没有提及的二进制位，全部为这个符号的 Unicode 码。
 
 ```
 下表总结了编码规则，字母x表示可用编码的位。
 
-Unicode符号范围      |      UTF-8编码方式
-(十六进制)           |     （二进制）
+Unicode符号范围      | UTF-8编码方式
+(十六进制)           | (二进制)
 --------------------+---------------------------------------------
 0000 0000-0000 007F | 0xxxxxxx
 0000 0080-0000 07FF | 110xxxxx 10xxxxxx
@@ -45,7 +45,7 @@ Unicode符号范围      |      UTF-8编码方式
 
 ## 具体举两个例子：
 ### 1.例如我们要编码"你好世界"四个字符，要经过以下步骤:
-1)找到四个字符对应的Unicode: [label color="default"]\u4f60\u597d\u4e16\u754c[/label] 
+1)找到四个字符对应的Unicode: {% label "\u4f60\u597d\u4e16\u754c" default %}
 2)将Unicode转换为二进制(16转2对应四位，不够前补0)
 (这里仅以"你"字做演示)
 ```
