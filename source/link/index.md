@@ -28,11 +28,13 @@ type: "link"
 ----------
 
 
-## 工具箱 ##
-- [compress_img](http://www.bejson.com/ui/compress_img/)在线图片压缩
+
+## 互联网仓鼠🐹专用收藏夹 ##
+- [compress_img](https://learnxinyminutes.com/)在线图片压缩
 - [太美工具网](https://tiomg.org/)上班族常用的在线工具网站
 - [孟坤工具箱-CSSbeautify](http://tool.mkblog.cn/cssbeautify/)CSS一键美化
 - [Sakura's Mirror](https://mirror.zerodream.net/)服务端软件镜像站 by Akkariin
+- [LearnXinYminutes](https://learnxinyminutes.com/)快速了解各种编程语言
 
 
 
