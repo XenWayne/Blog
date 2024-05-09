@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>XenWayne&#39;s Blog</title>
   
-  <subtitle>寸进欢喜，无限热爱</subtitle>
+  <subtitle>寸进具欢喜，万物皆可爱。</subtitle>
   <link href="https://xenwayne.top/feed/atom.xml" rel="self"/>
   
   <link href="https://xenwayne.top/"/>
@@ -324,9 +324,9 @@
     <category term="技术分享" scheme="https://xenwayne.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
     
     
-    <category term="Win10" scheme="https://xenwayne.top/tags/Win10/"/>
-    
     <category term="Windows" scheme="https://xenwayne.top/tags/Windows/"/>
+    
+    <category term="Win10" scheme="https://xenwayne.top/tags/Win10/"/>
     
   </entry>
   
