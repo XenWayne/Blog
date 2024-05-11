@@ -9,7 +9,7 @@ tags:
   - CloudFlare
 categories:
   - 技术分享
-cover: 'https://z1.ax1x.com/2023/09/20/pPIC5b8.png'
+cover: 'https://s11.ax1x.com/2023/09/20/pPIPcZT.png'
 abbrlink: d651e145
 date: 2023-09-20 19:35:00
 ---

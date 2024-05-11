@@ -1,10 +1,14 @@
+//! 下雪样式 START//
 /* 控制下雪 */
+var snow = null; // 存储雪花对象
 function snowFall(snow) {
     /* 可配置属性 */
     snow = snow || {};
-    this.maxFlake = snow.maxFlake || 400;   /* 最多片数 */
-    this.flakeSize = snow.flakeSize || 15;  /* 雪花形状 */
+    this.maxFlake = snow.maxFlake || 500;   /* 最多片数 */
+    this.flakeSize = snow.flakeSize || 16;  /* 雪花形状 */
     this.fallSpeed = snow.fallSpeed || 0.1;   /* 坠落速度 */
+    this.loop = null;  // 存储动画帧的引用
+    this.flakes = [];  // 存储所有雪花的数组
 }
 /* 兼容写法 */
 requestAnimationFrame = window.requestAnimationFrame ||
@@ -129,14 +133,19 @@ function drawSnow() {
     });
 }
 /* 调用及控制方法 兼容PJAX*/
-var pjaxFlag = false;
 document.addEventListener('pjax:success', function () {
-    pjaxFlag = true;
-    var snow = new snowFall({ maxFlake: 60 });
-    snow.start();
+    if (!snow) {
+        // 如果雪花效果对象不存在，则创建新的雪花效果
+        snow = new snowFall({ maxFlake: 60 });
+        snow.start();
+    } else {
+        // 如果雪花效果对象已存在，则重新启动现有的雪花效果
+        cancelAnimationFrame(snow.loop); // 取消之前的动画帧
+        snow.flakes = []; // 清空之前的雪花
+        snow.start(); // 重新启动雪花效果
+    }
 });
 //未使用PJAX时初始化
-if (!pjaxFlag) {
-    var snow = new snowFall({ maxFlake: 60 });
-    snow.start();
-}
+var snow = new snowFall({ maxFlake: 60 });
+snow.start();
+//! 下雪样式 END//

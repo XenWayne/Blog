@@ -5,7 +5,7 @@ tags:
   - OBS
 categories:
   - 技术分享
-cover: 'https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/blog/RTMP1.webp'
+cover: 'https://s11.ax1x.com/2023/09/20/pPICCct.png'
 abbrlink: b41cff3a
 date: 2020-08-06 20:55:00
 ---
