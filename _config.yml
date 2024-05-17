@@ -168,15 +168,30 @@ OhMyLive2d:
 
     mobileDisplay: false # 是否在移动端显示
     models:
-      - path: https://gcore.jsdelivr.net/gh/XenWayne/sitefile/live2d/snow_miku/model.json
+      # !snowmiku
+      # - path: https://gcore.jsdelivr.net/gh/XenWayne/sitefile/live2d/snow_miku/model.json
+      #   mobilePosition: [-20, 0] # 移动端时模型在舞台中的位置。 默认值: [0,0] [横坐标, 纵坐标]
+      #   mobileScale: 0.07 # 移动端时模型的缩放比例 默认值: 0.1
+      #   mobileStageStyle: # 移动端时舞台的样式
+      #     width: 180
+      #     height: 180
+      #   motionPreloadStrategy: IDLE # 动作预加载策略 默认值: IDLE 可选值: ALL | IDLE | NONE
+      #   position: [-20,0] # 模型在舞台中的位置。 默认值: [0,0] [横坐标, 纵坐标]
+      #   scale: 0.075 # 模型的缩放比例 默认值: 0.1
+      #   # showHitAreaFrames: false # 是否显示点击区域 默认值: false
+      #   stageStyle:
+      #     width: 250
+      #     height: 250
+      # !cdn-chino
+      - path: https://model.oml2d.com/chino/model.json
         mobilePosition: [-20, 0] # 移动端时模型在舞台中的位置。 默认值: [0,0] [横坐标, 纵坐标]
         mobileScale: 0.07 # 移动端时模型的缩放比例 默认值: 0.1
         mobileStageStyle: # 移动端时舞台的样式
           width: 180
           height: 180
         motionPreloadStrategy: IDLE # 动作预加载策略 默认值: IDLE 可选值: ALL | IDLE | NONE
-        position: [-20,0] # 模型在舞台中的位置。 默认值: [0,0] [横坐标, 纵坐标]
-        scale: 0.075 # 模型的缩放比例 默认值: 0.1
+        position: [16,15] # 模型在舞台中的位置。 默认值: [0,0] [横坐标, 纵坐标]
+        scale: 0.17 # 模型的缩放比例 默认值: 0.1
         # showHitAreaFrames: false # 是否显示点击区域 默认值: false
         stageStyle:
           width: 250
