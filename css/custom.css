@@ -1,9 +1,9 @@
 /* 文章页标题躲避波浪 */
 div#post-info {
     margin-bottom: 60px;
-  }
+}
 
-  #web_bg {
+#web_bg {
     background: -webkit-linear-gradient(0deg,
             rgba(247, 149, 51, 0.1) 0,
             rgba(243, 112, 85, 0.1) 15%,
@@ -50,9 +50,13 @@ div#post-info {
             rgba(7, 179, 155, 0.1) 86%,
             rgba(109, 186, 130, 0.1) 100%);
 }
+
 /* 导航栏 homepage标题阴影 */
-#nav .site-page,#page-header #scroll-down .scroll-down-effects,
-#page-header #site-subtitle,#page-header #site-title,#nav .site-name {
+#nav .site-page,
+#page-header #scroll-down .scroll-down-effects,
+#page-header #site-subtitle,
+#page-header #site-title,
+#nav .site-name {
     text-shadow: 3px -1px 5px #39c5bb, -2px 3px 5px #66ccff;
 }
 
@@ -61,8 +65,8 @@ div#post-info {
 }
 
 /*使黑色遮罩对主页的header背景失效*/
-#page-header.full_page:before{
-  background: transparent;
+#page-header.full_page:before {
+    background: transparent;
 }
 
 /*修改layout布局宽度*/
@@ -84,6 +88,15 @@ div#post-info {
 .read-mode .layout_post>#post {
     /* 以下代表白色透明度为0.3 */
     background: rgba(255, 255, 255, 0.3);
+}
+
+/* .post-bg 文章页header模糊+暗色遮罩 */
+.post-bg::before {
+    background-image: inherit;
+    /* 使用父元素的背景图片 */
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px) brightness(0.75);
 }
 
 #footer {
@@ -110,13 +123,13 @@ div#footer-wrap * {
 
 /*!Headerwave Start*/
 :root {
-    --wave-color1: rgba(255,255,255,0.7);
-    --wave-color2: rgba(255,255,255,0.5);
-    --wave-color3: rgba(255,255,255,0.3);
+    --wave-color1: rgba(255, 255, 255, 0.7);
+    --wave-color2: rgba(255, 255, 255, 0.5);
+    --wave-color3: rgba(255, 255, 255, 0.3);
     --wave-color4: #fff;
 }
 
-.waves{
+.waves {
     position: absolute;
     width: 100%;
     height: 30px;
@@ -124,203 +137,210 @@ div#footer-wrap * {
     max-height: 100px;
     bottom: 0px;
 }
-.parallax > use:nth-child(1) {
+
+.parallax>use:nth-child(1) {
     animation-delay: -2s;
     animation-duration: 7s;
 }
-.parallax > use {
-    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)infinite;
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5)infinite;
 }
-@keyframes move-forever{
+
+@keyframes move-forever {
     0% {
-        transform: translate3d(-90px,0,0);
+        transform: translate3d(-90px, 0, 0);
     }
+
     100% {
-        transform: translate3d(85px,0,0);
+        transform: translate3d(85px, 0, 0);
     }
 }
+
 /* 暗色适配部分 */
 [data-theme=dark] {
-    --wave-color1: rgba(20,20,20,0.7);
-    --wave-color2: rgba(20,20,20,0.5);
-    --wave-color3: rgba(20,20,20,0.3);
+    --wave-color1: rgba(20, 20, 20, 0.7);
+    --wave-color2: rgba(20, 20, 20, 0.5);
+    --wave-color3: rgba(20, 20, 20, 0.3);
     --wave-color4: #00000022;
 }
+
 /*!Headerwave End*/
 
 /*!灯笼 START*/
-  .deng-box {
-      position: fixed;
-      top: -40px;
-      right: -20px;
-      z-index: 2;
-  }
+.deng-box {
+    position: fixed;
+    top: -40px;
+    right: -20px;
+    z-index: 2;
+}
 
-  .deng-box1 {
-      position: fixed;
-      top: -30px;
-      right: 10px;
-      z-index: 2;
-  }
+.deng-box1 {
+    position: fixed;
+    top: -30px;
+    right: 10px;
+    z-index: 2;
+}
 
-  .deng-box1 .deng {
-      position: relative;
-      width: 120px;
-      height: 90px;
-      margin: 50px;
-      background: #d8000f;
-      background: rgba(216, 0, 15, 0.8);
-      border-radius: 50% 50%;
-      -webkit-transform-origin: 50% -100px;
-      -webkit-animation: swing 5s infinite ease-in-out;
-      box-shadow: -5px 5px 30px 4px rgba(252, 144, 61, 1);
-  }
+.deng-box1 .deng {
+    position: relative;
+    width: 120px;
+    height: 90px;
+    margin: 50px;
+    background: #d8000f;
+    background: rgba(216, 0, 15, 0.8);
+    border-radius: 50% 50%;
+    -webkit-transform-origin: 50% -100px;
+    -webkit-animation: swing 5s infinite ease-in-out;
+    box-shadow: -5px 5px 30px 4px rgba(252, 144, 61, 1);
+}
 
-  .deng {
-      position: relative;
-      width: 120px;
-      height: 90px;
-      margin: 50px;
-      background: #d8000f;
-      background: rgba(216, 0, 15, 0.8);
-      border-radius: 50% 50%;
-      -webkit-transform-origin: 50% -100px;
-      -webkit-animation: swing 3s infinite ease-in-out;
-      box-shadow: -5px 5px 50px 4px rgba(250, 108, 0, 1);
-  }
+.deng {
+    position: relative;
+    width: 120px;
+    height: 90px;
+    margin: 50px;
+    background: #d8000f;
+    background: rgba(216, 0, 15, 0.8);
+    border-radius: 50% 50%;
+    -webkit-transform-origin: 50% -100px;
+    -webkit-animation: swing 3s infinite ease-in-out;
+    box-shadow: -5px 5px 50px 4px rgba(250, 108, 0, 1);
+}
 
-  .deng-a {
-      width: 100px;
-      height: 90px;
-      background: #d8000f;
-      background: rgba(216, 0, 15, 0.1);
-      margin: 12px 8px 8px 8px;
-      border-radius: 50% 50%;
-      border: 2px solid #dc8f03;
-  }
+.deng-a {
+    width: 100px;
+    height: 90px;
+    background: #d8000f;
+    background: rgba(216, 0, 15, 0.1);
+    margin: 12px 8px 8px 8px;
+    border-radius: 50% 50%;
+    border: 2px solid #dc8f03;
+}
 
-  .deng-b {
-      width: 45px;
-      height: 90px;
-      background: #d8000f;
-      background: rgba(216, 0, 15, 0.1);
-      margin: -4px 8px 8px 26px;
-      border-radius: 50% 50%;
-      border: 2px solid #dc8f03;
-  }
+.deng-b {
+    width: 45px;
+    height: 90px;
+    background: #d8000f;
+    background: rgba(216, 0, 15, 0.1);
+    margin: -4px 8px 8px 26px;
+    border-radius: 50% 50%;
+    border: 2px solid #dc8f03;
+}
 
-  .xian {
-      position: absolute;
-      top: -20px;
-      left: 60px;
-      width: 2px;
-      height: 20px;
-      background: #dc8f03;
-  }
+.xian {
+    position: absolute;
+    top: -20px;
+    left: 60px;
+    width: 2px;
+    height: 20px;
+    background: #dc8f03;
+}
 
-  .shui-a {
-      position: relative;
-      width: 5px;
-      height: 20px;
-      margin: -5px 0 0 59px;
-      -webkit-animation: swing 4s infinite ease-in-out;
-      -webkit-transform-origin: 50% -45px;
-      background: #ffa500;
-      border-radius: 0 0 5px 5px;
-  }
+.shui-a {
+    position: relative;
+    width: 5px;
+    height: 20px;
+    margin: -5px 0 0 59px;
+    -webkit-animation: swing 4s infinite ease-in-out;
+    -webkit-transform-origin: 50% -45px;
+    background: #ffa500;
+    border-radius: 0 0 5px 5px;
+}
 
-  .shui-b {
-      position: absolute;
-      top: 14px;
-      left: -2px;
-      width: 10px;
-      height: 10px;
-      background: #dc8f03;
-      border-radius: 50%;
-  }
+.shui-b {
+    position: absolute;
+    top: 14px;
+    left: -2px;
+    width: 10px;
+    height: 10px;
+    background: #dc8f03;
+    border-radius: 50%;
+}
 
-  .shui-c {
-      position: absolute;
-      top: 18px;
-      left: -2px;
-      width: 10px;
-      height: 35px;
-      background: #ffa500;
-      border-radius: 0 0 0 5px;
-  }
+.shui-c {
+    position: absolute;
+    top: 18px;
+    left: -2px;
+    width: 10px;
+    height: 35px;
+    background: #ffa500;
+    border-radius: 0 0 0 5px;
+}
 
-  .deng:before {
-      position: absolute;
-      top: -7px;
-      left: 29px;
-      height: 12px;
-      width: 60px;
-      content: " ";
-      display: block;
-      z-index: 999;
-      border-radius: 5px 5px 0 0;
-      border: solid 1px #dc8f03;
-      background: #ffa500;
-      background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
-  }
+.deng:before {
+    position: absolute;
+    top: -7px;
+    left: 29px;
+    height: 12px;
+    width: 60px;
+    content: " ";
+    display: block;
+    z-index: 999;
+    border-radius: 5px 5px 0 0;
+    border: solid 1px #dc8f03;
+    background: #ffa500;
+    background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
+}
 
-  .deng:after {
-      position: absolute;
-      bottom: -7px;
-      left: 10px;
-      height: 12px;
-      width: 60px;
-      content: " ";
-      display: block;
-      margin-left: 20px;
-      border-radius: 0 0 5px 5px;
-      border: solid 1px #dc8f03;
-      background: #ffa500;
-      background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
-  }
+.deng:after {
+    position: absolute;
+    bottom: -7px;
+    left: 10px;
+    height: 12px;
+    width: 60px;
+    content: " ";
+    display: block;
+    margin-left: 20px;
+    border-radius: 0 0 5px 5px;
+    border: solid 1px #dc8f03;
+    background: #ffa500;
+    background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
+}
 
-  .deng-t {
-      font-family: 华文行楷,Arial,Lucida Grande,Tahoma,sans-serif;
-      font-size: 3.2rem;
-      color: #dc8f03;
-      font-weight: bold;
-      line-height: 85px;
-      text-align: center;
-  }
+.deng-t {
+    font-family: 华文行楷, Arial, Lucida Grande, Tahoma, sans-serif;
+    font-size: 3.2rem;
+    color: #dc8f03;
+    font-weight: bold;
+    line-height: 85px;
+    text-align: center;
+}
 
-  .night .deng-t, 
-  .night .deng-box, 
-  .night .deng-box1 {
-      background: transparent !important;
-  }
+.night .deng-t,
+.night .deng-box,
+.night .deng-box1 {
+    background: transparent !important;
+}
 
-  @-moz-keyframes swing {
-      0% {
-          -moz-transform: rotate(-10deg)
-      }
+@-moz-keyframes swing {
+    0% {
+        -moz-transform: rotate(-10deg)
+    }
 
-      50% {
-          -moz-transform: rotate(10deg)
-      }
+    50% {
+        -moz-transform: rotate(10deg)
+    }
 
-      100% {
-          -moz-transform: rotate(-10deg)
-      }
-  }
+    100% {
+        -moz-transform: rotate(-10deg)
+    }
+}
 
-  @-webkit-keyframes swing {
-      0% {
-          -webkit-transform: rotate(-10deg)
-      }
+@-webkit-keyframes swing {
+    0% {
+        -webkit-transform: rotate(-10deg)
+    }
 
-      50% {
-          -webkit-transform: rotate(10deg)
-      }
+    50% {
+        -webkit-transform: rotate(10deg)
+    }
 
-      100% {
-          -webkit-transform: rotate(-10deg)
-      }
-  }
+    100% {
+        -webkit-transform: rotate(-10deg)
+    }
+}
+
 /*!灯笼 END*/
 
 /* pjax progress bar */
@@ -331,7 +351,7 @@ div#footer-wrap * {
 }
 
 /* ?实验性修复整体页面*/
-:root{
+:root {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
@@ -341,13 +361,14 @@ div#footer-wrap * {
 /* !tag/linkcard 外挂标签CSS START */
 .tag-Link {
     display: block;
-    text-decoration: none!important;
+    text-decoration: none !important;
     color: inherit;
     width: 100%;
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease;
-    border-radius: 10px; /* 添加了卡片的圆角 */
+    border-radius: 10px;
+    /* 添加了卡片的圆角 */
 }
 
 .tag-Link:hover {
@@ -375,15 +396,17 @@ div#footer-wrap * {
     display: flex;
     align-items: center;
     padding: 15px;
-    border-top-left-radius: 10px; /* 修改卡片底部左上角的圆角 */
-    border-top-right-radius: 10px; /* 修改卡片底部右上角的圆角 */
+    border-top-left-radius: 10px;
+    /* 修改卡片底部左上角的圆角 */
+    border-top-right-radius: 10px;
+    /* 修改卡片底部右上角的圆角 */
     transition: box-shadow 0.3s ease, background-color 0.3s ease;
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .tag-link-bottom:hover {
-    background-color: rgba(0, 0, 0, 0.1)!important;
+    background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
 .tag-link-left {
@@ -393,7 +416,7 @@ div#footer-wrap * {
     margin-right: 15px;
 }
 
-.tag-link-left i{
+.tag-link-left i {
     font-size: 30px;
     line-height: 80px;
     color: #666;
@@ -432,4 +455,5 @@ div#footer-wrap * {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     color: #fff;
 }
+
 /* tag/linkcard 外挂标签CSS END */
