@@ -34,6 +34,7 @@ node_modules/hexo-theme-butterfly/layout/includes/footer.pug
       //- span= _p('footer.theme') + ' '
       span= 'Theme' + ' '
       a(href='https://github.com/jerryc127/hexo-theme-butterfly')= 'Butterfly'
+      span= ' ' +'Modified'
   if theme.footer.custom_text
     .footer_custom_text!=`${theme.footer.custom_text}`
 ```
