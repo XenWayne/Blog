@@ -6,7 +6,7 @@
   <link href="https://xenwayne.top/feed/atom.xml" rel="self"/>
   
   <link href="https://xenwayne.top/"/>
-  <updated>2024-05-04T13:32:41.393Z</updated>
+  <updated>2024-05-24T14:16:52.368Z</updated>
   <id>https://xenwayne.top/</id>
   
   <author>
@@ -15,6 +15,42 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GET&amp;POST请求-Web前后端数据交互学习小记</title>
+    <link href="https://xenwayne.top/posts/6f791b0c/"/>
+    <id>https://xenwayne.top/posts/6f791b0c/</id>
+    <published>2024-05-24T14:16:52.000Z</published>
+    <updated>2024-05-24T14:16:52.368Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;最近做一个全栈项目学习了一下前后端数据请求交互，这里用NodeJS Express做服务端，简单总结一下GET和POST请求交互的几种方案。&lt;/p&gt;
+&lt;h2 id=&quot;表单提交&quot;&gt;&lt;a href=&quot;#表单提交&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="AJAX" scheme="https://xenwayne.top/tags/AJAX/"/>
+    
+    <category term="JavaScript" scheme="https://xenwayne.top/tags/JavaScript/"/>
+    
+    <category term="XMLHttpRequest" scheme="https://xenwayne.top/tags/XMLHttpRequest/"/>
+    
+    <category term="Fetch" scheme="https://xenwayne.top/tags/Fetch/"/>
+    
+    <category term="Axios" scheme="https://xenwayne.top/tags/Axios/"/>
+    
+    <category term="Express" scheme="https://xenwayne.top/tags/Express/"/>
+    
+    <category term="NodeJS" scheme="https://xenwayne.top/tags/NodeJS/"/>
+    
+  </entry>
   
   <entry>
     <title>QMK/VIA固件键盘无需调整Layer实现锁win键</title>

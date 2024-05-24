@@ -9,8 +9,46 @@
     <atom:link href="https://xenwayne.top/feed/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Web/摄影/网络工程/平面设计/技术宅/LLer/假的车万人/柚子厨/人形自走废萌Galgame百科全书</description>
-    <pubDate>Sat, 04 May 2024 13:32:41 GMT</pubDate>
+    <pubDate>Fri, 24 May 2024 14:16:52 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>GET&amp;POST请求-Web前后端数据交互学习小记</title>
+      <link>https://xenwayne.top/posts/6f791b0c/</link>
+      <guid>https://xenwayne.top/posts/6f791b0c/</guid>
+      <pubDate>Fri, 24 May 2024 14:16:52 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;最近做一个全栈项目学习了一下前后端数据请求交互，这里用NodeJS Express做服务端，简单总结一下GET和POST请求交互的几种方案。&lt;/p&gt;
+&lt;h2 id=&quot;表单提交&quot;&gt;&lt;a href=&quot;#表单提交&quot; class=&quot;headerlink&quot;</description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="https://xenwayne.top/tags/AJAX/">AJAX</category>
+      
+      <category domain="https://xenwayne.top/tags/JavaScript/">JavaScript</category>
+      
+      <category domain="https://xenwayne.top/tags/XMLHttpRequest/">XMLHttpRequest</category>
+      
+      <category domain="https://xenwayne.top/tags/Fetch/">Fetch</category>
+      
+      <category domain="https://xenwayne.top/tags/Axios/">Axios</category>
+      
+      <category domain="https://xenwayne.top/tags/Express/">Express</category>
+      
+      <category domain="https://xenwayne.top/tags/NodeJS/">NodeJS</category>
+      
+      
+      <comments>https://xenwayne.top/posts/6f791b0c/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>QMK/VIA固件键盘无需调整Layer实现锁win键</title>
