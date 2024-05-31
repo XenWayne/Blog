@@ -9,7 +9,7 @@
     <atom:link href="https://xenwayne.top/feed/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Web/摄影/网络工程/平面设计/技术宅/LLer/假的车万人/柚子厨/人形自走废萌Galgame百科全书</description>
-    <pubDate>Fri, 24 May 2024 14:16:52 GMT</pubDate>
+    <pubDate>Fri, 31 May 2024 15:51:46 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -22,8 +22,8 @@
         
           
           
-      <description>&lt;p&gt;最近做一个全栈项目学习了一下前后端数据请求交互，这里用NodeJS Express做服务端，简单总结一下GET和POST请求交互的几种方案。&lt;/p&gt;
-&lt;h2 id=&quot;表单提交&quot;&gt;&lt;a href=&quot;#表单提交&quot; class=&quot;headerlink&quot;</description>
+      <description>&lt;p&gt;最近做一个全栈项目学习了一下前后端数据请求交互，这里用NodeJS Express做服务端，简单总结一下GET和POST请求交互的几种方案，本文不会对全部Api进行详细介绍，只是简单的示例，更多内容可以查看官方文档。&lt;/p&gt;
+&lt;h2 id=&quot;表单提交&quot;&gt;&lt;a</description>
           
         
       
