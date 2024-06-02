@@ -9,7 +9,7 @@
     <atom:link href="https://xenwayne.top/feed/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Web/摄影/网络工程/平面设计/技术宅/LLer/假的车万人/柚子厨/人形自走废萌Galgame百科全书</description>
-    <pubDate>Fri, 31 May 2024 15:51:46 GMT</pubDate>
+    <pubDate>Sun, 02 Jun 2024 08:55:06 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -86,7 +86,7 @@
     </item>
     
     <item>
-      <title>浏览器跨域问题-CORS</title>
+      <title>浏览器跨域问题-CORS、JSONP</title>
       <link>https://xenwayne.top/posts/d651e145/</link>
       <guid>https://xenwayne.top/posts/d651e145/</guid>
       <pubDate>Wed, 20 Sep 2023 11:35:00 GMT</pubDate>

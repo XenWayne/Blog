@@ -350,14 +350,6 @@ div#footer-wrap * {
     min-height: 3px;
 }
 
-/* ?实验性修复整体页面*/
-:root {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
 /* !tag/linkcard 外挂标签CSS START */
 .tag-Link {
     display: block;
@@ -368,7 +360,7 @@ div#footer-wrap * {
     overflow: hidden;
     transition: transform 0.3s ease;
     border-radius: 10px;
-    /* 添加了卡片的圆角 */
+    margin-bottom: 15px;
 }
 
 .tag-Link:hover {
@@ -456,4 +448,4 @@ div#footer-wrap * {
     color: #fff;
 }
 
-/* tag/linkcard 外挂标签CSS END */
+/* !tag/linkcard 外挂标签CSS END */
