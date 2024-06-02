@@ -16,7 +16,7 @@ date: 2024-05-24 22:16:52
 
 
 
-最近做一个全栈项目学习了一下前后端数据请求交互，这里用NodeJS Express做服务端，简单总结一下GET和POST请求交互的几种方案。
+最近做一个全栈项目学习了一下前后端数据请求交互，这里用NodeJS Express做服务端，简单总结一下GET和POST请求交互的几种方案，本文不会对全部Api进行详细介绍，只是简单的示例，更多内容可以查看官方文档。
 
 ## 表单提交
 通过html的form表单提交数据，浏览器默认的处理逻辑会刷新页面，并将目标url请求得到的响应渲染到页面上，大部分情况下都是通过`event.preventDefault()`阻止默认行为，然后通过其他方式处理请求，这小节我们只讨论表单提交的默认行为。
@@ -235,12 +235,81 @@ app.options('*', (req, res) => {
 
 需要说明的是，这里仅是为了给测试提供方便，面向生产环境的应用，应该根据实际情况设置更加细分的允许范围。
 
+## AJAX in jQuery
+
+jQuery是一个快速、简洁的JavaScript库，它简化了HTML文档遍历、事件处理、动画等操作，相较于原生写法，jQuery实现AJAX请求更加简洁，这里给出前端部分的示例。
+
+```html
+<button onclick="jqueryGet()">jQuery发送get请求</button>
+<button onclick="jqueryPost()">jQuery发送post请求</button>
+<div id="result"></div>
+```
+### GET请求
+
+```javascript
+function jqueryGet() {
+    $.get('//localhost:8000/get', { a: 100, b: 200 }, function (data) {
+        console.log(data);
+        $('#result').html(data);
+    });
+}
+```
+
+### POST请求
+
+```javascript
+function jqueryPost() {
+    $.post('//localhost:8000/post', { a: 100, b: 200 }, function (data) {
+        console.log(data);
+        $('#result').html(data);
+    });
+}
+```
+
+上述写法中，`$.get()`和`$.post()`分别是jQuery的get和post方法，适合一些简单的请求，接受四个参数，分别是(url, data, success, dataType)，其中url是请求的url，data是请求参数，success是请求成功的回调函数，dataType是响应体类型，如果dataType没有被指定，jQuery会根据响应体自动判断响应体类型。
+
+其实jQuery中`$.get()`和`$.post()`方法返回的是一个jqXHR对象，这个对象是jQuery的封装，实现了Promise接口，所以可以.done(), .fail(), .always(), .then()等方法添加不同情况下的回调函数。
+
+### jQuery.ajax()通用方法
+
+```javascript
+function jqueryAjax() {
+    $.ajax({
+        // 请求URL
+        url: '//localhost:8000/post',
+        // 请求方法
+        type: 'POST',
+        // 请求头
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        // 参数
+        data: { a: 100, b: 200 },
+        // 响应体类型
+        dataType: 'json',
+        // 成功回调函数
+        success: function (data) {
+            console.log(data);
+            $('#result').html(data);
+        }
+        // 超时时间
+        timeout: 3000,
+        // 失败回调函数
+        error: function (error) {
+            console.log(error);
+        }
+    });
+}
+```
+
 
 ## Fetch
 
-Fetch API 是现代 JavaScript 中用于进行网络请求的接口，它提供了比传统 XMLHttpRequest 更加灵活和强大的功能。Fetch API 使得网络请求的处理更加简洁，并且原生支持 Promises，从而简化了异步代码的编写和错误处理，后端处理方式和AJAX相同，这里只给出前端部分的示例。
+Fetch API 是现代 JavaScript 中用于进行网络请求的接口，它提供了比传统 XMLHttpRequest 更加灵活和强大的功能。Fetch API 使得网络请求的处理更加简洁，并且原生支持 Promises，从而简化了异步代码的编写和错误处理，这里只给出前端部分的示例。
 
 ### GET请求
+
+GET请求是fetch的默认请求方法，可以不指定method，如果需要传递参数，可以直接拼接在url上。
 
 ```javascript
 function fetchGet() {
@@ -316,6 +385,8 @@ Axios的使用方式和Fetch类似，但是Axios提供了更多的功能，比�
 
 ### GET请求
 
+axios#get(url[, config])
+
 ```javascript
 function axiosGet() {
     axios.get('//localhost:8000/get', {
@@ -323,24 +394,8 @@ function axiosGet() {
         params: {
             a: 100,
             b: 200
-        }
-    })
-        .then(response => {
-            console.log(response.data);
-            const result = document.getElementById('result');
-            result.innerHTML = response.data;
-        })
-        .catch(error => {
-            console.log(error);
-        });
-}
-```
-
-### POST请求
-
-```javascript
-function axiosPost() {
-    axios.post('//localhost:8000/post', 'a=100&b=200', {
+        },
+        // 请求头
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
         }
@@ -356,7 +411,66 @@ function axiosPost() {
 }
 ```
 
-Axios的`get()`和`post()`方法接受三个参数，第一个参数是url，第二个参数是请求体，第三个参数是配置对象，其中params表示请求参数，headers表示请求头，Axios的请求方法返回的是一个Promise对象，可以通过`then()`方法处理成功的响应，`catch()`方法处理失败的响应。
+### POST请求
+
+axios#post(url[, data[, config]])
+
+```javascript
+function axiosPost() {
+    axios.post('//localhost:8000/post', { a: 100, b: 200 }, {
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+        .then(response => {
+            console.log(response.data);
+            const result = document.getElementById('result');
+            result.innerHTML = response.data;
+        })
+        .catch(error => {
+            console.log(error);
+        });
+}
+```
+
+Axios的post()`方法接受三个参数，第一个参数是url，第二个参数是请求体，第三个参数是配置对象，其中params表示请求参数，headers表示请求头，Axios的请求方法返回的是一个Promise对象，可以通过`then()`方法处理成功的响应，`catch()`方法处理失败的响应。
+
+### Axios通用方法
+
+axios(url[, config])
+
+```javascript
+axios({
+    url: '//localhost:8000/post',
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    params: {
+        a: 100,
+        b: 200
+    },
+    data: { a: 100, b: 200 }
+})
+    .then(response => {
+        console.log(response.data);
+        const result = document.getElementById('result');
+        result.innerHTML = response.data;
+    })
+    .catch(error => {
+        console.log(error);
+    });
+```
+
+这种写法如果不在config指定method，Axios默认的请求方法是GET。  
+对于一些复杂场景的传参，我们可能需要在POST请求时同时传递params和data，即同时通过URL和请求体传递参数，这种情况下，params中的参数会拼接在url上，data中的参数会放在请求体中。后端以Express为例，可以通过`req.query`获取url上的参数，通过`req.body`获取请求体中的参数。
+
+Axios提供了很多实用的功能，比如拦截器、取消请求、全局配置等，值得一提的是，可以通过`axios.defaults.baseURL`设置全局请求的基础url，这样在请求时就不用每次都写完整的url，只需要写相对路径即可。
+
+## 其他方案
+
+除了上述几种方案，还有一些其他的方案，比如JSONP、WebSocket、Server-Sent Events等，其中JSONP是一种较为过时的跨域解决方案，我在下面这篇文章提到过。
+{% link 浏览器跨域问题-CORS、JSONP,https://xenwayne.top/posts/d651e145/,/posts/d651e145/%}
 
 
 >参考资料：  
@@ -365,3 +479,4 @@ Axios的`get()`和`post()`方法接受三个参数，第一个参数是url，第
 > [Axios](https://axios-http.com/zh/docs/)  
 > [CSDN-前端请求数据方法](https://blog.csdn.net/qq_53895518/article/details/135505979)
 > [express解析post请求的几个中间件](https://blog.csdn.net/weixin_43972437/article/details/102717320)
+> [Ajax jQuery API Documentation](https://api.jquery.com/category/ajax/)

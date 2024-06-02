@@ -927,7 +927,8 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    # - | # 黑白滤镜，注释开启
+    # !黑白滤镜，注释开启
+    # - | 
     #   <style>
     #   /*   
     #   html { 
