@@ -35,12 +35,12 @@ code_word_wrap: false
 # formal:
 #   icon: link || the description || color
 social:
-  fab fa-twitter: https://twitter.com/xenwayne || Twitter || '#fff'
-  fab fa-github: https://github.com/XenWayne || Github || '#fff'
-  fas fa-envelope: mailto:xenwayne@mevisual.top || Email || '#fff'
-  fab fa-weibo: https://weibo.com/xenwayne || Weibo || '#fff'
-  fa-solid fa-image: https://xenwayne.tuchong.com || Tuchong || '#fff'
-  fa-brands fa-qq: https://user.qzone.qq.com/1695140113/ || QQ || '#fff'
+  fab fa-twitter: https://twitter.com/xenwayne || Twitter
+  fab fa-github: https://github.com/XenWayne || Github
+  fas fa-envelope: mailto:xenwayne@mevisual.top || Email
+  fab fa-weibo: https://weibo.com/xenwayne || Weibo
+  fa-solid fa-image: https://xenwayne.tuchong.com || Tuchong
+  fa-brands fa-qq: https://user.qzone.qq.com/1695140113/ || QQ
 
 # Image (圖片設置)
 # --------------------------------------

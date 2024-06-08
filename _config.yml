@@ -124,7 +124,7 @@ abbrlink:
 # hexo-oh-my-live2d 配置
 OhMyLive2d:
   enable: true
-  CDN: https://registry.npmmirror.com/oh-my-live2d/latest/files
+  CDN: https://unpkg.com/oh-my-live2d@latest
   # CDN: https://registry.npmmirror.com/oh-my-live2d/0.16/files/dist/index.min.js
   option:
     dockedPosition: 'left' # 模型停靠位置 默认值: 'right' 可选值: 'left' | 'right'
