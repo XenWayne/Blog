@@ -67,6 +67,10 @@ app.post('/formpost', (req, res) => {
 
 浏览器行为和GET请求类似，只是POST请求不会在url上暴露参数，而是通过请求体传递参数。
 
+表单就支持很多丰富的功能，可以通过`enctype`属性设置表单数据的编码类型，例如`multipart/form-data`适用于文件上传，关于表单的Post请求更多用例，推荐阅读:
+
+{% link 四种常见的 POST 提交数据方式,JerryQu 的博客,https://imququ.com/post/four-ways-to-post-data-in-http.html%}
+
 ## AJAX
 表单提交的默认行为在登录表单的场景应用尚可，但在现代web应用中，我们更多的是通过AJAX请求来实现数据交互，这样可以避免页面刷新，提升用户体验。
 

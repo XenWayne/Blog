@@ -154,7 +154,7 @@ $.getJSON('http://example.com/data?callback=?', function(data) {
 
 jQuery封装的jsonp请求如无明确指定，会在请求url中自动添加随机生成的回调函数名`callback=?`，类似于`http://example.com/data?callback=jQuery1234567890`，服务端获取`req.query.callback`，响应时拼接即可。
 
-在更底层的方法`$.ajax`中，可以通过`jsonp`参数重写"callback"参数名，如`jsonp: 'cb'`，服务端获取`req.query.cb`。可以通过`jsonpCallback`参数指定回调函数名，如`jsonpCallback: 'handleResponse'`，服务端获取`req.query.handleResponse`，更多参数参考jQuery官方文档。
+在更底层的方法`$.ajax`中，可以通过`jsonp`参数重写“callback”参数名，即param，如`jsonp: 'cb'`，服务端获取`req.query.cb`。可以通过`jsonpCallback`参数指定回调函数名，如`jsonpCallback: 'handleResponse'`，服务端获取`req.query.cb`的返回结果就是`handleResponse`，更多参数参考jQuery官方文档。
 {% link jQuery.ajax(), jQuery API Documentation, https://api.jquery.com/jQuery.ajax/ %}
 
 ## JSONP的缺点
