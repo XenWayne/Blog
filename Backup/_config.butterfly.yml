@@ -136,15 +136,15 @@ anchor:
   # Click the headline to scroll and update the anchor
   click_to_scroll: true
 
-# figcaption (圖片描述文字)
-photofigcaption: true
+# !figcaption (圖片描述文字)
+photofigcaption: false
 
 # copy settings
 # copyright: Add the copyright information after copied content (複製的內容後面加上版權信息)
 copy:
   enable: true
   copyright:
-    enable: false
+    enable: true
     limit_count: 50
 
 # Post
