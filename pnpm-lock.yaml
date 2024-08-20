@@ -18,8 +18,8 @@ importers:
         specifier: ^0.0.5
         version: 0.0.5(ejs@3.1.10)(hexo-fs@4.1.3)
       hexo-bilibili-bangumi:
-        specifier: ^1.10.0
-        version: 1.10.0
+        specifier: ^1.10.2
+        version: 1.10.2
       hexo-browsersync:
         specifier: ^0.3.0
         version: 0.3.0
@@ -669,8 +669,8 @@ packages:
       ejs: ^3.1.7
       hexo-fs: ^4.1.1
 
-  hexo-bilibili-bangumi@1.10.0:
-    resolution: {integrity: sha512-KSsYllPmdgzZ7xqXrI9i5iWI2TEuxE0zp60Ggvfv5+Hz+GfZiZF6wvw9dKQzZ9x2We1Afod+XOwtBcTnvKf+Yg==}
+  hexo-bilibili-bangumi@1.10.2:
+    resolution: {integrity: sha512-l/XG090jBe/AYAz83yqLwxQt8FnFKKZhsF6DbRkBbpVlbBEWuq6joa2ESpFFanDwX68VmGUI7fVAKd7yM4Ppfg==}
 
   hexo-browsersync@0.3.0:
     resolution: {integrity: sha512-5grkDUG/jci1LgImUFHTGMhXRYFKYuBVVf1L62UAhd/IC/L3EfGtKXyPVqvxyVb4Pc5STY5tQR46xoBJLlWJNw==}
@@ -2229,7 +2229,7 @@ snapshots:
       hexo-fs: 4.1.3
       yaml: 2.4.2
 
-  hexo-bilibili-bangumi@1.10.0:
+  hexo-bilibili-bangumi@1.10.2:
     dependencies:
       '@babel/runtime': 7.24.5
       axios: 1.6.8
