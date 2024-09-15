@@ -183,28 +183,44 @@ OhMyLive2d:
       #     width: 250
       #     height: 250
       # !cdn-chino
-      - path: https://model.oml2d.com/chino/model.json
-        mobilePosition: [-20, 0] # 移动端时模型在舞台中的位置。 默认值: [0,0] [横坐标, 纵坐标]
+      # - path: https://gcore.jsdelivr.net/gh/XenWayne/sitefile/live2d/chino/model.json
+      #   mobilePosition: [-20, 0] # 移动端时模型在舞台中的位置。 默认值: [0,0] [横坐标, 纵坐标]
+      #   mobileScale: 0.07 # 移动端时模型的缩放比例 默认值: 0.1
+      #   mobileStageStyle: # 移动端时舞台的样式
+      #     width: 180
+      #     height: 180
+      #   motionPreloadStrategy: IDLE # 动作预加载策略 默认值: IDLE 可选值: ALL | IDLE | NONE
+      #   position: [16,15] # 模型在舞台中的位置。 默认值: [0,0] [横坐标, 纵坐标]
+      #   scale: 0.17 # 模型的缩放比例 默认值: 0.1
+      #   # showHitAreaFrames: false # 是否显示点击区域 默认值: false
+      #   stageStyle:
+      #     width: 250
+      #     height: 250
+      # !cdn-dujiaoshou_6
+      - path: https://sitefile.xenwayne.top/https://raw.githubusercontent.com/XenWayne/sitefile/master/live2d/dujiaoshou_6/dujiaoshou_6.model3.json
+        mobilePosition: [0, 0] # 移动端时模型在舞台中的位置。 默认值: [0,0] [横坐标, 纵坐标]
         mobileScale: 0.07 # 移动端时模型的缩放比例 默认值: 0.1
         mobileStageStyle: # 移动端时舞台的样式
-          width: 180
-          height: 180
+          width: 150
+          height: 150
         motionPreloadStrategy: IDLE # 动作预加载策略 默认值: IDLE 可选值: ALL | IDLE | NONE
-        position: [16,15] # 模型在舞台中的位置。 默认值: [0,0] [横坐标, 纵坐标]
-        scale: 0.17 # 模型的缩放比例 默认值: 0.1
+        position: [-140,-8] # 模型在舞台中的位置。 默认值: [0,0] [横坐标, 纵坐标]
+        scale: 0.06 # 模型的缩放比例 默认值: 0.1
         # showHitAreaFrames: false # 是否显示点击区域 默认值: false
         stageStyle:
           width: 250
-          height: 250
+          height: 400
+
+          
     parentElement: document.body #为组件提供一个父元素，如果未指定则默认挂载到 body 中
     primaryColor: 'var(--btn-bg)' # 主题色 支持变量
     sayHello: false # 是否在初始化阶段打印项目信息
     tips:
       style:
-        width: 230
-        height: 120
+        width: 200
+        height: 100
         left: 50%
-        top: -120px
+        top: -60px
       mobileStyle:
         width: 180
         height: 80
