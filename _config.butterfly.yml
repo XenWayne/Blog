@@ -137,7 +137,7 @@ anchor:
   click_to_scroll: true
 
 # figcaption (圖片描述文字)
-photofigcaption: true
+photofigcaption: false
 
 # copy settings
 # copyright: Add the copyright information after copied content (複製的內容後面加上版權信息)
