@@ -15,7 +15,7 @@ date: 2022-04-14 20:56:00
 ---
 
 # 问题描述
-一个很久之前的问题，因为不是很急就搁置了。在软路由的OpenWRT上用vsftpd搭建FTP服务器，因为我的环境只有IPv6公网ip，还是动态的（淦，所以勾上了vsftpd的ipv6监听，监听地址是 [label color="blue"] [::] [/label] ，本来想着和ipv4的 [label color="blue"]0.0.0.0[/label] 一样监听所有来源IP，结果只要通过ipv6访问，它就毫无疑问的会罢工，但是只要我将IPv6的监听地址换为准确的软路由当前公网地址，就又能正常连接了。
+一个很久之前的问题，因为不是很急就搁置了。在软路由的OpenWRT上用vsftpd搭建FTP服务器，因为我的环境只有IPv6公网ip，还是动态的（淦），所以勾上了vsftpd的ipv6监听，监听地址是 {% label [::] blue %}   ，本来想着和ipv4的 {% label 0.0.0.0 blue %} 一样监听所有来源IP，结果只要通过ipv6访问，它就毫无疑问的会罢工，但是只要我将IPv6的监听地址换为准确的软路由当前公网地址，就又能正常连接了。
 ![L12sW8.png](https://s1.ax1x.com/2022/04/14/L12sW8.png)
 离谱归离谱，想解决倒是简单，我也不深究问题来源，总之想办法让这个监听地址的配置像DDNS一样跟着当前公网IPv6地址变动就行了。脚本改vsftpd配置的过程在OpenWRT伟大的UCI (Unified Configuration Interface，统一配置接口)加持下显得尤为简单，问题集中在轻量化的获取公网IP上。
 

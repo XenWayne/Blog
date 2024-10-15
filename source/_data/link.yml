@@ -1,4 +1,21 @@
-- class_name: 友人帐
+- class_name: 友人帐📑
+  class_desc: 
+  link_list:
+    - name: 张长明
+      link: https://20040122.github.io
+      avatar: https://20040122.github.io/img/230.jpg
+      descr: 230
+    - name: The_Rainbow's Blog
+      link: https://alexanderqwq.github.io/
+      avatar: https://s21.ax1x.com/2024/10/09/pAJZTn1.jpg
+      descr: e哥の自我修养
+    - name: KuaiMiaoDa
+      link: https://kuaimiaoda.github.io/
+      avatar: https://kuaimiaoda.github.io/img/1.jpg
+      descr: 谎言不会伤人，真相才是快刀
+
+
+- class_name: 网友们🛜
   class_desc: 
   link_list:
     - name: 风记星辰
@@ -29,10 +46,6 @@
       link: http://blog.fxit.top
       avatar: http://out.fxit.top/ITlogo.png
       descr: 为逐梦努力~
-    - name: Bhao's Blog
-      link: https://dwd.moe/
-      avatar: https://dwd.moe/logo.png
-      descr: 世间无田螺，世间多田螺。
     - name: Phoenix's island
       link: https://blog.phoenixlzx.com/
       avatar: https://blog.phoenixlzx.com/static/img/avatar/avatar.jpg
@@ -45,9 +58,9 @@
       link: https://lo-li.cn/
       avatar: https://cdn.zerodream.net/images/gravatar/?id=525c10789e06ce71e23b47dcc289c475&s=512&d=mm&r=g
       descr: 一个喜欢东方和游戏的宅 phper
-    - name: 中弦星空魔法屋
+    - name: 汐塔魔法屋
       link: https://blog.sinzmise.top/
-      avatar: https://blog.sinzmise.top/img/512.png
+      avatar: https://blog.sinzmise.top/images/icon.png
       descr: 种下一颗有故事的种子，让它带着魔法和奇迹生根发芽
     - name: 时歌的博客
       link: https://www.lapis.cafe
