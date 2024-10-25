@@ -13,19 +13,30 @@
       link: https://kuaimiaoda.github.io/
       avatar: https://kuaimiaoda.github.io/img/1.jpg
       descr: 谎言不会伤人，真相才是快刀
+    - name: 9527’s Blog
+      link: https://9527dhx.top
+      avatar: https://i.loli.net/2019/05/26/5cea282e596b167848.png
+      descr: 跌倒了，站起来，换个姿势，再跌倒。
+    - name: 汐塔魔法屋
+      link: https://blog.sinzmise.top/
+      avatar: https://blog.sinzmise.top/images/icon.png
+      descr: 种下一颗有故事的种子，让它带着魔法和奇迹生根发芽
+    - name: 时歌的博客
+      link: https://www.lapis.cafe
+      avatar: https://www.lapis.cafe/upload/20240323172736.png
+      descr: 理解以真实为本，但真实本身并不会自动呈现   
+    - name: Nero978 的日记
+      link: https://nero978.top
+      avatar: https://nero978.top/wp-content/uploads/2023/07/logo.jpg
+      descr: Brave yourself, brave the world.
 
-
-- class_name: 网友们🛜
+- class_name: 巨佬收藏夹🛜
   class_desc: 
   link_list:
     - name: 风记星辰
       link: https://www.thyuu.com
       avatar: https://std.thyuu.com/logo.svg
       descr: 热爱你来过的每度温暖
-    - name: Nero978 的日记
-      link: https://nero978.top
-      avatar: https://nero978.top/wp-content/uploads/2023/07/logo.jpg
-      descr: Brave yourself, brave the world.
     - name: 云游君的小站
       link: https://www.yunyoujun.cn
       avatar: https://yunyoujun.cn/images/avatar.jpg
@@ -34,10 +45,6 @@
       link: https://laoooo.cn/
       avatar: https://s3.bmp.ovh/imgs/2021/11/4ac63e6220d204f1.jpg
       descr: 练习Bug时长两年半的程序员
-    - name: 9527’s Blog
-      link: https://9527dhx.top
-      avatar: https://i.loli.net/2019/05/26/5cea282e596b167848.png
-      descr: 跌倒了，站起来，换个姿势，再跌倒。
     - name: Lazy's Blog
       link: https://blog.imlazy.ink:233/
       avatar: https://i.zerodream.net/86b5133c13a7e7109b89f8d24fc0b746.jpg
@@ -49,7 +56,7 @@
     - name: Phoenix's island
       link: https://blog.phoenixlzx.com/
       avatar: https://blog.phoenixlzx.com/static/img/avatar/avatar.jpg
-      descr: 是巨佬
+      descr: 晩ご飯だよー 
     - name: 羽榊
       link: http://loli.moe.sx/
       avatar: http://loli.moe.sx/wp-content/themes/Variant/images/zztx.jpg
@@ -58,11 +65,3 @@
       link: https://lo-li.cn/
       avatar: https://cdn.zerodream.net/images/gravatar/?id=525c10789e06ce71e23b47dcc289c475&s=512&d=mm&r=g
       descr: 一个喜欢东方和游戏的宅 phper
-    - name: 汐塔魔法屋
-      link: https://blog.sinzmise.top/
-      avatar: https://blog.sinzmise.top/images/icon.png
-      descr: 种下一颗有故事的种子，让它带着魔法和奇迹生根发芽
-    - name: 时歌的博客
-      link: https://www.lapis.cafe
-      avatar: https://www.lapis.cafe/upload/20240323172736.png
-      descr: 理解以真实为本，但真实本身并不会自动呈现
