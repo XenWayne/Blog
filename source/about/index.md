@@ -43,7 +43,7 @@ Mandarin Chinese Native | English CET-6 | Japanese learning
 Skill List:
 ===============
 
-[![SkillIcons](https://skillicons.dev/icons?i=js,html,css,jquery,bootstrap,vue,md,nginx,mysql,linux,docker,php,java,c,ps,pr,au,ai,vscode,idea,cloudflare,github,git,)](https://skillicons.dev)
+[![SkillIcons](https://skillicons.dev/icons?i=js,html,css,jquery,bootstrap,nodejs,vue,vite,ts,pnpm,md,nginx,mongodb,mysql,ubuntu,arch,debian,linux,windows,docker,php,java,c,ps,pr,au,ai,vscode,idea,cloudflare,github,git,)](https://skillicons.dev)
 
 
 **打字后面加上<.jpg>是奇怪的癖好，可能早期摸PS摸多了疯狂敲后缀名导致的= =** 
