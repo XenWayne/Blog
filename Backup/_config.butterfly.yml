@@ -14,7 +14,9 @@ menu:
   说说|Essay: /essay/ || fas fa-message
   关于|About: /about/ || fas fa-user
   实验室|Lab: /lab/ || fas fa-flask
-  追番|Anime: /bangumi/ || fas fa-tv
+  动画|Anime || fas fa-tv:
+    追番|Bangumi: /bangumi/ || fas fa-film
+    收藏|Collection: /anicollection/ || fas fa-heart
   目录|Catalog || fas fa-list:
     归档|Archives: /archives/ || fas fa-archive
     标签|Tags: /tags/ || fas fa-tags
@@ -136,7 +138,7 @@ anchor:
   # Click the headline to scroll and update the anchor
   click_to_scroll: true
 
-# !figcaption (圖片描述文字)
+# figcaption (圖片描述文字)
 photofigcaption: false
 
 # copy settings
@@ -144,7 +146,7 @@ photofigcaption: false
 copy:
   enable: true
   copyright:
-    enable: true
+    enable: false
     limit_count: 50
 
 # Post

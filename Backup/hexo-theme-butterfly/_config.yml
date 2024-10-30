@@ -14,11 +14,14 @@ menu:
   说说|Essay: /essay/ || fas fa-message
   关于|About: /about/ || fas fa-user
   实验室|Lab: /lab/ || fas fa-flask
-  追番|Bangumi: /bangumi/ || fas fa-tv
+  动画|Anime || fas fa-tv:
+    追番|Bangumi: /bangumi/ || fas fa-film
+    收藏|Collection: /anicollection/ || fas fa-heart
   目录|Catalog || fas fa-list:
     归档|Archives: /archives/ || fas fa-archive
     标签|Tags: /tags/ || fas fa-tags
     分类|Categories: /categories/ || fas fa-folder-open
+  开往 | Travelling: https://www.travellings.cn/go.html || fas fa-subway
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -34,12 +37,12 @@ code_word_wrap: false
 # formal:
 #   icon: link || the description || color
 social:
-  fab fa-twitter: https://twitter.com/xenwayne || Twitter || '#fff'
-  fab fa-github: https://github.com/XenWayne || Github || '#fff'
-  fas fa-envelope: mailto:xenwayne@mevisual.top || Email || '#fff'
-  fab fa-weibo: https://weibo.com/xenwayne || Weibo || '#fff'
-  fa-solid fa-image: https://xenwayne.tuchong.com || Tuchong || '#fff'
-  fa-brands fa-qq: https://user.qzone.qq.com/1695140113/ || QQ || '#fff'
+  fab fa-twitter: https://twitter.com/xenwayne || Twitter
+  fab fa-github: https://github.com/XenWayne || Github
+  fas fa-envelope: mailto:xenwayne@mevisual.top || Email
+  fab fa-weibo: https://weibo.com/xenwayne || Weibo
+  fa-solid fa-image: https://xenwayne.tuchong.com || Tuchong
+  fa-brands fa-qq: https://user.qzone.qq.com/1695140113/ || QQ
 
 # Image (圖片設置)
 # --------------------------------------
@@ -214,15 +217,16 @@ footer:
     enable: true
     since: 2020
   custom_text: '
-    <a style="text-decoration:none;" href="https://travel.moe/go.html?travel=on" title="异次元之旅-跃迁-我们一起去萌站成员的星球旅行吧！" target="_blank">
-    <img src="https://travel.moe/images/icon/icon64.png" style="width:24px;height:24px">异次元之旅🚀</a>
+    <a style="text-decoration:none;" href="https://travel.moe/go.html?travel=on" title="异次元之旅-跃迁-我们一起去萌站成员的星球旅行吧！" target="_blank">🚀异次元之旅</a>
+    <span class="footer-separator">|</span>
+    <a href="https://www.travellings.cn/go.html" target="_blank">🚇开往 Travelling</a>
     <span class="footer-separator">|</span>
     <img src="https://icp.gov.moe/images/ico64.png" alt="" style="width: 20px; vertical-align: text-bottom;"/>
     <a href="https://icp.gov.moe/?keyword=20205300" target="_blank">萌ICP备20205300号</a>
     <span class="footer-separator">|</span>
-    <a>Made with 💖</a>
+    <a href="https://xenwayne.top/feed/rss2.xml">📡RSS</a>
     <span class="footer-separator">|</span>
-    <a href="/sitemap.xml" target="_blank"> Sitemap</a>
+    <a href="/sitemap.xml" target="_blank"> 🗺️Sitemap</a>
     '
   copyright: true # Copyright of theme and framework
 
@@ -249,7 +253,8 @@ aside:
       link: /about/
   card_announcement: # 站点公告
     enable: true
-    content: XenWayne's Blog | Hexo Version 灰度开发中版本
+    content: |
+      XenWayne's Blog | Hexo Version
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
@@ -745,7 +750,7 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
-  global-font-size: 17px
+  global-font-size: 16px
   code-font-size:
   font-family:
   code-font-family:
@@ -927,19 +932,21 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - | # 黑白滤镜，注释开启
-      <style>
-      /*   
-      html { 
-              -webkit-filter: grayscale(100%); 
-              -moz-filter: grayscale(100%); 
-              -ms-filter: grayscale(100%); 
-              -o-filter: grayscale(100%); 
-              filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);  
-              _filter:none; 
-          } 
-      */
-      </style>
+    # !黑白滤镜，注释开启
+    # - | 
+    #   <style>
+    #   /*   
+    #   html { 
+    #           -webkit-filter: grayscale(100%); 
+    #           -moz-filter: grayscale(100%); 
+    #           -ms-filter: grayscale(100%); 
+    #           -o-filter: grayscale(100%); 
+    #           filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);  
+    #           _filter:none; 
+    #       } 
+    #   */
+    #   </style>
+
     - <link rel="stylesheet" href="/css/custom.css"> #! ButteryFly Custom CSS
 
   bottom:
