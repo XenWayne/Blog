@@ -384,3 +384,9 @@ feed:
   order_by: -date
   autodiscovery: true
   template: 
+
+# !pdf-tag
+pdf:
+  enable: true          # default: true
+  width: '100%'         # default: 100%
+  height: '1200px'      # default: 550px
