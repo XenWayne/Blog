@@ -6,7 +6,7 @@
   <link href="https://xenwayne.top/feed/atom.xml" rel="self"/>
   
   <link href="https://xenwayne.top/"/>
-  <updated>2024-08-16T15:11:36.984Z</updated>
+  <updated>2024-10-31T13:48:09.112Z</updated>
   <id>https://xenwayne.top/</id>
   
   <author>
@@ -15,6 +15,45 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小さな恋のうた（小小恋歌）汉字注音+平假名+罗马音+翻译</title>
+    <link href="https://xenwayne.top/posts/666fe92b/"/>
+    <id>https://xenwayne.top/posts/666fe92b/</id>
+    <published>2024-10-31T13:21:09.000Z</published>
+    <updated>2024-10-31T13:48:09.112Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;小さな恋のうた（小小恋歌）&lt;/p&gt;
+&lt;p&gt;忙里偷闲，稍微整理排版了一下《小さな恋のうた》的歌词，个人日语基础薄弱这样搞一下方便看注音。&lt;/p&gt;
+&lt;p&gt;汉字注音+平假名+罗马音+翻译&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;lyricist:	上江洌 清作（Kiyosaku</summary>
+        
+      
+    
+    
+    
+    <category term="日语" scheme="https://xenwayne.top/categories/%E6%97%A5%E8%AF%AD/"/>
+    
+    
+    <category term="歌词" scheme="https://xenwayne.top/tags/%E6%AD%8C%E8%AF%8D/"/>
+    
+    <category term="小小恋歌" scheme="https://xenwayne.top/tags/%E5%B0%8F%E5%B0%8F%E6%81%8B%E6%AD%8C/"/>
+    
+    <category term="小さな恋のうた" scheme="https://xenwayne.top/tags/%E5%B0%8F%E3%81%95%E3%81%AA%E6%81%8B%E3%81%AE%E3%81%86%E3%81%9F/"/>
+    
+    <category term="日语学习" scheme="https://xenwayne.top/tags/%E6%97%A5%E8%AF%AD%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="平假名" scheme="https://xenwayne.top/tags/%E5%B9%B3%E5%81%87%E5%90%8D/"/>
+    
+    <category term="罗马音" scheme="https://xenwayne.top/tags/%E7%BD%97%E9%A9%AC%E9%9F%B3/"/>
+    
+  </entry>
   
   <entry>
     <title>GET&amp;POST请求-Web前后端数据交互学习小记</title>

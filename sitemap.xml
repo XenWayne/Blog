@@ -4,7 +4,16 @@
   <url>
     <loc>https://xenwayne.top/anicollection/index.html</loc>
     
-    <lastmod>2024-10-30</lastmod>
+    <lastmod>2024-10-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xenwayne.top/posts/666fe92b/</loc>
+    
+    <lastmod>2024-10-31</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -316,14 +325,14 @@
   </url>
   
   <url>
-    <loc>https://xenwayne.top/tags/%E6%8E%A8%E6%B5%81/</loc>
+    <loc>https://xenwayne.top/tags/Nginx/</loc>
     <lastmod>2024-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://xenwayne.top/tags/OBS/</loc>
+    <loc>https://xenwayne.top/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</loc>
     <lastmod>2024-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -372,56 +381,35 @@
   </url>
   
   <url>
-    <loc>https://xenwayne.top/tags/OpenWRT/</loc>
+    <loc>https://xenwayne.top/tags/%E6%8E%A8%E6%B5%81/</loc>
     <lastmod>2024-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://xenwayne.top/tags/vsftpd/</loc>
+    <loc>https://xenwayne.top/tags/OBS/</loc>
     <lastmod>2024-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://xenwayne.top/tags/FTP/</loc>
+    <loc>https://xenwayne.top/tags/UTF-8/</loc>
     <lastmod>2024-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://xenwayne.top/tags/%E8%BD%AF%E8%B7%AF%E7%94%B1/</loc>
+    <loc>https://xenwayne.top/tags/Unicode/</loc>
     <lastmod>2024-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://xenwayne.top/tags/IPv6/</loc>
-    <lastmod>2024-10-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://xenwayne.top/tags/bash/</loc>
-    <lastmod>2024-10-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://xenwayne.top/tags/Nginx/</loc>
-    <lastmod>2024-10-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://xenwayne.top/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</loc>
+    <loc>https://xenwayne.top/tags/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81/</loc>
     <lastmod>2024-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -505,21 +493,42 @@
   </url>
   
   <url>
-    <loc>https://xenwayne.top/tags/UTF-8/</loc>
+    <loc>https://xenwayne.top/tags/%E6%AD%8C%E8%AF%8D/</loc>
     <lastmod>2024-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://xenwayne.top/tags/Unicode/</loc>
+    <loc>https://xenwayne.top/tags/%E5%B0%8F%E5%B0%8F%E6%81%8B%E6%AD%8C/</loc>
     <lastmod>2024-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://xenwayne.top/tags/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81/</loc>
+    <loc>https://xenwayne.top/tags/%E5%B0%8F%E3%81%95%E3%81%AA%E6%81%8B%E3%81%AE%E3%81%86%E3%81%9F/</loc>
+    <lastmod>2024-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xenwayne.top/tags/%E6%97%A5%E8%AF%AD%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2024-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xenwayne.top/tags/%E5%B9%B3%E5%81%87%E5%90%8D/</loc>
+    <lastmod>2024-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xenwayne.top/tags/%E7%BD%97%E9%A9%AC%E9%9F%B3/</loc>
     <lastmod>2024-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -582,13 +591,6 @@
   </url>
   
   <url>
-    <loc>https://xenwayne.top/tags/%E7%BD%91%E9%A1%B5%E7%BE%8E%E5%8C%96/</loc>
-    <lastmod>2024-10-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://xenwayne.top/tags/HyperV/</loc>
     <lastmod>2024-10-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -623,6 +625,55 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://xenwayne.top/tags/%E7%BD%91%E9%A1%B5%E7%BE%8E%E5%8C%96/</loc>
+    <lastmod>2024-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xenwayne.top/tags/OpenWRT/</loc>
+    <lastmod>2024-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xenwayne.top/tags/vsftpd/</loc>
+    <lastmod>2024-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xenwayne.top/tags/FTP/</loc>
+    <lastmod>2024-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xenwayne.top/tags/%E8%BD%AF%E8%B7%AF%E7%94%B1/</loc>
+    <lastmod>2024-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xenwayne.top/tags/IPv6/</loc>
+    <lastmod>2024-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xenwayne.top/tags/bash/</loc>
+    <lastmod>2024-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -634,6 +685,13 @@
   
   <url>
     <loc>https://xenwayne.top/categories/%E6%B8%B8%E6%88%8F/</loc>
+    <lastmod>2024-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xenwayne.top/categories/%E6%97%A5%E8%AF%AD/</loc>
     <lastmod>2024-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
