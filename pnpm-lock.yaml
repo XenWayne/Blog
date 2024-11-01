@@ -56,9 +56,6 @@ importers:
       hexo-oh-my-live2d:
         specifier: ^0.1.3
         version: 0.1.3
-      hexo-pdf-better:
-        specifier: ^1.1.3
-        version: 1.1.3
       hexo-renderer-ejs:
         specifier: ^2.0.0
         version: 2.0.0
@@ -502,10 +499,6 @@ packages:
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
-  ejs@1.0.0:
-    resolution: {integrity: sha512-hK3tEqj0pP7UF5UHKNiRvm3zCaYk7UI4EBJ6wwN5O2qX1WdSovmqvUHEbNOJuglXzVkk/H0r7vgst3mVcQXrPA==}
-    deprecated: Critical security bugs fixed in 2.5.5
-
   ejs@3.1.10:
     resolution: {integrity: sha512-UeJmFfOrAQS8OJWPZ4qtgHyWExa088/MtK5UEyoJGFH67cDEXkZSviOiKRCZ4Xij0zxI3JECgYs3oKx+AizQBA==}
     engines: {node: '>=0.10.0'}
@@ -760,10 +753,6 @@ packages:
   hexo-pagination@3.0.0:
     resolution: {integrity: sha512-8oo1iozloZo7TojPVYg4IxL3SJKCBdSJ908fTlIxIK7TWJIKdYnQlW31+12DBJ0NhVZA/lZisPObGF08wT8fKw==}
     engines: {node: '>=14'}
-
-  hexo-pdf-better@1.1.3:
-    resolution: {integrity: sha512-ViCegn1r/WET6dLeBzr8ImasrWBHHVjP1LiLVW7LTnhHlip9LKzuPR2svjuxhjomXUCMf/Qzk1xbG+19+P7iYA==}
-    engines: {node: '>= 0.10.0'}
 
   hexo-renderer-ejs@2.0.0:
     resolution: {integrity: sha512-qCjE1IdwgDgv65qyb0KMVCwCdSVAkH0vwAe9XihjvaKWkmb9dtt8DgErOdqCXn0HReSyWiEVP2BrLRj3gyHwOQ==}
@@ -2056,8 +2045,6 @@ snapshots:
 
   ee-first@1.1.1: {}
 
-  ejs@1.0.0: {}
-
   ejs@3.1.10:
     dependencies:
       jake: 10.9.1
@@ -2372,10 +2359,6 @@ snapshots:
       oh-my-live2d: 0.16.1
 
   hexo-pagination@3.0.0: {}
-
-  hexo-pdf-better@1.1.3:
-    dependencies:
-      ejs: 1.0.0
 
   hexo-renderer-ejs@2.0.0:
     dependencies:

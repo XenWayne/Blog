@@ -105,7 +105,7 @@ header#page-header(class=`${isHomeClass+isFixedClass}` style=bg_img)
 ```
 
 4.网址卡片外置标签(https://blog.zhheo.com/p/ccaf9148.html)
-node_modules\hexo-theme-butterfly\scripts\tag\linkcard.js
+node_modules\hexo-theme-butterfly\scripts\tag\link.js
 ```js
 function link(args) {
     args = args.join(' ').split(',');
