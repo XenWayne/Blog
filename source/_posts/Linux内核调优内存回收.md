@@ -9,7 +9,7 @@ tags:
   - RAM
 categories:
   - 技术分享
-cover: 'https://s1.ax1x.com/2022/09/27/xeAyCV.png'
+cover: 'https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411011525686.webp'
 abbrlink: 8306fea3
 date: 2022-09-27 21:56:00
 ---
@@ -73,7 +73,7 @@ sync
 ## 在Unraid宿主机上的实现
 众所周知Unraid作为一个运行在RAM中的系统,数据持久化是个令人头疼的问题。可以通过```UserScripts```来实现开机脚本或定时回收内存或者把配置写进flash的"go"文件中,这里笔者使用前者。
 
-![Unraid实现](https://s1.ax1x.com/2022/09/27/xeAyCV.png)
+![Unraid实现](https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411011525686.webp)
 
 
 参考资料 | Reference
