@@ -5,7 +5,7 @@ tags:
   - 路由器
 categories:
   - 技术分享
-cover: 'https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/blog/LANWAN1.webp'
+cover: 'https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/LANWAN1.webp'
 abbrlink: b16db021
 date: 2020-03-12 00:52:00
 ---

@@ -129,8 +129,8 @@ rtmp://推流的PC地址:上文设置的监听端口/live/上文自定义的密�
   [1]: https://obsproject.com/forum/resources/obs-virtualcam.539/
   [2]: https://nginx-win.ecsds.eu/download/nginx%201.7.11.3%20Gryphon.zip
   [3]: http://auan.cn/
-  [4]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/blog/RTMP1.webp
+  [4]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/RTMP1.webp
   [5]: https://github.com/videolan/vlc
-  [6]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/blog/RTMP2.webp
-  [7]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/blog/RTMP3.webp
-  [8]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/blog/RTMP4.webp
+  [6]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/RTMP2.webp
+  [7]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/RTMP3.webp
+  [8]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/RTMP4.webp
