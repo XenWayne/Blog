@@ -2,7 +2,7 @@
 title: 解决EAC反作弊“A debugger has been found running in your system”
 abbrlink: da05f60f
 date: 2020-02-24 11:33:00
-cover: https://gcore.jsdelivr.net/gh/XenWayne@master/sitefile/img/blog/EAC1.webp
+cover: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/EAC1.webp
 tags:
     - EAC
     - 反作弊

@@ -107,13 +107,13 @@ Header头图:[@あい.miapi](https://www.pixiv.net/artworks/76191507)
 
 > 署名 - 非商业性使用 - 相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议
 
-![CC][11] 
+
 
 That's all.请多指教w。
 
 
   [1]: https://osusig.lolicon.app/sig.php?colour=hex66ccff&uname=XenWayne&mode=3&pp=2&removeavmargin&flagshadow&flagstroke&darktriangles&xpbar&xpbarhex
-  [2]: https://s2.ax1x.com/2019/08/22/mdytSJ.jpg
+  [2]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411061428075.webp
   [3]: http://gallery.mevisual.top
   [4]: https://github.com/xenwayne
   [5]: https://weibo.com/xenwayne
@@ -122,4 +122,3 @@ That's all.请多指教w。
   [8]: http://xenwayne.lofter.com
   [9]: http://xenwayne.tuchong.com
   [10]: http://user.qzone.qq.com/1695140113
-  [11]: https://s2.ax1x.com/2020/01/27/1ur4SK.png
