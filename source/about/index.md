@@ -32,7 +32,7 @@ Mandarin Chinese Native | English CET-6 | Japanese learning
  - -为什么要演奏春日影(
  - -白玉老师yyds
  - -是鸽子（确信）
- - -自信音游人 Phigros | PJSK | VOEZ | LL | OSU mania>std | Maimai | Chunithm
+ - -自信音游人 Phigros | Project Sekai | VOEZ | LL | OSU mania 4k > std | Maimai | Chunithm
  - -前中期圆锥角膜患者
  - -重重重重度散光人
  - 
