@@ -1,3 +1,4 @@
+Hexo DIY修改文档 *使用NPM包管理器
 更新备份主题包里的_config.yml文件
 
 * 1.自定义css和js存在github仓库sitefile/blog_custom中，在主题包中的_config.yml文件中引用
@@ -107,30 +108,71 @@ header#page-header(class=`${isHomeClass+isFixedClass}` style=bg_img)
 4.网址卡片外置标签(https://blog.zhheo.com/p/ccaf9148.html)
 node_modules\hexo-theme-butterfly\scripts\tag\link.js
 ```js
+/**
+ * Butterfly XenWayne Modified
+ * link
+ * {% link 标题,网站名称(subtitle),地址,是否在新标签页打开 %}
+ */
+
 function link(args) {
     args = args.join(' ').split(',');
     let title = args[0];
     let sitename = args[1];
     let link = args[2];
+    let openInNewTab = args[3] !== 'false'; // 默认为 true，除非指定为 'false'
 
-    // 获取网页favicon
-    let urlNoProtocol = link.replace(/^https?\:\/\//i, "");
-    let imgUrl = "https://api.iowen.cn/favicon/" + urlNoProtocol + ".png";
+    let target = openInNewTab ? '_blank' : '_self';
 
-    return `<a class="tag-Link" target="_blank" href="${link}">
+    return `<a class="tag-Link" target="${target}" href="${link}">
     <div class="tag-link-tips">引用站外地址</div>
     <div class="tag-link-bottom">
-        <div class="tag-link-left" style="background-image: url(${imgUrl});"></div>
+        <div class="tag-link-left"><i class="fa-solid fa-link"></i></div>
         <div class="tag-link-right">
             <div class="tag-link-title">${title}</div>
             <div class="tag-link-sitename">${sitename}</div>
         </div>
         <i class="fa-solid fa-angle-right"></i>
     </div>
-    </a>`
+    </a>`;
 }
 
-hexo.extend.tag.register('link',link, { ends: false })
+hexo.extend.tag.register('link', link, { ends: false });
+
+```
+
+5.menus_item修改支持_blank选项
+\node_modules\hexo-theme-butterfly\layout\includes\header\menu_item.pug
+
+```pug
+if theme.menu
+  .menus_items
+    each value, label in theme.menu
+      if typeof value !== 'object'
+        .menus_item
+          - const valueArray = value.split('||')
+          - const target = valueArray[2] && trim(valueArray[2]) === '_blank' ? '_blank' : '_self'
+          a.site-page(href=url_for(trim(valueArray[0])) target=target)
+            if valueArray[1]
+              i.fa-fw(class=trim(valueArray[1]))
+            span=' '+label
+      else
+        .menus_item
+          - const labelArray = label.split('||')
+          - const hideClass = labelArray[2] && trim(labelArray[2]) === 'hide' ? 'hide' : ''
+          a.site-page.group(class=`${hideClass}` href='javascript:void(0);')
+            if labelArray[1]
+              i.fa-fw(class=trim(labelArray[1]))
+            span=' '+ trim(labelArray[0])
+            i.fas.fa-chevron-down
+          ul.menus_item_child
+            each val, lab in value 
+              - const valArray = val.split('||')
+              - const target = valArray[2] && trim(valArray[2]) === '_blank' ? '_blank' : '_self'
+              li
+                a.site-page.child(href=url_for(trim(valArray[0])) target=target)
+                  if valArray[1]
+                    i.fa-fw(class=trim(valArray[1]))
+                  span=' '+ lab
 ```
 
 ----------

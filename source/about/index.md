@@ -96,8 +96,18 @@ GPG ID: `395F 13FC 1EF4 49E0 4175 7CE5 F41A 0509 0C79 69C9`
 
 ↑这些已经是旧时代的事情了( ；∀；)
 
-{%label '2024.5.5 更新' blue%} ： 
-已经重新迁移至[Hexo](https://hexo.io/)，主题基于[hexo-theme-butterfly](https://butterfly.js.org/)魔改，评论系统来自[Twikoo](https://twikoo.js.org/)。站点托管在Github Pages，CDN来自jsDelivr/Cloudflare/npmmirror/unpkg。
+{%label '更新日志：' blue%} 
+
+- 2024/05/05:
+  - 已经重新迁移至[Hexo](https://hexo.io/)，主题基于[hexo-theme-butterfly](https://butterfly.js.org/)魔改，评论系统来自[Twikoo](https://twikoo.js.org/)。站点托管在Github Pages，CDN来自jsDelivr/Cloudflare/npmmirror/unpkg。
+
+- 2024/12/01:
+  - 原实验室|Lab板块变为一级菜单，其下属增加了项目|Project、影集|Album(WIP)、文档库|Doc
+  - 原收藏|Collection新加了个歌词收藏的子目录，目前是用来测试ruby标签的
+  - xenwayne.top/cierra项目迁移到cierra.xenwayne.top
+  - 计划把影集|Album页面的数据集加载继续优化，最好封装一个npm包
+
+----------
 
 关于站点subtitle，灵感原文出自《进一寸有一寸的欢喜：胡适谈读书》: “怕什么真理无穷，进一寸有进一寸的欢喜”。
 

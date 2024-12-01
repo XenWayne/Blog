@@ -9,16 +9,13 @@ type: "link"
 - [~~梦想之都~~](https://hexo.dreamerhe.cn/)
 - [~~落日余晖团队博客~~](https://blog.666old666.cn)
 - [~~Master_Quan Techblog~~](https://www.masterquan.tech)
-
+- [~~时歌的博客~~](https://www.lapis.cafe)
 
 
 ## 互联网仓鼠专用收藏夹🐹 ##
 | Name | Link | Description |
 | --- | --- | --- |
 | μ's时光蛋 | [https://lovelive.ws/](https://lovelive.ws/) | 来自一个拉拉人的倔强 |
-| compress_img | [https://learnxinyminutes.com/](https://learnxinyminutes.com/) | 在线图片压缩 |
-| 太美工具网 | [https://tiomg.org/](https://tiomg.org/) | 上班族常用的在线工具网站 |
-| 孟坤工具箱-CSSbeautify | [http://tool.mkblog.cn/cssbeautify/](http://tool.mkblog.cn/cssbeautify/) | CSS一键美化 |
 | Sakura's Mirror | [https://mirror.zerodream.net/](https://mirror.zerodream.net/) | 服务端软件镜像站 by Akkariin |
 | LearnXinYminutes | [https://learnxinyminutes.com/](https://learnxinyminutes.com/) | 快速了解各种编程语言 |
 | Cyralive | [https://github.com/RnEric/Cyralive](https://github.com/RnEric/Cyralive) | 谢拉桌宠项目 |
