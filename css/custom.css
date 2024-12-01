@@ -451,12 +451,7 @@ div#footer-wrap * {
 /* !tag/linkcard 外挂标签CSS END */
 
 /* !修改全局ruby标签注音样式 START */
-ruby {
-    font-size: 1.2em;
-}
-
 rt {
     font-size: 0.8em;
 }
-
 /* !修改全局ruby标签注音样式 END */
