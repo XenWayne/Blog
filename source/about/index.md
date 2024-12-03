@@ -123,7 +123,7 @@ That's all.请多指教w。
 
 
   [1]: https://osusig.lolicon.app/sig.php?colour=hex66ccff&uname=XenWayne&mode=3&pp=2&removeavmargin&flagshadow&flagstroke&darktriangles&xpbar&xpbarhex
-  [2]: https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411061428075.webp
+  [2]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411061428075.webp
   [3]: http://gallery.mevisual.top
   [4]: https://github.com/xenwayne
   [5]: https://weibo.com/xenwayne

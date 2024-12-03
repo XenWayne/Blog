@@ -9,7 +9,7 @@ tags:
   - CloudFlare
 categories:
   - 技术分享
-cover: 'https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411011528684.webp'
+cover: 'https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411011528684.webp'
 abbrlink: d651e145
 date: 2023-09-20 19:35:00
 ---
@@ -18,7 +18,7 @@ date: 2023-09-20 19:35:00
 # 浏览器报错案例
 
 前段时间写LightZone网站调用api的时候遇到了跨域问题，今天来唠唠。浏览器报错:
-![pPIC5b8.png](https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411011528012.webp)
+![pPIC5b8.png](https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411011528012.webp)
 
 要明白跨域报错的原因，首先要了解一下什么是跨域。
 > 跨域是指浏览器不能执行其他网站的脚本。它是由浏览器的同源策略造成的，是浏览器对JavaScript施加的安全限制。所谓同源是指，域名，协议，端口相同。同源策略限制从一个源加载的文档或脚本如何与来自另一个源的资源进行交互。这是一个用于隔离潜在恶意文件的关键的安全机制。
@@ -79,13 +79,13 @@ MDN文档介绍了更多的CORS配置项，包括预检请求缓存时间等。�
 
 我的站点使用了CloudFlare，那么也可以在CloudFlare中修改响应头，导航到`规则->转换规则->修改响应头->创建规则`,添加以下内容即可:
 
-![pPIC4Df.png](https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411011528271.webp)
-![pPICWvt.png](https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411011529961.webp)
+![pPIC4Df.png](https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411011528271.webp)
+![pPICWvt.png](https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411011529961.webp)
 
 ## 验证响应头
 
 正确配置后的响应头应该如下图所示:
-![pPIChKP.png](https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411011529404.webp)
+![pPIChKP.png](https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411011529404.webp)
 
 
 # JSONP(JSON with Padding)

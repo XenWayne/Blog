@@ -30,6 +30,7 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:  # 跳过渲染
   - "project/**/*.html"
+  - "album/**"
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -169,7 +170,7 @@ OhMyLive2d:
     mobileDisplay: false # 是否在移动端显示
     models:
       # !snowmiku
-      # - path: https://cdn.jsdelivr.net/gh/XenWayne/sitefile/live2d/snow_miku/model.json
+      # - path: https://gcore.jsdelivr.net/gh/XenWayne/sitefile/live2d/snow_miku/model.json
       #   mobilePosition: [-20, 0] # 移动端时模型在舞台中的位置。 默认值: [0,0] [横坐标, 纵坐标]
       #   mobileScale: 0.07 # 移动端时模型的缩放比例 默认值: 0.1
       #   mobileStageStyle: # 移动端时舞台的样式
@@ -183,7 +184,7 @@ OhMyLive2d:
       #     width: 250
       #     height: 250
       # !cdn-chino
-      # - path: https://cdn.jsdelivr.net/gh/XenWayne/sitefile/live2d/chino/model.json
+      # - path: https://gcore.jsdelivr.net/gh/XenWayne/sitefile/live2d/chino/model.json
       #   mobilePosition: [-20, 0] # 移动端时模型在舞台中的位置。 默认值: [0,0] [横坐标, 纵坐标]
       #   mobileScale: 0.07 # 移动端时模型的缩放比例 默认值: 0.1
       #   mobileStageStyle: # 移动端时舞台的样式
@@ -274,7 +275,7 @@ artitalk:
   title: 说说 | Essay ## 标题
   path: essay/index.html ## 生成路径
   pageSize: 20 ## 显示几条说说
-  avatar: https://cdn.jsdelivr.net/gh/XenWayne/sitefile/img/avatar.webp ## 说说头像
+  avatar: https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/avatar.webp ## 说说头像
   plugins: [] ## 插件，具体请看下文
   template: ## 说说模板，可查看仓库中的 main.ejs
   imports: ## 在说说模板的开头和结尾处插入内容

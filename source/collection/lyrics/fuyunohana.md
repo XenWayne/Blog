@@ -61,4 +61,4 @@ date: 2024-11-17 20:46:22
 通过第三方PDF加载，可能需要一定时间。
 {% endnote %}
 
-{% pdf https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/pdf/dzh_lyrics_xw_v2.pdf %}
+{% pdf https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/pdf/dzh_lyrics_xw_v2.pdf %}

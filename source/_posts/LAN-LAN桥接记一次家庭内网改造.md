@@ -5,7 +5,7 @@ tags:
   - 路由器
 categories:
   - 技术分享
-cover: 'https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/LANWAN1.webp'
+cover: 'https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/LANWAN1.webp'
 abbrlink: b16db021
 date: 2020-03-12 00:52:00
 ---
@@ -51,13 +51,13 @@ date: 2020-03-12 00:52:00
 ![is][8]
 
 
-  [1]: https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/LANWAN1.webp
-  [2]: https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/LANWAN2.webp
-  [3]: https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/LANWAN3.webp
-  [4]: https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/LANWAN4.webp
-  [5]: https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/LANWAN5.webp
-  [6]: https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/LANWAN6.webp
-  [7]: https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/LANWAN7.webp
-  [8]: https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/LANWAN8.webp
+  [1]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/LANWAN1.webp
+  [2]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/LANWAN2.webp
+  [3]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/LANWAN3.webp
+  [4]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/LANWAN4.webp
+  [5]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/LANWAN5.webp
+  [6]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/LANWAN6.webp
+  [7]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/LANWAN7.webp
+  [8]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/LANWAN8.webp
 
 
