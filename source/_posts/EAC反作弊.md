@@ -2,7 +2,7 @@
 title: 解决EAC反作弊“A debugger has been found running in your system”
 abbrlink: da05f60f
 date: 2020-02-24 11:33:00
-cover: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/EAC1.webp
+cover: https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/EAC1.webp
 tags:
     - EAC
     - 反作弊
@@ -40,6 +40,6 @@ bcdedit /set testsigning off
 本文仅个人经验，不保证对所有人有效，希望对你有帮助。
 
 
-  [1]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/EAC1.webp
-  [2]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/EAC2.webp
-  [3]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/EAC3.webp
+  [1]: https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/EAC1.webp
+  [2]: https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/EAC2.webp
+  [3]: https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/EAC3.webp

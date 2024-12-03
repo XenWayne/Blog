@@ -51,8 +51,8 @@ type: "link"
 > 【ATOM】[https://xenwayne.top/feed/atom.xml](/feed/atom.xml)
 > **网站图标**：
 > 默认:
-> 【png】https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/avatar_square.png
-> 【WebP】https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/avatar_square.webp
+> 【png】https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/avatar_square.png
+> 【WebP】https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/avatar_square.webp
 > 圆形:
-> 【png】https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/avatar.png
-> 【WebP】https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/avatar.webp
+> 【png】https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/avatar.png
+> 【WebP】https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/avatar.webp

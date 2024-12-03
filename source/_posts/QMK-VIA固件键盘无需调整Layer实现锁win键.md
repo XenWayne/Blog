@@ -8,7 +8,7 @@ tags:
   - Nuphy
 categories:
   - 技术分享
-cover: 'https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411011504114.webp'
+cover: 'https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411011504114.webp'
 abbrlink: '87210117'
 date: 2024-03-03 16:46:00
 ---
@@ -34,8 +34,8 @@ date: 2024-03-03 16:46:00
 
 我手里的Nuphy Air96 V2导入json之后默认用到了前五个层，Layer0、1是mac模式下的，Layer2、3是win模式下的，Layer4是额外功能层，1、3层是长按Fn后切换到的层，这里我们要修改win模式下Fn层，也就是Layer3的键值，记得找到自己键盘对应的Layer。  
 切换到对应Layer后，选择win键位置，在列表中选择*Special->Any*，然后在弹出的窗口中手动输入16进制的键值`0x5d61`或`0x700b`，按照Keychron的说法，具体哪个键值生效貌似与QMK固件版本有关，笔者生效的是`0x700b`。
-![1](https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411011504114.webp)
-![2](https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411011506236.webp)
+![1](https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411011504114.webp)
+![2](https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411011506236.webp)
 
 如果一切顺利，在Confirm后你的键盘现在应该能够通过Fn+win键锁定win键了。
 

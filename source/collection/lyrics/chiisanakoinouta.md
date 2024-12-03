@@ -1,6 +1,6 @@
 ---
 title: 小さな恋のうた（小小恋歌）
-top_img: 'https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411061410203.webp'
+top_img: 'https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411061410203.webp'
 date: 2024-10-31 21:21:09
 ---
 
@@ -49,5 +49,5 @@ date: 2024-10-31 21:21:09
 通过第三方PDF加载，可能需要一定时间。
 {% endnote %}
 
-{% pdf https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/pdf/xxlg_lyrics_xw_v3.pdf %}
+{% pdf https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/pdf/xxlg_lyrics_xw_v3.pdf %}
 

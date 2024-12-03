@@ -5,7 +5,7 @@ tags:
   - 小米路由
 categories:
   - 技术分享
-cover: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/firewallbat.webp
+cover: https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/firewallbat.webp
 abbrlink: 133a89d9
 date: 2020-10-04 11:06:00
 ---
@@ -95,4 +95,4 @@ ip6tables -P FORWARD ACCEPT
 &emsp;&emsp;又拿到一台红米AX3000，后台已经添加了全局IPv6防火墙开关。
 
 
-[2]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/firewallbat.webp
+[2]: https://cdn.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/firewallbat.webp
