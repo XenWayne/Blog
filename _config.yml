@@ -390,3 +390,9 @@ pdf:
   enable: true          # default: true
   width: '100%'         # default: 100%
   height: '1200px'      # default: 550px
+
+# !hexo-album-page
+album:
+  enable: true # 是否启用相册插件
+  site_title: "影集 | Album | XenWayne's Blog" # 相册页面的标题
+  output_path: album/index.html # 相册页面的渲染输出路径 
