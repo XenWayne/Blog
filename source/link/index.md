@@ -9,7 +9,6 @@ type: "link"
 - [~~梦想之都~~](https://hexo.dreamerhe.cn/)
 - [~~落日余晖团队博客~~](https://blog.666old666.cn)
 - [~~Master_Quan Techblog~~](https://www.masterquan.tech)
-- [~~时歌的博客~~](https://www.lapis.cafe)
 
 
 ## 互联网仓鼠专用收藏夹🐹 ##

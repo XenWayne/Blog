@@ -18,5 +18,5 @@ date: 2024-05-04 15:44:17
 Archived
 {% endnote %}
 
-{% link MinecraftLight,公益性质的Minecraft杂志，已经停运了👋,https://light.rxgzs.cn %} 
+{% link MinecraftLight,公益性质的Minecraft杂志，已经停运了👋,https://lightread.mevisual.top %} 
 {% link Miracle Town,正不断进步的纯净生存服务器，已经停运了👋,https://www.mtsmc.net/ %}
