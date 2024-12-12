@@ -111,7 +111,7 @@ node_modules\hexo-theme-butterfly\scripts\tag\link.js
 /**
  * Butterfly XenWayne Modified
  * link
- * {% link 标题,网站名称(subtitle),地址,是否在新标签页打开 %}
+ * {% link 标题,网站名称(subtitle),地址,是否在新标签页打开(new,不填) %}
  */
 
 function link(args) {
@@ -119,7 +119,7 @@ function link(args) {
     let title = args[0];
     let sitename = args[1];
     let link = args[2];
-    let openInNewTab = args[3] !== 'false'; // 默认为 true，除非指定为 'false'
+    let openInNewTab = args[3] === 'new'; // 默认为 false，除非指定为 'new'
 
     let target = openInNewTab ? '_blank' : '_self';
 

@@ -5,7 +5,7 @@ tags:
   - 小米路由
 categories:
   - 技术分享
-cover: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/firewallbat.webp
+cover: https://s2.loli.net/2024/12/12/xEjgdsRoCZ6bkeh.webp
 abbrlink: 133a89d9
 date: 2020-10-04 11:06:00
 ---
@@ -17,7 +17,7 @@ date: 2020-10-04 11:06:00
 事情在几个月前发生了转机，那天我闲着没事逛逛恩山无线论坛，然后就看见首页排行榜有大佬分享了AX系列路由器官方固件开启SSH的方法。
 
 
-{% link 官方固件开启SSH方法, 恩山无线论坛, https://www.right.com.cn/forum/forum.php?mod=viewthread&tid=4032490&extra=page%3D1%26filter%3Dtypeid%26typeid%3D44 %}
+{% link 官方固件开启SSH方法, 恩山无线论坛, https://www.right.com.cn/forum/forum.php?mod=viewthread&tid=4032490&extra=page%3D1%26filter%3Dtypeid%26typeid%3D44 , new %}
 
 
 开启SSH之后就简单得多了，用SSH关闭IPV6防火墙就行了，虽然有安全隐患，但是也凑合用（，~~毕竟不会写防火墙配置文件~~
@@ -82,7 +82,7 @@ ip6tables -P FORWARD ACCEPT
 
 ※第二条中 ip6tables -I forwarding_rule 也能加入 /etc/firewall.user
 从而自定义开放端口。
-{% link "[AX3600] AX3600开启IPV6外网访问的一些疑惑求解", 恩山无线论坛, https://www.right.com.cn/forum/forum.php?mod=viewthread&tid=4053486&extra=page%3D1%26filter%3Dtypeid%26typeid%3D44 %}
+{% link "[AX3600] AX3600开启IPV6外网访问的一些疑惑求解", 恩山无线论坛, https://www.right.com.cn/forum/forum.php?mod=viewthread&tid=4053486&extra=page%3D1%26filter%3Dtypeid%26typeid%3D44 , new %}
 
 
 ----------
@@ -95,4 +95,4 @@ ip6tables -P FORWARD ACCEPT
 &emsp;&emsp;又拿到一台红米AX3000，后台已经添加了全局IPv6防火墙开关。
 
 
-[2]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/firewallbat.webp
+[2]: https://s2.loli.net/2024/12/12/xEjgdsRoCZ6bkeh.webp

@@ -5,7 +5,7 @@ tags:
   - OBS
 categories:
   - 技术分享
-cover: 'https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411011525198.webp'
+cover: 'https://s2.loli.net/2024/12/12/hxOz9S2gK7k3jwl.webp'
 abbrlink: b41cff3a
 date: 2020-08-06 20:55:00
 ---
@@ -129,8 +129,8 @@ rtmp://推流的PC地址:上文设置的监听端口/live/上文自定义的密�
   [1]: https://obsproject.com/forum/resources/obs-virtualcam.539/
   [2]: https://nginx-win.ecsds.eu/download/nginx%201.7.11.3%20Gryphon.zip
   [3]: http://auan.cn/
-  [4]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/RTMP1.webp
+  [4]: https://s2.loli.net/2024/12/12/lvwg1237OfMbYAQ.webp
   [5]: https://github.com/videolan/vlc
-  [6]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/RTMP2.webp
-  [7]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/RTMP3.webp
-  [8]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/RTMP4.webp
+  [6]: https://s2.loli.net/2024/12/12/tYEWj16hHPeNxyu.webp
+  [7]: https://s2.loli.net/2024/12/12/koqjiNbBm5nKsZV.webp
+  [8]: https://s2.loli.net/2024/12/12/hxOz9S2gK7k3jwl.webp

@@ -6,7 +6,7 @@ tags:
   - Win11
 categories:
   - 技术分享
-cover: 'https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411011526795.webp'
+cover: 'https://s2.loli.net/2024/12/12/9zsqeMYt7IRBKLh.webp'
 abbrlink: 7834b51
 date: 2022-08-16 19:57:00
 ---
@@ -36,11 +36,11 @@ bcdedit /set {XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX} hypervisorlaunchtype OFF
 其中``XXXX``使用上述ID替换。
 
 上述步骤完成后，应该有类似以下两项启动项:
-![v0rcxf.png](https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411011526795.webp)
+![launch1](https://s2.loli.net/2024/12/12/9zsqeMYt7IRBKLh.webp)
 ## 3.检查启动项，设置等待时间
 Win+R运行msconfig，进入"引导"选项卡，你可以看到刚刚修改的启动项出现在引导项中，在此处你可以修改在进入默认OS前给予选择启动项多长的等待时间，当然也可以把NoHyperV的启动项设为默认值，然后重启看效果。
-![v0r6RP.png](https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411011527861.webp)
-![v0ryGt.jpg](https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411011527067.webp)
+![con1](https://s2.loli.net/2024/12/12/Im8HfwrFN1vYLR2.webp)
+![sys1](https://s2.loli.net/2024/12/12/SQJ6BAfjCWEvMh1.webp)
 
 大功告成。
 

@@ -1,6 +1,6 @@
 ---
 title: 小さな恋のうた（小小恋歌）
-top_img: 'https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411061410203.webp'
+top_img: 'https://s2.loli.net/2024/12/12/QeMNKdF8Ta6EjIR.webp'
 date: 2024-10-31 21:21:09
 ---
 

@@ -5,7 +5,7 @@ tags:
   - 路由器
 categories:
   - 技术分享
-cover: 'https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/LANWAN1.webp'
+cover: 'https://s2.loli.net/2024/12/12/Ygk3hKmJqDVfEwI.webp'
 abbrlink: b16db021
 date: 2020-03-12 00:52:00
 ---
@@ -51,13 +51,13 @@ date: 2020-03-12 00:52:00
 ![is][8]
 
 
-  [1]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/LANWAN1.webp
-  [2]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/LANWAN2.webp
-  [3]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/LANWAN3.webp
-  [4]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/LANWAN4.webp
-  [5]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/LANWAN5.webp
-  [6]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/LANWAN6.webp
-  [7]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/LANWAN7.webp
-  [8]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/blog/LANWAN8.webp
+  [1]: https://s2.loli.net/2024/12/12/Ygk3hKmJqDVfEwI.webp
+  [2]: https://s2.loli.net/2024/12/12/SCjYthUmPlKHrIG.webp
+  [3]: https://s2.loli.net/2024/12/12/EkYvrehomCOLG7s.webp
+  [4]: https://s2.loli.net/2024/12/12/wztOHlLri9vDkWm.webp
+  [5]: https://s2.loli.net/2024/12/12/2hWmsjV1OKreoH4.webp
+  [6]: https://s2.loli.net/2024/12/12/9uwHgM61ORmX4JI.webp
+  [7]: https://s2.loli.net/2024/12/12/aFw4J7WfIT9Qbjr.webp
+  [8]: https://s2.loli.net/2024/12/12/oua6b4XrGedOHET.webp
 
 

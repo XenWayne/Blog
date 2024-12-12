@@ -5,6 +5,7 @@ tags:
   - 反向代理
 categories:
   - 技术分享
+cover: 'https://s2.loli.net/2024/12/12/SEI5aLPWpqHeicy.png'
 abbrlink: 2ca49b12
 date: 2023-09-20 18:38:00
 ---

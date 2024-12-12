@@ -8,12 +8,12 @@ categories:
   - 技术分享
 abbrlink: 296aa3cb
 date: 2022-03-13 09:29:00
-cover: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411011504760.webp
+cover: https://s2.loli.net/2024/12/12/keyE3b1XB68wxgP.webp
 ---
 
 # 一个巧合
 一个朋友在玩打AVG的时候给我抛过来一张图：
-![1](https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411011504760.webp)
+![1](https://s2.loli.net/2024/12/12/keyE3b1XB68wxgP.webp)
 这兴趣瞬间就涌上来了嗷，作者贴心的把三个字节分为一组，这让我立马就想到了UTF-8,因为我是清楚中文字符在UTF8中占三个字节的。尝试过直接换算Unicode，得到的是乱码，我对UTF-8的编码规则一窍不通（，看来还得去查查UTF-8的编码规则才行。
 
 # UTF-8编码规则

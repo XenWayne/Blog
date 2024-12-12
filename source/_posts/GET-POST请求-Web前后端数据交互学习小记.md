@@ -69,7 +69,7 @@ app.post('/formpost', (req, res) => {
 
 表单就支持很多丰富的功能，可以通过`enctype`属性设置表单数据的编码类型，例如`multipart/form-data`适用于文件上传，关于表单的Post请求更多用例，推荐阅读:
 
-{% link 四种常见的 POST 提交数据方式,JerryQu 的博客,https://imququ.com/post/four-ways-to-post-data-in-http.html%}
+{% link 四种常见的 POST 提交数据方式,JerryQu 的博客,https://imququ.com/post/four-ways-to-post-data-in-http.html , new %}
 
 ## AJAX
 表单提交的默认行为在登录表单的场景应用尚可，但在现代web应用中，我们更多的是通过AJAX请求来实现数据交互，这样可以避免页面刷新，提升用户体验。
@@ -474,7 +474,7 @@ Axios提供了很多实用的功能，比如拦截器、取消请求、全局配
 ## 其他方案
 
 除了上述几种方案，还有一些其他的方案，比如JSONP、WebSocket、Server-Sent Events等，其中JSONP是一种较为过时的跨域解决方案，我在下面这篇文章提到过。
-{% link 浏览器跨域问题-CORS、JSONP,https://xenwayne.top/posts/d651e145/,/posts/d651e145/%}
+{% link 浏览器跨域问题-CORS、JSONP,https://xenwayne.top/posts/d651e145/,/posts/d651e145/ , new %}
 
 
 >参考资料：  
