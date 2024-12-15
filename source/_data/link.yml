@@ -1,10 +1,6 @@
 - class_name: 友人帐📑
   class_desc: 
   link_list:
-    - name: 张长明
-      link: https://zcm230.top/
-      avatar: https://zcm230.top/img/230.jpg
-      descr: 230
     - name: The_Rainbow's Blog
       link: https://alexanderqwq.top/
       avatar: https://s21.ax1x.com/2024/10/09/pAJZTn1.jpg
@@ -13,6 +9,10 @@
       link: https://kuaimiaoda.cn/
       avatar: https://gcore.jsdelivr.net/gh/kuaimiaoda/random-menu/xxx/asus/202410261937471.webp
       descr: 谎言不会伤人，真相才是快刀
+    - name: 张长明
+      link: https://zcm230.top/
+      avatar: https://zcm230.top/img/230.jpg
+      descr: 230
     - name: 9527’s Blog
       link: https://9527dhx.top
       avatar: https://i.loli.net/2019/05/26/5cea282e596b167848.png
@@ -23,7 +23,7 @@
       descr: 种下一颗有故事的种子，让它带着魔法和奇迹生根发芽
     - name: 时歌的博客
       link: https://www.lapis.cafe
-      avatar: https://www.lapis.cafe/upload/20240323172736.png
+      avatar: https://www.lapis.cafe/_astro/avatar.exAKhE7w_1xwha6.webp
       descr: 理解以真实为本，但真实本身并不会自动呈现   
     - name: Nero978 的日记
       link: https://nero978.top
