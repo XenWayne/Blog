@@ -400,4 +400,5 @@ pdf:
 album:
   enable: true # 是否启用相册插件
   site_title: "影集 | Album | XenWayne's Blog" # 相册页面的标题
+  favicon: '' # 站点图标
   output_path: album/index.html # 相册页面的渲染输出路径 
