@@ -14,7 +14,7 @@ date: 2024-04-27 21:22:57
 关于我——森稳XenWayne
 ===============
 
-网络常用马甲XenWayne Wu {% label "/zen'weɪn  wu:/" default %}，{% label /ゼウエ/ blue%}。
+网络常用马甲XenWayne Wu {% label "/zen'weɪn  wu:/" default %}，{% label /ゼウエン/ blue%}。
 
 {% note %}
 Mandarin Chinese Native | English CET-6 | Japanese learning
@@ -123,7 +123,7 @@ That's all.请多指教w。
 
 
   [1]: https://osusig.lolicon.app/sig.php?colour=hex66ccff&uname=XenWayne&mode=3&pp=2&removeavmargin&flagshadow&flagstroke&darktriangles&xpbar&xpbarhex
-  [2]: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/picgo/202411061428075.webp
+  [2]: https://s2.loli.net/2024/12/29/iztwhbImYqLWNsS.webp
   [3]: http://gallery.mevisual.top
   [4]: https://github.com/xenwayne
   [5]: https://weibo.com/xenwayne
