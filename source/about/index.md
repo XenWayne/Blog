@@ -74,7 +74,9 @@ Skill List:
 
 联系方式Contact
 =========
-GPG ID: `395F 13FC 1EF4 49E0 4175 7CE5 F41A 0509 0C79 69C9` 
+
+> OpenPGP ID: [395F 13FC 1EF4 49E0 4175 7CE5 F41A 0509 0C79 69C9](https://keys.openpgp.org/search?q=395F+13FC+1EF4+49E0+4175+7CE5+F41A+0509+0C79+69C9)
+
  - [Github][4]
  - [微博Weibo][5]
  - [哔哩哔哩Bilibili][6]
@@ -106,6 +108,9 @@ GPG ID: `395F 13FC 1EF4 49E0 4175 7CE5 F41A 0509 0C79 69C9`
   - 原收藏|Collection新加了个歌词收藏的子目录，目前是用来测试ruby标签的
   - xenwayne.top/cierra项目迁移到cierra.xenwayne.top
   - 计划把影集|Album页面的数据集加载继续优化，最好封装一个npm包
+
+- 2024/1/3
+  - 影集|Album的npm包已经发布，[hexo-album-page](https://www.npmjs.com/package/hexo-album-page)。
 
 ----------
 
