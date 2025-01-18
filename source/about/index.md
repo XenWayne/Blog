@@ -23,18 +23,18 @@ Mandarin Chinese Native | English CET-6 | Japanese learning
 **您来猜猜我什么成分(**
 > **00后/杂鱼摄影/不打鸟の尼康用户/技术宅/LLer/术力口/假的车万人/沙勒のSensei/柚子厨/音游玩家/人形自走废萌Galgame百科全书**
 
- - -爱好摄影、平面设计、~~折腾~~硬件，热衷于钻研和计算机有关的一切~~除了算法~~；
- - -中国图库签约供稿摄影师（半斤八两罢
- - -LNU信息学部计科在读
- - -Adobe全家桶资深用户（迫真）
- - -FPS人菜瘾大玩家~~KD0.6没跟你开玩笑~~
- - -在上学~~（指热血高校）~~，入宅作Lovelive. 
- - -为什么要演奏春日影(
- - -白玉老师yyds
- - -是鸽子（确信）
- - -自信音游人 Phigros | Project Sekai | VOEZ | LL | OSU mania 4k > std | Maimai | Chunithm
- - -前中期圆锥角膜患者
- - -重重重重度散光人
+ - 爱好摄影、平面设计、~~折腾~~硬件，热衷于钻研和计算机有关的一切~~除了算法~~；
+ - 中国图库签约供稿摄影师（半斤八两罢
+ - I Love JavaScript.
+ - LNU信息学部计科在读
+ - Adobe全家桶资深用户（迫真）
+ - FPS人菜瘾大玩家~~KD0.6没跟你开玩笑~~
+ - 在上学~~（指热血高校）~~，入宅作Lovelive. 
+ - 为什么要演奏春日影(
+ - 白玉老师yyds
+ - 是鸽子（确信）
+ - 自信音游人 Phigros | Project Sekai | VOEZ | LL | OSU mania 4k > std | Maimai | Chunithm
+ - 前中期圆锥角膜患者 高度不规则散光人= =
  - 
 {% label 另:欢迎圆锥角膜患者任何对我任何形式的咨询，我很乐意分享经验。 green %}
 
@@ -75,15 +75,9 @@ Skill List:
 联系方式Contact
 =========
 
-> OpenPGP ID: [395F 13FC 1EF4 49E0 4175 7CE5 F41A 0509 0C79 69C9](https://keys.openpgp.org/search?q=395F+13FC+1EF4+49E0+4175+7CE5+F41A+0509+0C79+69C9)
-
- - [Github][4]
- - [微博Weibo][5]
- - [哔哩哔哩Bilibili][6]
- - [乐乎Lofter（已经弃坑啦）][8]
- - [图虫tuchong][9]
- - [QQ][10]
- - Business Email:xenwayne#mevisual.top（你懂的）
+{% note %}
+[PGP 0x0C7969C9](https://keyserver.ubuntu.com/pks/lookup?search=0x0C7969C9&fingerprint=on&op=index)
+{% endnote %} 
 
 
 关于这个Blog
