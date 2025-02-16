@@ -9,12 +9,15 @@ date: 2024-04-27 21:22:57
 
 欢迎Welcome
 ====
+
+> Life is a grand DevOps journey, To embark on the journey is more significant than reaching the destination.
+
 　　无论是搜索引擎还是他人的友链将你带到了这里，能在万千Blog相互遇见，实属不易，我会把我学习开发过程中的问题记录下来，希望能帮到你。如果你在浏览过程中发现了不足，欢迎指正。相信我们能碰撞出灵感的火花= =。其实我嘴很笨，写文字对我来说甚至有些痛苦(，但是还是想记录些什么。再次感谢你来访这个用心搭建的Blog。
 
 关于我——森稳XenWayne
 ===============
 
-网络常用马甲XenWayne Wu {% label "/zen'weɪn  wu:/" default %}，{% label /ゼウエン/ blue%}。
+网络常用马甲XenWayne Wu {% label "/zen'weɪn  wu:/" default %}，{% label /ゼウエン/ blue%},线下常用Wayne。
 
 {% note %}
 Mandarin Chinese Native | English CET-6 | Japanese learning
