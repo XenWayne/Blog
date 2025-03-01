@@ -17,8 +17,8 @@ date: 2024-04-27 21:22:57
 关于我——森稳XenWayne
 ===============
 
-网络常用马甲XenWayne Wu {% label "/zen'weɪn  wu:/" default %}，{% label /ゼウエン/ blue%},线下常用Wayne。
-
+网络常用马甲XenWayne {% label "/zen'weɪn/" default %}，{% label /ゼンウェイン/ blue%}  
+线下常用Wayne {% label /weɪn/ default %}，{% label /ウェイン/ blue%} 
 {% note %}
 Mandarin Chinese Native | English CET-6 | Japanese learning
 {% endnote %}
