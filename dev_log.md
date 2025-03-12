@@ -1,5 +1,4 @@
-Hexo DIY修改文档 *使用NPM包管理器
-更新备份主题包里的_config.yml文件
+Hexo DIY修改文档
 
 * 1.自定义css和js存在github仓库sitefile/blog_custom中，在主题包中的_config.yml文件中引用
 ```yml

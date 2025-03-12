@@ -3,8 +3,6 @@ Thumbs.db
 db.json
 *.log
 node_modules/*
-!node_modules/hexo-theme-butterfly/
-!node_modules/hexo-artitalk-static/
 public/
 .deploy*/
 _multiconfig.yml
