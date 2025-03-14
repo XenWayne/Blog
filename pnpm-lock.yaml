@@ -32,6 +32,9 @@ importers:
       hexo-deployer-git:
         specifier: ^4.0.0
         version: 4.0.0(chokidar@3.6.0)
+      hexo-diagrams-net:
+        specifier: ^2024.4.1
+        version: 2024.4.1
       hexo-filter-nofollow:
         specifier: ^2.0.2
         version: 2.0.2
@@ -721,6 +724,9 @@ packages:
     resolution: {integrity: sha512-28t1Q+4taB/UaBAP52W3mD/wcCwa2y2zBieUfBJFBZudbmVgiKJB5YedYILeyI5QByaUKAOwoupmdTbocdQ+CQ==}
     engines: {node: '>=14'}
 
+  hexo-diagrams-net@2024.4.1:
+    resolution: {integrity: sha512-oDftScAbixuddm60PCR7uqq39++WgKLXaYbfYpmcK8jZaAUsmBDqvlyJQyFh1mMnjohzMv7QdBy9ptJrWyrklA==}
+
   hexo-filter-nofollow@2.0.2:
     resolution: {integrity: sha512-roIkEIkGOR22EPMoy8iKrufDoAH25LOT5ZeVXVLavEpM757Y96kfUhyathryMLXr326EURffgkZAKsVf3EDl0A==}
     engines: {node: '>= 8.6.0'}
@@ -807,6 +813,9 @@ packages:
   hexo-server@3.0.0:
     resolution: {integrity: sha512-u4s0ty9Aew6jV+a9oMrXBwhrRpUQ0U8PWM/88a5aHgDru58VY81mVrxOFxs788NAsWQ8OvsJtF5m7mnXoRnSIA==}
     engines: {node: '>=12.13.0'}
+
+  hexo-util-parse-tag-arguments@2021.1.2:
+    resolution: {integrity: sha512-JwM1pH1b9k553cxDOqFzCoGo/W39Cktf3YAIu7cBSCOaEmASSmpr0x4tYzyM8U2HtVnfmhfvi75kXDTw+gnOlg==}
 
   hexo-util@2.7.0:
     resolution: {integrity: sha512-hQM3h34nhDg0bSe/Tg1lnpODvNkz7h2u0+lZGzlKL0Oufp+5KCAEUX9wal7/xC7ax3/cwEn8IuoU75kNpZLpJQ==}
@@ -2382,6 +2391,10 @@ snapshots:
     transitivePeerDependencies:
       - chokidar
 
+  hexo-diagrams-net@2024.4.1:
+    dependencies:
+      hexo-util-parse-tag-arguments: 2021.1.2
+
   hexo-filter-nofollow@2.0.2: {}
 
   hexo-front-matter@1.0.0:
@@ -2504,6 +2517,8 @@ snapshots:
       serve-static: 1.16.2
     transitivePeerDependencies:
       - supports-color
+
+  hexo-util-parse-tag-arguments@2021.1.2: {}
 
   hexo-util@2.7.0:
     dependencies:
