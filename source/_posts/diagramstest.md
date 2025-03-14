@@ -1,5 +1,6 @@
 ---
-title: Cloudflare动态重定向
+title: diagrams test
+abbrlink: a57f6f72
 tags:
 ---
 

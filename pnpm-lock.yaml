@@ -32,9 +32,9 @@ importers:
       hexo-deployer-git:
         specifier: ^4.0.0
         version: 4.0.0(chokidar@3.6.0)
-      hexo-diagrams-net:
-        specifier: ^2024.4.1
-        version: 2024.4.1
+      hexo-diagrams-net-butterfly:
+        specifier: ^0.0.1
+        version: 0.0.1
       hexo-filter-nofollow:
         specifier: ^2.0.2
         version: 2.0.2
@@ -724,8 +724,8 @@ packages:
     resolution: {integrity: sha512-28t1Q+4taB/UaBAP52W3mD/wcCwa2y2zBieUfBJFBZudbmVgiKJB5YedYILeyI5QByaUKAOwoupmdTbocdQ+CQ==}
     engines: {node: '>=14'}
 
-  hexo-diagrams-net@2024.4.1:
-    resolution: {integrity: sha512-oDftScAbixuddm60PCR7uqq39++WgKLXaYbfYpmcK8jZaAUsmBDqvlyJQyFh1mMnjohzMv7QdBy9ptJrWyrklA==}
+  hexo-diagrams-net-butterfly@0.0.1:
+    resolution: {integrity: sha512-rqGPEuHcUAXIcn7wmuA89liUXDbmTO87Tf6SBX9Ezyn77sD8CLT2TsuLOIBmaaIil3Vq01V0Je1OVuQXFpotkQ==}
 
   hexo-filter-nofollow@2.0.2:
     resolution: {integrity: sha512-roIkEIkGOR22EPMoy8iKrufDoAH25LOT5ZeVXVLavEpM757Y96kfUhyathryMLXr326EURffgkZAKsVf3EDl0A==}
@@ -2391,7 +2391,7 @@ snapshots:
     transitivePeerDependencies:
       - chokidar
 
-  hexo-diagrams-net@2024.4.1:
+  hexo-diagrams-net-butterfly@0.0.1:
     dependencies:
       hexo-util-parse-tag-arguments: 2021.1.2
 

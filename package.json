@@ -20,7 +20,7 @@
     "hexo-bilibili-bangumi": "^1.10.2",
     "hexo-browsersync": "^0.3.0",
     "hexo-deployer-git": "^4.0.0",
-    "hexo-diagrams-net": "^2024.4.1",
+    "hexo-diagrams-net-butterfly": "^0.0.1",
     "hexo-filter-nofollow": "^2.0.2",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
