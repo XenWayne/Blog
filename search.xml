@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>diagrams test</title>
+      <link href="/posts/a57f6f72/"/>
+      <url>/posts/a57f6f72/</url>
+      
+        <content type="html"><![CDATA[<p>diagrams测试 CITEST</p><div class="mxgraph-container">    <div class="mxgraph" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;toolbar&quot;:&quot;lightbox zoom layers pages&quot;,&quot;url&quot;:&quot;/diagrams/test.drawio&quot;,&quot;lightbox&quot;:false,&quot;page&quot;:0,&quot;nav&quot;:true,&quot;resize&quot;:false}"></div></div><p>diagrams测试 allow-zoom-in&#x3D;true max-height&#x3D;”500px”</p><div class="mxgraph-container">    <div class="mxgraph" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;toolbar&quot;:&quot;lightbox zoom layers pages&quot;,&quot;url&quot;:&quot;/diagrams/test.drawio&quot;,&quot;max-height&quot;:500,&quot;lightbox&quot;:false,&quot;allow-zoom-in&quot;:true,&quot;page&quot;:0,&quot;nav&quot;:true,&quot;resize&quot;:false}"></div></div>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>GET&amp;POST请求-Web前后端数据交互学习小记</title>
       <link href="/posts/6f791b0c/"/>
       <url>/posts/6f791b0c/</url>
