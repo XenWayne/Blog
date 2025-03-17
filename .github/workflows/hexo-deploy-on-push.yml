@@ -38,8 +38,8 @@ jobs:
         pnpm install
         cd themes/butterfly
         pnpm install
-        pnpm run prod
+        cd ..
     - name: Deploy hexo
       run: |
         hexo clean
-        hexo d -g
+        hexo d
