@@ -36,7 +36,7 @@ jobs:
           npm install
           npm i -g hexo-cli
           npm ci
-          cd themes/tranquilpeak/
+          cd themes/butterfly/
           npm ci
           npm run prod
       - name: Deploy hexo
