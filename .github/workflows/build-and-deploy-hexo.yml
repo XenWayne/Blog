@@ -13,11 +13,21 @@ jobs:
         with:
           persist-credentials: false
 
-      # 安装依赖并生成页面
-      - name: Install and Build 🔧
+      # 安装依赖
+      - name: Install🔧
         run: |
           npm install -g hexo-cli --save
           npm install
+      
+      # Bangumi插件拉取数据
+      - name: Bangumi📺
+        run: |
+          hexo bangumi -u
+          hexo game -u
+
+      # 生成页面
+      - name: Build🪧
+        run: |
           hexo generate
 
       # 部署
