@@ -36,6 +36,7 @@ jobs:
     - name: Install dependencies
       run: |
         pnpm install
+        pnpm approve-builds hexo-util
         cd themes/butterfly
         pnpm install
         cd ..
