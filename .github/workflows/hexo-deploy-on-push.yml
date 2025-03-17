@@ -35,7 +35,7 @@ jobs:
         git config --global user.email "xenwayne@mevisual.top"
     - name: Install dependencies
       run: |
-        pnpm approve-builds hexo-util
+        pnpm approve-builds -g
         pnpm install
         cd themes/butterfly
         pnpm install
