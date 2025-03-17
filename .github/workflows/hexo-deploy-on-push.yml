@@ -10,37 +10,35 @@ jobs:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
-        node-version: [20]
+        node-version: [20.x]
+
     steps:
-    - uses: actions/checkout@v4
-    - name: 安装 pnpm
-      uses: pnpm/action-setup@v4
-      with:
-        version: 10
-    - name: 使用 Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'pnpm'
-    - name: Configuration environment
-      env:
-        HEXO_DEPLOY_PRI: ${{secrets.HEXO_DEPLOY_PRI}}
-      run: |
-        sudo timedatectl set-timezone "Asia/Shanghai"
-        mkdir -p ~/.ssh/
-        echo "$HEXO_DEPLOY_PRI" | tr -d '\r' > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        ssh-keyscan github.com >> ~/.ssh/known_hosts
-        git config --global user.name "xenwayne-github-actions"
-        git config --global user.email "xenwayne@mevisual.top"
-    - name: Install dependencies
-      run: |
-        pnpm approve-builds -g
-        pnpm install
-        cd themes/butterfly
-        pnpm install
-        cd ..
-    - name: Deploy hexo
-      run: |
-        hexo clean
-        hexo d
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Configuration environment
+        env:
+          HEXO_DEPLOY_PRI: ${{secrets.HEXO_DEPLOY_PRI}}
+        run: |
+          sudo timedatectl set-timezone "Asia/Shanghai"
+          mkdir -p ~/.ssh/
+          echo "$HEXO_DEPLOY_PRI" | tr -d '\r' > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          git config --global user.name "xenwayne-github-actions"
+          git config --global user.email "xenwayne@mevisual.top"
+      - name: Install dependencies
+        run: |
+          npm i -g hexo-cli
+          npm ci
+          cd themes/tranquilpeak/
+          npm ci
+          npm run prod
+      - name: Deploy hexo
+        run: |
+          hexo clean
+          hexo d -g
