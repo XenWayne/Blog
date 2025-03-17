@@ -1,0 +1,29 @@
+name: Build and Deploy Hexo
+on:
+  push:
+    branches:
+      - local
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-22.04
+    steps:
+      # 相当于 git clone 到服务器
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      # 安装依赖并生成页面
+      - name: Install and Build 🔧
+        run: |
+          npm install -g hexo-cli --save
+          npm install
+          hexo generate
+
+      # 部署
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          token: ${{ secrets.DEPLOY_GITHUB_TOKEN }}
+          branch: pages   # 存储站点的分支
+          folder: public     # 构建出来的待部署的站点文件夹名称
