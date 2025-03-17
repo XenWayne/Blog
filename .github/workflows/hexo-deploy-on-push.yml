@@ -17,7 +17,7 @@ jobs:
       uses: pnpm/action-setup@v4
       with:
         version: 10
-    - name: 使用 Nnode.js ${{ matrix.node-version }}
+    - name: 使用 Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
@@ -35,9 +35,9 @@ jobs:
         git config --global user.email "xenwayne@mevisual.top"
     - name: Install dependencies
       run: |
-        pnpm i
+        pnpm install
         cd themes/butterfly
-        pnpm i
+        pnpm install
         pnpm run prod
     - name: Deploy hexo
       run: |
