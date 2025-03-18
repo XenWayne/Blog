@@ -9,7 +9,7 @@
     <atom:link href="https://xenwayne.top/feed/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Web/摄影/全沾工程师🤣/音游人/平面设计/技术宅/LLer/假的车万人/柚子厨/PGP 0x0C7969C9</description>
-    <pubDate>Tue, 18 Mar 2025 13:38:15 GMT</pubDate>
+    <pubDate>Tue, 18 Mar 2025 13:46:15 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -29,6 +29,16 @@
       
       
       
+      
+      <category domain="https://xenwayne.top/tags/%E7%BD%91%E7%BB%9C/">网络</category>
+      
+      <category domain="https://xenwayne.top/tags/IPv6/">IPv6</category>
+      
+      <category domain="https://xenwayne.top/tags/OpenWrt/">OpenWrt</category>
+      
+      <category domain="https://xenwayne.top/tags/DHCPv6/">DHCPv6</category>
+      
+      <category domain="https://xenwayne.top/tags/%E9%98%B2%E7%81%AB%E5%A2%99/">防火墙</category>
       
       
       <comments>https://xenwayne.top/posts/676ecf57/#disqus_thread</comments>
@@ -330,6 +340,8 @@
       <category domain="https://xenwayne.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">技术分享</category>
       
       
+      <category domain="https://xenwayne.top/tags/IPv6/">IPv6</category>
+      
       <category domain="https://xenwayne.top/tags/OpenWRT/">OpenWRT</category>
       
       <category domain="https://xenwayne.top/tags/vsftpd/">vsftpd</category>
@@ -337,8 +349,6 @@
       <category domain="https://xenwayne.top/tags/FTP/">FTP</category>
       
       <category domain="https://xenwayne.top/tags/%E8%BD%AF%E8%B7%AF%E7%94%B1/">软路由</category>
-      
-      <category domain="https://xenwayne.top/tags/IPv6/">IPv6</category>
       
       <category domain="https://xenwayne.top/tags/bash/">bash</category>
       
@@ -428,7 +438,7 @@
       <category domain="https://xenwayne.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">技术分享</category>
       
       
-      <category domain="https://xenwayne.top/tags/IPV6/">IPV6</category>
+      <category domain="https://xenwayne.top/tags/IPv6/">IPv6</category>
       
       <category domain="https://xenwayne.top/tags/%E5%B0%8F%E7%B1%B3%E8%B7%AF%E7%94%B1/">小米路由</category>
       
