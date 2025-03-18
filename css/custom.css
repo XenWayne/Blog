@@ -454,10 +454,18 @@ div#footer-wrap * {
 rt {
     font-size: 0.8em;
 }
+
 /* !修改全局ruby标签注音样式 END */
 
 /* !修改友链头像框样式 START */
-#article-container .flink .flink-list > .flink-list-item a .flink-item-icon {
+#article-container .flink .flink-list>.flink-list-item a .flink-item-icon {
     border-radius: 10px;
 }
+
 /* !修改友链头像框样式 END */
+
+/* !页脚git-commit样式 START */
+.git-commit * {
+    /* 字体颜色 */
+    color: rgb(0, 0, 0, 0.5) !important;
+}
