@@ -54,7 +54,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2025-03-17 23:13:23'
+  postUpdate: '2025-03-18 18:00:23'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -178,7 +178,43 @@ function panguInit () {
   }
 }
 
-document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"></div><script>window.addEventListener('load', () => {
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>(() => {
+  const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaid.length === 0) return
+  const runMermaid = () => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    Array.from($mermaid).forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+      const mermaidID = 'mermaid-' + index
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+
+      const renderV10 = () => {
+        renderFn.then(({svg}) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svg)
+        })
+      }
+
+      const renderV9 = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      typeof renderFn === 'string' ? renderV9(renderFn) : renderV10()
+    })
+  }
+
+  const loadMermaid = () => {
+    window.loadMermaid ? runMermaid() : getScript('https://unpkg.com/mermaid@11.5.0/dist/mermaid.min.js').then(runMermaid)
+  }
+
+  btf.addGlobalFn('themeChange', runMermaid, 'mermaid')
+
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script></div><script>window.addEventListener('load', () => {
   const changeContent = (content) => {
     if (content === '') return content
 
@@ -339,7 +375,6 @@ return [
 ]
 }
 },mobileDisplay:false,models:[{"path":"https://sitefile.xenwayne.top/https://raw.githubusercontent.com/XenWayne/sitefile/master/live2d/dujiaoshou_6/dujiaoshou_6.model3.json","mobilePosition":[0,0],"mobileScale":0.07,"mobileStageStyle":{"width":150,"height":150},"motionPreloadStrategy":"IDLE","position":[-140,-8],"scale":0.06,"stageStyle":{"width":250,"height":400}}],parentElement:document.body,primaryColor:"var(--btn-bg)",sayHello:false,tips:{style: {"width":200,"height":100,"left":"50%","top":"-60px"},mobileStyle: {"width":180,"height":80,"left":"50%","top":"-100px"},idleTips:{interval:15000,message:null}}});</script><!-- hexo injector body_end end -->
-// compatible with hexo-themes-butterfly pjax
 <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js" data-pjax="" defer=""></script>
 <style>
 .mxgraph-container { width: 100%; }

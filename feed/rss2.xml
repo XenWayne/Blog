@@ -9,23 +9,20 @@
     <atom:link href="https://xenwayne.top/feed/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Web/摄影/全沾工程师🤣/音游人/平面设计/技术宅/LLer/假的车万人/柚子厨/PGP 0x0C7969C9</description>
-    <pubDate>Mon, 17 Mar 2025 15:12:51 GMT</pubDate>
+    <pubDate>Tue, 18 Mar 2025 09:59:55 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>diagrams test</title>
-      <link>https://xenwayne.top/posts/a57f6f72/</link>
-      <guid>https://xenwayne.top/posts/a57f6f72/</guid>
-      <pubDate>Mon, 17 Mar 2025 15:12:51 GMT</pubDate>
+      <title>HomeLab - OpenWrt DHCPv6小记与防火墙最佳实践</title>
+      <link>https://xenwayne.top/posts/676ecf57/</link>
+      <guid>https://xenwayne.top/posts/676ecf57/</guid>
+      <pubDate>Mon, 17 Mar 2025 18:58:09 GMT</pubDate>
       
         
         
           
           
-      <description>&lt;p&gt;diagrams测试 CITEST&lt;/p&gt;
-
-&lt;div class=&quot;mxgraph-container&quot;&gt;
-    &lt;div class=&quot;mxgraph&quot;</description>
+      <description>&lt;p&gt;春节回去把家里的软路由换上了OpenWrt 24.10，感觉现在OpenWrt对IPv6的支持已经非常完善了，顺便完善一下网关层面的防火墙。</description>
           
         
       
@@ -34,7 +31,7 @@
       
       
       
-      <comments>https://xenwayne.top/posts/a57f6f72/#disqus_thread</comments>
+      <comments>https://xenwayne.top/posts/676ecf57/#disqus_thread</comments>
       
     </item>
     
