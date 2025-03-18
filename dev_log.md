@@ -191,7 +191,10 @@ https://github.com/HCLonely/hexo-bilibili-bangumi
 ----------
 
 
+diagrams使用标签示例：
 
-TODO:
-NodeJS Express 中间件小记
-Cloudflare动态重定向
+diagrams测试 CITEST
+{% diagramsnet "/diagrams/test.drawio"  %}
+
+diagrams测试 allow-zoom-in=true max-height="500px"
+{% diagramsnet "/diagrams/test.drawio" allow-zoom-in=true max-height="500px" %}

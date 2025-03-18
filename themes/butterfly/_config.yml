@@ -141,7 +141,7 @@ anchor:
   # Click the headline to scroll and update the anchor
   click_to_scroll: true
 
-# figcaption (圖片描述文字)
+# figcaption (图片描述文字)
 photofigcaption: false
 
 # copy settings
@@ -839,7 +839,7 @@ abcjs:
 # mermaid
 # see https://github.com/mermaid-js/mermaid
 mermaid:
-  enable: false
+  enable: true
   # built-in themes: default/forest/dark/neutral
   theme:
     light: default
