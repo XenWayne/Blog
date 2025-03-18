@@ -1,7 +1,7 @@
 ---
 title: 记一次与小米路由IPV6防火墙的折腾经历
 tags:
-  - IPV6
+  - IPv6
   - 小米路由
 categories:
   - 技术分享

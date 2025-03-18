@@ -2,7 +2,7 @@
 title: HomeLab - OpenWrt DHCPv6小记与防火墙最佳实践
 abbrlink: 676ecf57
 date: 2025-03-18 02:58:09
-tags:
+tags: [网络, IPv6, OpenWrt, DHCPv6, 防火墙]
 ---
 
 春节回去把家里的软路由换上了OpenWrt 24.10，感觉现在OpenWrt对IPv6的支持已经非常完善了，顺便完善一下网关层面的防火墙。 
@@ -76,8 +76,8 @@ SLAAC即Stateless Address Autoconfiguration，无状态自动配置，是一种�
 ### DHCPv6
 
 说到DHCPv6，你可能听到过它有状态和无状态的区别:
-- 有状态：通过 DHCPv6 分配 IP。
-- 无状态：IP 依然采用 SLAAC 生成，但其他参数例如 DNS，网关地址等则通过 DHCPv6 获取。
+- **有状态**：通过 DHCPv6 分配 IP。
+- **无状态**：IP 依然采用 SLAAC 生成，但其他参数例如 DNS，网关地址等则通过 DHCPv6 获取。
 
 {% note default %}
 题外话，Android 貌似对支持有状态DHCPv6持反对态度，或许是历史遗留问题，又或许是因为Google认为这有悖它的“隐私保护策略”。
