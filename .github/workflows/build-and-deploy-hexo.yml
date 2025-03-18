@@ -12,21 +12,30 @@ jobs:
         uses: actions/checkout@v4
         with:
           persist-credentials: false
+          fetch-depth: 0  # 必须获取完整提交历史
+
+      - name: Commit SHA Injection to deploy.yml 🔄
+        run: |
+          SHORT_SHA=$(git rev-parse --short ${{ github.sha }})
+          COMMIT_URL="${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}"
+          
+          # 使用变量替换内容
+          sed -i "s|^sha:.*$|sha: '<a href=\"$COMMIT_URL\">$SHORT_SHA</a>'|" ./source/_data/deploy.yml
 
       # 安装依赖
-      - name: Install🔧
+      - name: Install 🔧
         run: |
           npm install -g hexo-cli --save
           npm install
       
       # Bangumi插件拉取数据
-      - name: Bangumi📺
+      - name: Bangumi 📺
         run: |
           hexo bangumi -u
           hexo game -u
 
       # 生成页面
-      - name: Build🪧
+      - name: Build 🪧
         run: |
           hexo generate
 

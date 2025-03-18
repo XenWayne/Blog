@@ -1,0 +1,2 @@
+# for cicd progress,this field should be set to current commit sha
+sha: "local-deploy"

@@ -212,7 +212,7 @@ OhMyLive2d:
           height: 400
 
           
-    parentElement: document.body #为组件提供一个父元素，如果未指定则默认挂载到 body 中
+    parentElement: document.getElementById('live2d-container') #为组件提供一个父元素，如果未指定则默认挂载到 document.body 中 
     primaryColor: 'var(--btn-bg)' # 主题色 支持变量
     sayHello: false # 是否在初始化阶段打印项目信息
     tips:

@@ -18,3 +18,7 @@
       span= ' ' +'Modified'
   if theme.footer.custom_text
     .footer_custom_text!=`${theme.footer.custom_text}`
+  //- deploy git 哈希值 文件_data/deploy.yml
+  .git-commit
+      i.fa-brands.fa-git-alt
+      span(style="margin-left: 4px;")!= site.data.deploy.sha

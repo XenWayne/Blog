@@ -174,6 +174,91 @@ if theme.menu
                   span=' '+ lab
 ```
 
+6.layout/includes/layout.pug
+
+添加live2d挂载父元素
+```pug
+- var htmlClassHideAside = theme.aside.enable && theme.aside.hide ? 'hide-aside' : ''
+- page.aside = is_archive() ? theme.aside.display.archive: is_category() ? theme.aside.display.category : is_tag() ? theme.aside.display.tag : page.aside
+- var hideAside = !theme.aside.enable || page.aside === false ? 'hide-aside' : ''
+- var pageType = is_post() ? 'post' : 'page'
+
+doctype html
+html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside)
+  head
+    include ./head.pug
+  body
+    if theme.preloader.enable
+      !=partial('includes/loading/index', {}, {cache: true})
+
+    if theme.background
+      #web_bg
+      
+    !=partial('includes/sidebar', {}, {cache: true})
+
+    if page.type !== '404'
+      #body-wrap(class=pageType)
+        include ./header/index.pug
+
+        main#content-inner.layout(class=hideAside)
+          if body
+            div!= body
+          else
+            block content
+            if theme.aside.enable && page.aside !== false
+              include widget/index.pug
+
+        - var footerBg = theme.footer_bg
+        if (footerBg)
+          if (footerBg === true)
+            - var footer_bg = bg_img
+          else
+            - var footer_bg = isImgOrUrl(theme.footer_bg) ? `background-image: url('${url_for(footerBg)}')` : `background: ${footerBg}`
+        else
+          - var footer_bg = ''
+
+        footer#footer(style=footer_bg)
+          !=partial('includes/footer', {}, {cache: true})
+
+    else
+      include ./404.pug
+
+    #live2d-container(style="position: fixed; left: 0px; bottom: 0px; z-index: 2;")
+    
+    include ./rightside.pug
+    include ./additional-js.pug
+```
+
+7. footer增加deploy actions相关哈希
+   layout/includes/footer.pug
+
+```pug
+#footer-wrap
+  if theme.footer.owner.enable
+    - var now = new Date()
+    - var nowYear = now.getFullYear()
+    if theme.footer.owner.since && theme.footer.owner.since != nowYear
+      .copyright!= `&copy;${theme.footer.owner.since} - ${nowYear} Copyright ${config.author}`
+    else
+      .copyright!= `&copy;${nowYear} Copyright ${config.author}`
+  if theme.footer.copyright
+    .framework-info
+      //- span= _p('footer.framework') + ' '
+      span= 'Powered by' + ' '
+      a(href='https://hexo.io')= 'Hexo'
+      span.footer-separator |
+      //- span= _p('footer.theme') + ' '
+      span= 'Theme' + ' '
+      a(href='https://github.com/jerryc127/hexo-theme-butterfly')= 'Butterfly'
+      span= ' ' +'Modified'
+  if theme.footer.custom_text
+    .footer_custom_text!=`${theme.footer.custom_text}`
+  //- deploy git 哈希值 文件_data/deploy.yml
+  .git-commit
+      i.fa-brands.fa-git-alt
+      span(style="margin-left: 4px;")= site.data.deploy.sha
+```
+
 ----------
 标签外挂文档:
 https://butterfly.js.org/posts/4aa8abbe/#label
