@@ -14,10 +14,10 @@ jobs:
           persist-credentials: false
           fetch-depth: 0  # 必须获取完整提交历史
 
-      # 替换 deploy.yml 中的 commit sha
+      # 替换 deploy.yml 中的 commit sha (指定为7位短SHA)
       - name: Commit SHA Injection to deploy.yml 🔄
         run: |
-          SHORT_SHA=$(git rev-parse --short ${{ github.sha }})
+          SHORT_SHA=$(git rev-parse --short=7 ${{ github.sha }})
           COMMIT_URL="${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}"
           
           # 使用变量替换内容
