@@ -73,6 +73,8 @@ SLAAC即Stateless Address Autoconfiguration，无状态自动配置，是一种�
 2. [RFC-7217](https://www.rfc-editor.org/rfc/rfc7217) 随机化接口标识符 
 在某些实现中，SLAAC可能使用 ​RFC 7217 定义的随机化接口标识符生成方法。这种方法通过哈希函数结合网络前缀、秘密密钥和其他参数，生成稳定但隐私友好的接口标识符。
 
+对于随机化，一些平台可能会有自己独立的实现。
+
 ### DHCPv6
 
 说到DHCPv6，你可能听到过它有状态和无状态的区别:
@@ -113,11 +115,11 @@ SLAAC即Stateless Address Autoconfiguration，无状态自动配置，是一种�
 
 在IPv4的DHCP静态分配中，我们可以指定设备的MAC地址和IP地址的对应关系，在DHCPv6，我们通常指定DUID（DHCP Unique Identifier）和IP地址的对应关系。DUID是一个由客户端生成的唯一标识符，用于标识客户端，可以在路由器侧的DHCP界面查看，也可以在客户端用查看(例如Windows使用`ipconfig /all`)。
 
+DUID在生成后，理论上只要硬件上没有变化，DUID就不会变化，但是有些设备可能会在每次重启时生成新的DUID，如果他是`LLT`类型的DUID（基于MAC地址和时间戳），那么每次生成的DUID都会有几个bit位不同，比如笔者的`unraid`服务器，令人头大😵‍💫，这种情况我要么手动指定DUID(Windows改注册表、Linux可以改dhcp client配置)，要么配防火墙的时候直接就用它SLAAC的地址后缀算了😵.
+
 在OpenWrt中，我们可以在`网络 -> DHCP/DNS -> 静态地址分配`中指定DUID和对应后缀的对应关系，这里的IPv6后缀用无冒号的16进制填写，共`64/4=16`位，例如`0000000000000ef1`。
 
-
-
-> 需要强调的是，后缀无论是使用 DHCPv6 还是 SLAAC（使用 EUI64和部分随机化实现），理论上生成后只要设备MAC地址等相关信息不变，后缀就不会变化。我这里只是为了方便在路由中心化管理。
+> 需要强调的是，后缀无论是使用 DHCPv6 还是 SLAAC（使用 EUI64和部分随机化实现），理论上生成后只要设备MAC地址等相关信息不变，生成的后缀就不会变化。我这里只是为了方便在路由中心化管理地址。
 
 
 ## OpenWrt 防火墙配置
@@ -128,7 +130,7 @@ SLAAC即Stateless Address Autoconfiguration，无状态自动配置，是一种�
 ::aaaa:bbbb:cccc:dddd/-64
 ```
 
-其中`-64`表示匹配后64位，即匹配后缀。当然我们在DHCP静态分配中都能自定义后缀了，不如用零压缩定义的更简短些，例如`::ef1/64`，一个放行目标地址的Web服务的防火墙规则示例如下：
+其中`-64`表示匹配后64位，即匹配后缀。当然我们在DHCP静态分配中都能自定义后缀了，不如分配地址的时候就用零压缩定义的更简短些，例如`::ef1/64`，一个放行目标地址的Web服务的防火墙规则示例如下：
 
 ![OpenWrt 防火墙规则](https://s2.loli.net/2025/03/18/VE9rMw2vHmpob6X.webp)
 

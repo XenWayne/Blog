@@ -139,7 +139,12 @@ OhMyLive2d:
         (defaultItems)=>{
         return [
           defaultItems[0],
-          defaultItems[3]
+          {
+            id: 'l2d-about',
+            icon: 'icon-about',
+            title: 'About',
+            onClick: ()=>window.open('https://github.com/oh-my-live2d')
+          }
         ]
         }
     # menus: |
