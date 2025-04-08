@@ -12,7 +12,7 @@ categories:
 cover: 'https://s2.loli.net/2025/04/08/fqujvLJmTi9rxle.webp'
 ---
 
-最近想把HomeLab的一些应用搬到一个独立的虚拟机上，寻思有一个独立的IP比Docker要好管理一些。一个需求是要限制这台虚拟机的网卡带宽，避免影响到其他的应用。路由层面的话OpenWrt对IPv6的流控有点费劲；在宿主机上限制的话，我的宿主机是Unraid，这个魔改的QEMU缺少一些环境。最后还是决定在虚拟机上搞定。
+最近想把HomeLab的一些应用搬到一个独立的虚拟机上，觉得有一个独立的IP比Docker要好管理一些。一个需求是要限制这台虚拟机的网卡带宽，避免影响到其他的应用。路由层面的话OpenWrt对IPv6的流控有点费劲；在宿主机上限制的话，我的宿主机是Unraid，这个魔改的QEMU缺少一些环境。最后还是决定在虚拟机上搞定。
 
 本来打算用[wondershaper](https://github.com/magnific0/wondershaper)这个工具，指令写起来比较简单，但是在Debian12上运行有问题，起初以为是apt仓库里的版本太低，又用了源码安装，还是有问题。回头一看这仓库上次commit是四年前😇，那行吧，直接用`tc`命令吧，tc虽然强大，但是语法还是挺冗杂的。
 
