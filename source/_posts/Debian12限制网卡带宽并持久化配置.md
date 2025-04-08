@@ -7,6 +7,7 @@ tags:
   - Debian
   - 网络
   - Shell
+  - Traffic Control
 categories:
   - 技术分享
 cover: 'https://s2.loli.net/2025/04/08/fqujvLJmTi9rxle.webp'
