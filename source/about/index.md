@@ -4,9 +4,6 @@ date: 2024-04-27 21:22:57
 ---
 
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="https://music.163.com/outchain/player?type=2&id=569962512&auto=0&height=66"></iframe>
-
-
 欢迎Welcome
 ====
 
@@ -98,7 +95,7 @@ Skill List:
 {%label '更新日志：' blue%} 
 
 - 2024/05/05:
-  - 已经重新迁移至[Hexo](https://hexo.io/)，主题基于[hexo-theme-butterfly](https://butterfly.js.org/)魔改，评论系统来自[Twikoo](https://twikoo.js.org/)。站点托管在Github Pages，CDN来自jsDelivr/Cloudflare/npmmirror/unpkg。
+  - 已经重新迁移至[Hexo](https://hexo.io/)，主题基于[hexo-theme-butterfly](https://butterfly.js.org/)魔改。
 
 - 2024/12/01:
   - 原实验室|Lab板块变为一级菜单，其下属增加了项目|Project、影集|Album(WIP)、文档库|Doc
@@ -110,6 +107,8 @@ Skill List:
   - 影集|Album的npm包已经发布，[hexo-album-page](https://www.npmjs.com/package/hexo-album-page)。
 
 ----------
+
+部分对象存储服务来自[七牛云](https://www.qiniu.com/)，评论系统来自[Twikoo](https://twikoo.js.org/)。站点托管在Github Pages，CDN来自cdnjs/jsDelivr/Cloudflare/npmmirror/unpkg。
 
 关于站点subtitle，灵感原文出自《进一寸有一寸的欢喜：胡适谈读书》: “怕什么真理无穷，进一寸有进一寸的欢喜”。
 

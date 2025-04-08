@@ -224,7 +224,7 @@ footer:
     <span class="footer-separator">|</span>
     <a href="https://www.travellings.cn/go.html" target="_blank">🚇开往 Travelling</a>
     <span class="footer-separator">|</span>
-    <img src="https://icp.gov.moe/images/ico64.png" alt="" style="width: 20px; vertical-align: text-bottom;"/>
+    <img src="https://icp.gov.moe/images/ico64.png" alt="" style="width: 20px; vertical-align: text-bottom;" data-no-lazy/>
     <a href="https://icp.gov.moe/?keyword=20205300" target="_blank">萌ICP备20205300号</a>
     <span class="footer-separator">|</span>
     <a href="https://xenwayne.top/feed/rss2.xml">📡RSS</a>
