@@ -4,6 +4,39 @@
   
     
     <entry>
+      <title>Debian12限制网卡带宽并持久化配置</title>
+      <link href="/posts/838795f3/"/>
+      <url>/posts/838795f3/</url>
+      
+        <content type="html"><![CDATA[<p>最近想把HomeLab的一些应用搬到一个独立的虚拟机上，觉得有一个独立的IP比Docker要好管理一些。一个需求是要限制这台虚拟机的网卡带宽，避免影响到其他的应用。路由层面的话OpenWrt对IPv6的流控有点费劲；在宿主机上限制的话，我的宿主机是Unraid，这个魔改的QEMU缺少一些环境。最后还是决定在虚拟机上搞定。</p><p>本来打算用<a href="https://github.com/magnific0/wondershaper">wondershaper</a>这个工具，指令写起来比较简单，但是在Debian12上运行有问题，起初以为是apt仓库里的版本太低，又用了源码安装，还是有问题。回头一看这仓库上次commit是四年前😇，那行吧，直接用<code>tc</code>命令吧，tc虽然强大，但是语法还是挺冗杂的。</p><h2 id="确认网卡名"><a href="#确认网卡名" class="headerlink" title="确认网卡名"></a>确认网卡名</h2><p>使用<code>ifconfig</code>或者<code>ip addr</code>命令查看并确认要操作的对应网卡，顺带一提，Debian12应该默认已经不提供<code>ifconfig</code>命令了，该工具已被<code>ip</code>命令替代。本例使用的网卡名是<code>ens2</code>。</p><h2 id="如有，清理现有规则"><a href="#如有，清理现有规则" class="headerlink" title="如有，清理现有规则"></a>如有，清理现有规则</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 清除 ens2 的所有 tc 规则</span></span><br><span class="line"><span class="built_in">sudo</span> tc qdisc del dev ens2 root 2&gt;/dev/null</span><br><span class="line"><span class="built_in">sudo</span> tc qdisc del dev ens2 ingress 2&gt;/dev/null</span><br></pre></td></tr></table></figure><h2 id="添加限速规则"><a href="#添加限速规则" class="headerlink" title="添加限速规则"></a>添加限速规则</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 限制 ens2 上行带宽为 50Mbps</span></span><br><span class="line">tc qdisc add dev ens2 root tbf rate 50mbit burst 32kbit latency 400ms</span><br></pre></td></tr></table></figure><p>如果要限制下行带宽，将<code>root</code>改为<code>ingress</code>即可。其中的<code>burst</code>是突发流量的大小，<code>latency</code>是最大延迟，属于令牌桶过滤器的相关参数，根据网络实际情况调整，这里不做过多解释，具体可以参考<a href="https://arthurchiao.art/blog/lartc-qdisc-zh/">[译] 《Linux 高级路由与流量控制手册（2012）》第九章：用 tc qdisc 管理 Linux 网络带宽</a>。</p><p>执行之后，可以用其他的终端测速工具验证规则是否生效。</p><h2 id="持久化配置"><a href="#持久化配置" class="headerlink" title="持久化配置"></a>持久化配置</h2><p>要持久化无非就是系统启动时自动执行上述命令，可以注册一个服务项。</p><ol><li>创建文件<code>/usr/local/bin/limit_upload.sh</code>，内容如下：</li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 网卡名称</span></span><br><span class="line">INTERFACE=<span class="string">&quot;ens2&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 清除现有限速规则</span></span><br><span class="line">tc qdisc del dev <span class="variable">$INTERFACE</span> root 2&gt;/dev/null</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加新的限速规则（示例限制上传为 50Mbit带宽）</span></span><br><span class="line">tc qdisc add dev <span class="variable">$INTERFACE</span> root tbf rate 50mbit burst 32kbit latency 400ms</span><br></pre></td></tr></table></figure><ol start="2"><li>创建文件<code>/etc/systemd/system/limit_upload.service</code>，内容如下：</li></ol><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[Unit]</span></span><br><span class="line"><span class="attr">Description</span>=Limit system upload bandwidth</span><br><span class="line"><span class="attr">After</span>=network.target</span><br><span class="line"></span><br><span class="line"><span class="section">[Service]</span></span><br><span class="line"><span class="attr">Type</span>=<span class="literal">on</span>eshot</span><br><span class="line"><span class="attr">ExecStart</span>=/usr/local/bin/limit_upload.sh</span><br><span class="line"><span class="attr">RemainAfterExit</span>=<span class="literal">yes</span></span><br><span class="line"></span><br><span class="line"><span class="section">[Install]</span></span><br><span class="line"><span class="attr">WantedBy</span>=multi-user.target</span><br></pre></td></tr></table></figure><ol start="3"><li>使服务生效并启动：</li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> systemctl daemon-reload</span><br><span class="line"><span class="built_in">sudo</span> systemctl <span class="built_in">enable</span> --now limit_upload.service </span><br></pre></td></tr></table></figure><ol start="4"><li>重启系统后，检查服务是否生效：</li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tc qdisc show dev ens2</span><br></pre></td></tr></table></figure><p>如果<code>tc</code>命令返回了我们设置的规则，那么就说明服务生效了。</p><p><strong>Reference：</strong></p><ul><li><a href="https://aduan.cc/archives/39/">Debian&#x2F;Ubuntu下使用 WonderShaper 对服务器网卡限速</a></li><li><a href="https://www.cnblogs.com/yulia/p/10346339.html">linux下使用tc(Traffic Control) 流量控制命令模拟网络延迟和丢包</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> Debian </tag>
+            
+            <tag> 网络 </tag>
+            
+            <tag> Shell </tag>
+            
+            <tag> Traffic Control </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>HomeLab - OpenWrt DHCPv6小记与防火墙最佳实践</title>
       <link href="/posts/676ecf57/"/>
       <url>/posts/676ecf57/</url>
@@ -202,9 +235,9 @@
       
         <tags>
             
-            <tag> unraid </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> unraid </tag>
             
             <tag> 内核调优 </tag>
             
