@@ -102,13 +102,13 @@ div#post-info {
 #footer {
     -webkit-backdrop-filter: saturate(100%) blur(5px);
     backdrop-filter: saturate(100%) blur(5px);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
 }
 
 #footer,
 #footer:before {
-    background: hsla(0, 0%, 100%, .15)
+    background: hsla(0, 0%, 100%, .40)
 }
 
 div#footer-wrap * {
