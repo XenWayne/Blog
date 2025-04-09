@@ -108,7 +108,7 @@ Skill List:
 
 ----------
 
-部分对象存储服务来自[七牛云](https://www.qiniu.com/)，评论系统来自[Twikoo](https://twikoo.js.org/)。站点托管在Github Pages，CDN来自cdnjs/jsDelivr/Cloudflare/npmmirror/unpkg。
+评论系统来自[Twikoo](https://twikoo.js.org/)。站点托管在Github Pages，CDN来自cdnjs/jsDelivr/Cloudflare/npmmirror/unpkg。
 
 关于站点subtitle，灵感原文出自《进一寸有一寸的欢喜：胡适谈读书》: “怕什么真理无穷，进一寸有进一寸的欢喜”。
 

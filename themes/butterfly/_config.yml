@@ -227,9 +227,11 @@ footer:
     <img src="https://icp.gov.moe/images/ico64.png" alt="" style="width: 20px; vertical-align: text-bottom;" data-no-lazy/>
     <a href="https://icp.gov.moe/?keyword=20205300" target="_blank">萌ICP备20205300号</a>
     <span class="footer-separator">|</span>
-    <a href="https://xenwayne.top/feed/rss2.xml">📡RSS</a>
-    <span class="footer-separator">|</span>
-    <a href="/sitemap.xml" target="_blank"> 🗺️Sitemap</a>
+    <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank">
+      由
+      <img src="https://s2.loli.net/2025/04/09/iZFtkYocq7IMCKa.webp" alt="" style="width: 60px; vertical-align: bottom;" data-no-lazy/>
+      提供云存储能力
+    </a>
     '
   copyright: true # Copyright of theme and framework
 

@@ -251,12 +251,17 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
       span= 'Theme' + ' '
       a(href='https://github.com/jerryc127/hexo-theme-butterfly')= 'Butterfly'
       span= ' ' +'Modified'
+      span.footer-separator |
+      a(href="https://xenwayne.top/feed/rss2.xml")= 'RSS'
+      span.footer-separator |
+      a(href="/sitemap.xml" target="_blank")=' Sitemap'
   if theme.footer.custom_text
     .footer_custom_text!=`${theme.footer.custom_text}`
   //- deploy git 哈希值 文件_data/deploy.yml
   .git-commit
       i.fa-brands.fa-git-alt
-      span(style="margin-left: 4px;")= site.data.deploy.sha
+      span(style="margin-left: 4px;")!= site.data.deploy.sha
+
 ```
 
 ----------
