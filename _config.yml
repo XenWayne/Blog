@@ -173,20 +173,20 @@ OhMyLive2d:
 
     mobileDisplay: false # 是否在移动端显示
     models:
-      # !snowmiku
-      # - path: https://gcore.jsdelivr.net/gh/XenWayne/sitefile/live2d/snow_miku/model.json
-      #   mobilePosition: [-20, 0] # 移动端时模型在舞台中的位置。 默认值: [0,0] [横坐标, 纵坐标]
-      #   mobileScale: 0.07 # 移动端时模型的缩放比例 默认值: 0.1
-      #   mobileStageStyle: # 移动端时舞台的样式
-      #     width: 180
-      #     height: 180
-      #   motionPreloadStrategy: IDLE # 动作预加载策略 默认值: IDLE 可选值: ALL | IDLE | NONE
-      #   position: [-20,0] # 模型在舞台中的位置。 默认值: [0,0] [横坐标, 纵坐标]
-      #   scale: 0.075 # 模型的缩放比例 默认值: 0.1
-      #   # showHitAreaFrames: false # 是否显示点击区域 默认值: false
-      #   stageStyle:
-      #     width: 250
-      #     height: 250
+      #!snowmiku
+      - path: https://gcore.jsdelivr.net/gh/XenWayne/sitefile/live2d/snow_miku/model.json
+        mobilePosition: [-20, 0] # 移动端时模型在舞台中的位置。 默认值: [0,0] [横坐标, 纵坐标]
+        mobileScale: 0.07 # 移动端时模型的缩放比例 默认值: 0.1
+        mobileStageStyle: # 移动端时舞台的样式
+          width: 180
+          height: 180
+        motionPreloadStrategy: IDLE # 动作预加载策略 默认值: IDLE 可选值: ALL | IDLE | NONE
+        position: [-20,0] # 模型在舞台中的位置。 默认值: [0,0] [横坐标, 纵坐标]
+        scale: 0.075 # 模型的缩放比例 默认值: 0.1
+        # showHitAreaFrames: false # 是否显示点击区域 默认值: false
+        stageStyle:
+          width: 250
+          height: 250
       # !cdn-chino
       # - path: https://gcore.jsdelivr.net/gh/XenWayne/sitefile/live2d/chino/model.json
       #   mobilePosition: [-20, 0] # 移动端时模型在舞台中的位置。 默认值: [0,0] [横坐标, 纵坐标]
@@ -202,22 +202,22 @@ OhMyLive2d:
       #     width: 250
       #     height: 250
       # !cdn-dujiaoshou_6
-      #- path: https://sitefile.xenwayne.top/https://raw.githubusercontent.com/XenWayne/sitefile/master/live2d/dujiaoshou_6/dujiaoshou_6.model3.json
-      - path: https://gcore.jsdelivr.net/gh/XenWayne/sitefile/live2d/dujiaoshou_6/dujiaoshou_6.model3.json
-      #- path: https://ghproxy.mevisual.workers.dev/https://raw.githubusercontent.com/XenWayne/sitefile/master/live2d/dujiaoshou_6/dujiaoshou_6.model3.json
+      # #- path: https://sitefile.xenwayne.top/https://raw.githubusercontent.com/XenWayne/sitefile/master/live2d/dujiaoshou_6/dujiaoshou_6.model3.json
+      # - path: https://gcore.jsdelivr.net/gh/XenWayne/sitefile/live2d/dujiaoshou_6/dujiaoshou_6.model3.json
+      # #- path: https://ghproxy.mevisual.workers.dev/https://raw.githubusercontent.com/XenWayne/sitefile/master/live2d/dujiaoshou_6/dujiaoshou_6.model3.json
       
-        mobilePosition: [0, 0] # 移动端时模型在舞台中的位置。 默认值: [0,0] [横坐标, 纵坐标]
-        mobileScale: 0.07 # 移动端时模型的缩放比例 默认值: 0.1
-        mobileStageStyle: # 移动端时舞台的样式
-          width: 150
-          height: 150
-        motionPreloadStrategy: IDLE # 动作预加载策略 默认值: IDLE 可选值: ALL | IDLE | NONE
-        position: [-140,-8] # 模型在舞台中的位置。 默认值: [0,0] [横坐标, 纵坐标]
-        scale: 0.06 # 模型的缩放比例 默认值: 0.1
-        # showHitAreaFrames: false # 是否显示点击区域 默认值: false
-        stageStyle:
-          width: 250
-          height: 400
+      #   mobilePosition: [0, 0] # 移动端时模型在舞台中的位置。 默认值: [0,0] [横坐标, 纵坐标]
+      #   mobileScale: 0.07 # 移动端时模型的缩放比例 默认值: 0.1
+      #   mobileStageStyle: # 移动端时舞台的样式
+      #     width: 150
+      #     height: 150
+      #   motionPreloadStrategy: IDLE # 动作预加载策略 默认值: IDLE 可选值: ALL | IDLE | NONE
+      #   position: [-140,-8] # 模型在舞台中的位置。 默认值: [0,0] [横坐标, 纵坐标]
+      #   scale: 0.06 # 模型的缩放比例 默认值: 0.1
+      #   # showHitAreaFrames: false # 是否显示点击区域 默认值: false
+      #   stageStyle:
+      #     width: 250
+      #     height: 400
 
           
     parentElement: document.getElementById('live2d-container') #为组件提供一个父元素，如果未指定则默认挂载到 document.body 中 
