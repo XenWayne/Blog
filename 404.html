@@ -54,7 +54,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2025-05-10 21:35:36'
+  postUpdate: '2025-05-10 22:21:55'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-
   const getComment = () => {
     const runTwikoo = () => {
       twikoo.getRecentComments({
-        envId: 'https://comment.xenwayne.top',
+        envId: 'https://comment.xenwayne.top/.netlify/functions/twikoo',
         region: '',
         pageSize: 6,
         includeReply: true
@@ -258,7 +258,7 @@ document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-
     if (typeof twikoo === 'object') {
       runTwikoo()
     } else {
-      getScript('https://cdnjs.cloudflare.com/ajax/libs/twikoo/1.6.32/twikoo.all.min.js').then(runTwikoo)
+      getScript('https://cdnjs.cloudflare.com/ajax/libs/twikoo/1.6.41/twikoo.min.js').then(runTwikoo)
     }
   }
 
