@@ -511,7 +511,8 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://comment.xenwayne.top
+  # envId: https://comment.xenwayne.top
+  envId: https://comment.xenwayne.top/.netlify/functions/twikoo
   region:
   visitor: false
   option:
