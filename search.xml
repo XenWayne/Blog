@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>虚拟机下ArchLinux-Pipewire音频卡顿的问题</title>
+      <link href="/posts/b11fff51/"/>
+      <url>/posts/b11fff51/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Issue"><a href="#Issue" class="headerlink" title="Issue"></a>Issue</h2><p>挺早之前图折腾方便，就在Vmware Workstation里装了ArchLinux，大部分情况都靠SSH连接使用，最近用它看视频的时候才发现音频有明显的卡顿现象，具体表现为播放音频时会断断续续，有明显的延迟和齿音。我这台宿主机还装有Ubuntu和RockyLinux，这两个发行版都没有这个问题，或许跟KDE有点关系<code>?</code>。有时候多等一会这种现象会自行消失，但重启复现率100%，试过更换PulseAudio也未能解决问题。</p><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>一番搜索，问题应该跟虚拟机模拟的音频设备性能差有关，可以修改虚拟机里Pipewire的相关配置：</p><ol><li><p>修改<code>~/.config/wireplumber/wireplumber.conf.d/50-alsa-config.conf</code></p> <figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">monitor.alsa.rules</span> = [</span><br><span class="line">    &#123;</span><br><span class="line">        matches = [</span><br><span class="line">            <span class="comment"># This matches the value of the &#x27;node.name&#x27; property of the node.</span></span><br><span class="line">            &#123;</span><br><span class="line">                node.name = <span class="string">&quot;~alsa_output.*&quot;</span></span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">        actions = &#123;</span><br><span class="line">            <span class="comment"># Apply all the desired node specific settings here.</span></span><br><span class="line">            update-props = &#123;</span><br><span class="line">                api.alsa.period-size   = <span class="number">1024</span></span><br><span class="line">                api.alsa.headroom      = <span class="number">8192</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure></li><li><p>重启相关服务</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl --user restart wireplumber pipewire pipewire-pulse</span><br></pre></td></tr></table></figure></li></ol><p><code>api.alsa.period-size</code>定义每个音频周期（period）的帧数（frames）。一个周期是ALSA处理音频数据的基本单位，增加周期大小会减少中断频率。<code>api.alsa.headroom</code>定义了音频缓冲区的额外空间（headroom），用于处理突发的音频数据流。增加上述两者的值可以减少卡顿，但同时会增加延迟。</p><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><a class="tag-Link" target="_blank" href="https://pipewire.pages.freedesktop.org/wireplumber/daemon/configuration/alsa.html ">    <div class="tag-link-tips">引用站外地址</div>    <div class="tag-link-bottom">        <div class="tag-link-left"><i class="fa-solid fa-link"></i></div>        <div class="tag-link-right">            <div class="tag-link-title">ALSA configuration</div>            <div class="tag-link-sitename">WirePlumber 0.5.10 documentation</div>        </div>        <i class="fa-solid fa-angle-right"></i>    </div>    </a><a class="tag-Link" target="_blank" href="https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Troubleshooting#stuttering-audio-in-virtual-machine ">    <div class="tag-link-tips">引用站外地址</div>    <div class="tag-link-bottom">        <div class="tag-link-left"><i class="fa-solid fa-link"></i></div>        <div class="tag-link-right">            <div class="tag-link-title">PipeWire Troubleshooting</div>            <div class="tag-link-sitename">Troubleshooting-stuttering-audio-in-virtual-machine</div>        </div>        <i class="fa-solid fa-angle-right"></i>    </div>    </a><a class="tag-Link" target="_self" href="ArchLinux Forum">    <div class="tag-link-tips">引用站外地址</div>    <div class="tag-link-bottom">        <div class="tag-link-left"><i class="fa-solid fa-link"></i></div>        <div class="tag-link-right">            <div class="tag-link-title">[SOLVED] Audio/Videao stuttering/crackling</div>            <div class="tag-link-sitename"> Firefox + PipeWire in VMs</div>        </div>        <i class="fa-solid fa-angle-right"></i>    </div>    </a>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> ArchLinux </tag>
+            
+            <tag> Pipewire </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Debian12限制网卡带宽并持久化配置</title>
       <link href="/posts/838795f3/"/>
       <url>/posts/838795f3/</url>

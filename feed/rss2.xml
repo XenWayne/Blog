@@ -9,8 +9,39 @@
     <atom:link href="https://xenwayne.top/feed/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Web/摄影/全沾工程师🤣/音游人/平面设计/技术宅/LLer/假的车万人/柚子厨/PGP 0x0C7969C9</description>
-    <pubDate>Mon, 26 May 2025 13:02:15 GMT</pubDate>
+    <pubDate>Sun, 01 Jun 2025 15:55:11 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>虚拟机下ArchLinux-Pipewire音频卡顿的问题</title>
+      <link>https://xenwayne.top/posts/b11fff51/</link>
+      <guid>https://xenwayne.top/posts/b11fff51/</guid>
+      <pubDate>Sat, 31 May 2025 07:23:14 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h2 id=&quot;Issue&quot;&gt;&lt;a href=&quot;#Issue&quot; class=&quot;headerlink&quot; title=&quot;Issue&quot;&gt;&lt;/a&gt;Issue&lt;/h2&gt;&lt;p&gt;挺早之前图折腾方便，就在Vmware</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://xenwayne.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">技术分享</category>
+      
+      
+      <category domain="https://xenwayne.top/tags/Linux/">Linux</category>
+      
+      <category domain="https://xenwayne.top/tags/ArchLinux/">ArchLinux</category>
+      
+      <category domain="https://xenwayne.top/tags/Pipewire/">Pipewire</category>
+      
+      
+      <comments>https://xenwayne.top/posts/b11fff51/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Debian12限制网卡带宽并持久化配置</title>
