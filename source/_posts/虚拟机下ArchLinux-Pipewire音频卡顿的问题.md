@@ -50,4 +50,4 @@ cover: https://oss.xenwayne.top/img/2025/06/75753e088089a4c73653144b946cd514.web
 
 {% link PipeWire Troubleshooting,Troubleshooting-stuttering-audio-in-virtual-machine,https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Troubleshooting#stuttering-audio-in-virtual-machine , new %}
 
-{% link [SOLVED] Audio/Videao stuttering/crackling, Firefox + PipeWire in VMs,ArchLinux Forum,https://bbs.archlinux.org/viewtopic.php?id=280654 , new %}
+{% link "[SOLVED] Audio/Video stuttering/crackling，Firefox + PipeWire in VMs","ArchLinux Forum","https://bbs.archlinux.org/viewtopic.php?id=280654", new %}
