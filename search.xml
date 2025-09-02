@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>单盘LVM扩容</title>
+      <link href="/posts/2eca1925/"/>
+      <url>/posts/2eca1925/</url>
+      
+        <content type="html"><![CDATA[<h2 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h2><p>虚拟机为了仿照服务器场景，用默认的LVM配置安装了RockyLinux，在后期测试过程中需要扩容空间，因为虚拟机硬盘动态可调，所以不打算使用新挂载硬盘的方式，而是直接扩容物理卷。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> LVM </tag>
+            
+            <tag> 系统管理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>虚拟机下ArchLinux-Pipewire音频卡顿的问题</title>
       <link href="/posts/b11fff51/"/>
       <url>/posts/b11fff51/</url>

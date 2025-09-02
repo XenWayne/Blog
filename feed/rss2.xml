@@ -9,8 +9,39 @@
     <atom:link href="https://xenwayne.top/feed/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Web/摄影/全沾工程师🤣/音游人/平面设计/技术宅/LLer/假的车万人/柚子厨/PGP 0x0C7969C9</description>
-    <pubDate>Thu, 07 Aug 2025 12:19:37 GMT</pubDate>
+    <pubDate>Tue, 02 Sep 2025 00:19:56 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>单盘LVM扩容</title>
+      <link>https://xenwayne.top/posts/2eca1925/</link>
+      <guid>https://xenwayne.top/posts/2eca1925/</guid>
+      <pubDate>Tue, 02 Sep 2025 00:19:56 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h2 id=&quot;场景&quot;&gt;&lt;a href=&quot;#场景&quot; class=&quot;headerlink&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://xenwayne.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">技术分享</category>
+      
+      
+      <category domain="https://xenwayne.top/tags/Linux/">Linux</category>
+      
+      <category domain="https://xenwayne.top/tags/LVM/">LVM</category>
+      
+      <category domain="https://xenwayne.top/tags/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/">系统管理</category>
+      
+      
+      <comments>https://xenwayne.top/posts/2eca1925/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>虚拟机下ArchLinux-Pipewire音频卡顿的问题</title>
@@ -629,37 +660,6 @@
       
       
       <comments>https://xenwayne.top/posts/dec8d4a9/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>过节了，给你的网站挂上灯笼吧~</title>
-      <link>https://xenwayne.top/posts/6bc96f5e/</link>
-      <guid>https://xenwayne.top/posts/6bc96f5e/</guid>
-      <pubDate>Thu, 06 Feb 2020 14:14:00 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;p&gt;&lt;img src=&quot;https://s2.loli.net/2024/12/12/CHWnkIaTQqR8LzA.webp&quot; alt=&quot;BLOG&quot;&gt;&lt;br&gt;新春佳节，是时候给网站挂两个灵动的灯笼添点喜气了&amp;#x3D;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://xenwayne.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">技术分享</category>
-      
-      
-      <category domain="https://xenwayne.top/tags/html/">html</category>
-      
-      <category domain="https://xenwayne.top/tags/css/">css</category>
-      
-      <category domain="https://xenwayne.top/tags/%E7%BD%91%E9%A1%B5%E7%BE%8E%E5%8C%96/">网页美化</category>
-      
-      
-      <comments>https://xenwayne.top/posts/6bc96f5e/#disqus_thread</comments>
       
     </item>
     
