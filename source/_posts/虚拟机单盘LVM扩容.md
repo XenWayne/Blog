@@ -41,7 +41,7 @@ nvme0n1 259:0    0   80G  0 disk
 ```bash
 [xenwayne@localhost ~]$ sudo cfdisk /dev/nvme0n1
 ```
-对`nvme0n1p2`分区进行Resize`+100%`，然后Write保存并退出。
+对`nvme0n1p2`分区进行Resize，回车接受默认最大值，然后Write保存并退出。
 
 再次查看分区信息，分区已经扩容成功。
 ```bash
