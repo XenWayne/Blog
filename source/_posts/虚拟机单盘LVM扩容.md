@@ -74,32 +74,16 @@ nvme0n1 259:0    0   80G  0 disk
 ```
 ### 4.扩容Logical Volume(LV)逻辑卷
 
-因为PV直接扩容，所以VG卷组不需要做任何操作，VG的可用空间直接变更：
+因为PV直接扩容，没有向卷组新加入新PV的操作，所以VG卷组不需要做任何操作，VG的可用空间直接变更：
 ```bash
 [root@localhost ~]# vgs
   VG #PV #LV #SN Attr   VSize   VFree 
   rl   1   2   0 wz--n- <79.00g 60.00g
 ```
 
-使用`lvextend`命令扩容逻辑卷`rl-root`
+使用`lvresize`命令扩容逻辑卷`rl-root`
 
 ```bash
-[root@localhost ~]# df -h
-文件系统             容量  已用  可用 已用% 挂载点
-devtmpfs             4.0M     0  4.0M    0% /dev
-tmpfs                1.8G     0  1.8G    0% /dev/shm
-tmpfs                726M  9.7M  716M    2% /run
-/dev/mapper/rl-root   17G   1
-
-### 5.扩容文件系统
-这里用的是xfs：
-```bash
-[root@localhost mnt]# xfs_growfs /dev/mapper/rl-root7G  465M   98% /
-/dev/nvme0n1p1       960M  304M  657M   32% /boot
-tmpfs                363M  100K  363M    1% /run/user/1000
-/dev/sr0              11G   11G     0  100% /run/media/xenwayne/Rocky-9-4-x86_64-dvd
-
-
 [root@localhost ~]# lvresize -l +100%FREE /dev/mapper/rl-root
   Size of logical volume rl/root changed from <17.00 GiB (4351 extents) to <77.00 GiB (19711 extents).
   Logical volume rl/root successfully resized.
