@@ -18,7 +18,6 @@ toc: false
 | μ's时光蛋 | [https://lovelive.ws/](https://lovelive.ws/) | 来自一个拉拉人的倔强 |
 | Sakura's Mirror | [https://mirror.zerodream.net/](https://mirror.zerodream.net/) | 服务端软件镜像站 by Akkariin |
 | LearnXinYminutes | [https://learnxinyminutes.com/](https://learnxinyminutes.com/) | 快速了解各种编程语言 |
-| Cyralive | [https://github.com/RnEric/Cyralive](https://github.com/RnEric/Cyralive) | 谢拉桌宠项目 |
 | Sakura Frp | [https://www.natfrp.org/](https://www.natfrp.org/) | 免费的内网穿透服务 |
 | RX工作室's Blog | [https://blog.rxgzs.cn](https://blog.rxgzs.cn) | 逐梦鸽子写的404 |
 | NyaaCat喵窝 | [https://www.nyaa.cat/](https://www.nyaa.cat/) | 温馨有爱的社区和精彩广阔的世界 |
