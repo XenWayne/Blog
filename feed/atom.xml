@@ -6,7 +6,7 @@
   <link href="https://xenwayne.top/feed/atom.xml" rel="self"/>
   
   <link href="https://xenwayne.top/"/>
-  <updated>2025-10-25T14:15:23.855Z</updated>
+  <updated>2025-10-28T08:49:00.581Z</updated>
   <id>https://xenwayne.top/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>虚拟机单盘LVM扩容</title>
     <link href="https://xenwayne.top/posts/2eca1925/"/>
     <id>https://xenwayne.top/posts/2eca1925/</id>
-    <published>2025-10-25T14:15:23.855Z</published>
-    <updated>2025-10-25T14:15:23.855Z</updated>
+    <published>2025-10-28T08:49:00.581Z</published>
+    <updated>2025-10-28T08:49:00.581Z</updated>
     
     
       
@@ -46,11 +46,48 @@
   </entry>
   
   <entry>
+    <title>清除Edge等chromium浏览器的https缓存</title>
+    <link href="https://xenwayne.top/posts/1bc24c43/"/>
+    <id>https://xenwayne.top/posts/1bc24c43/</id>
+    <published>2025-10-27T22:48:43.000Z</published>
+    <updated>2025-10-28T08:49:00.581Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Issue&quot;&gt;&lt;a href=&quot;#Issue&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术分享" scheme="https://xenwayne.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="浏览器" scheme="https://xenwayne.top/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+    <category term="HTTPS" scheme="https://xenwayne.top/tags/HTTPS/"/>
+    
+    <category term="缓存" scheme="https://xenwayne.top/tags/%E7%BC%93%E5%AD%98/"/>
+    
+    <category term="Chromium" scheme="https://xenwayne.top/tags/Chromium/"/>
+    
+    <category term="Chrome" scheme="https://xenwayne.top/tags/Chrome/"/>
+    
+    <category term="Edge" scheme="https://xenwayne.top/tags/Edge/"/>
+    
+    <category term="HSTS" scheme="https://xenwayne.top/tags/HSTS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>虚拟机下ArchLinux-Pipewire音频卡顿的问题</title>
     <link href="https://xenwayne.top/posts/b11fff51/"/>
     <id>https://xenwayne.top/posts/b11fff51/</id>
     <published>2025-05-31T07:23:14.000Z</published>
-    <updated>2025-10-25T14:15:23.855Z</updated>
+    <updated>2025-10-28T08:49:00.581Z</updated>
     
     
       
@@ -79,7 +116,7 @@
     <link href="https://xenwayne.top/posts/838795f3/"/>
     <id>https://xenwayne.top/posts/838795f3/</id>
     <published>2025-04-08T04:24:41.000Z</published>
-    <updated>2025-10-25T14:15:23.854Z</updated>
+    <updated>2025-10-28T08:49:00.580Z</updated>
     
     
       
@@ -112,7 +149,7 @@
     <link href="https://xenwayne.top/posts/676ecf57/"/>
     <id>https://xenwayne.top/posts/676ecf57/</id>
     <published>2025-03-17T18:58:09.000Z</published>
-    <updated>2025-10-25T14:15:23.854Z</updated>
+    <updated>2025-10-28T08:49:00.580Z</updated>
     
     
       
@@ -143,7 +180,7 @@
     <link href="https://xenwayne.top/posts/6f791b0c/"/>
     <id>https://xenwayne.top/posts/6f791b0c/</id>
     <published>2024-05-24T14:16:52.000Z</published>
-    <updated>2025-10-25T14:15:23.854Z</updated>
+    <updated>2025-10-28T08:49:00.580Z</updated>
     
     
       
@@ -179,7 +216,7 @@
     <link href="https://xenwayne.top/posts/87210117/"/>
     <id>https://xenwayne.top/posts/87210117/</id>
     <published>2024-03-03T08:46:00.000Z</published>
-    <updated>2025-10-25T14:15:23.854Z</updated>
+    <updated>2025-10-28T08:49:00.580Z</updated>
     
     
       
@@ -212,7 +249,7 @@
     <link href="https://xenwayne.top/posts/d651e145/"/>
     <id>https://xenwayne.top/posts/d651e145/</id>
     <published>2023-09-20T11:35:00.000Z</published>
-    <updated>2025-10-25T14:15:23.855Z</updated>
+    <updated>2025-10-28T08:49:00.581Z</updated>
     
     
       
@@ -247,7 +284,7 @@
     <link href="https://xenwayne.top/posts/2ca49b12/"/>
     <id>https://xenwayne.top/posts/2ca49b12/</id>
     <published>2023-09-20T10:38:00.000Z</published>
-    <updated>2025-10-25T14:15:23.854Z</updated>
+    <updated>2025-10-28T08:49:00.580Z</updated>
     
     
       
@@ -274,7 +311,7 @@
     <link href="https://xenwayne.top/posts/c57e2d45/"/>
     <id>https://xenwayne.top/posts/c57e2d45/</id>
     <published>2023-09-13T01:12:00.000Z</published>
-    <updated>2025-10-25T14:15:23.856Z</updated>
+    <updated>2025-10-28T08:49:00.582Z</updated>
     
     
       
@@ -303,7 +340,7 @@
     <link href="https://xenwayne.top/posts/8306fea3/"/>
     <id>https://xenwayne.top/posts/8306fea3/</id>
     <published>2022-09-27T13:56:00.000Z</published>
-    <updated>2025-10-25T14:15:23.854Z</updated>
+    <updated>2025-10-28T08:49:00.580Z</updated>
     
     
       
@@ -338,7 +375,7 @@
     <link href="https://xenwayne.top/posts/7834b51/"/>
     <id>https://xenwayne.top/posts/7834b51/</id>
     <published>2022-08-16T11:57:00.000Z</published>
-    <updated>2025-10-25T14:15:23.856Z</updated>
+    <updated>2025-10-28T08:49:00.582Z</updated>
     
     
       
@@ -367,7 +404,7 @@
     <link href="https://xenwayne.top/posts/2fe1b2e5/"/>
     <id>https://xenwayne.top/posts/2fe1b2e5/</id>
     <published>2022-05-04T11:43:00.000Z</published>
-    <updated>2025-10-25T14:15:23.854Z</updated>
+    <updated>2025-10-28T08:49:00.580Z</updated>
     
     
       
@@ -402,7 +439,7 @@
     <link href="https://xenwayne.top/posts/606c9d02/"/>
     <id>https://xenwayne.top/posts/606c9d02/</id>
     <published>2022-04-14T12:56:00.000Z</published>
-    <updated>2025-10-25T14:15:23.854Z</updated>
+    <updated>2025-10-28T08:49:00.580Z</updated>
     
     
       
@@ -437,7 +474,7 @@
     <link href="https://xenwayne.top/posts/296aa3cb/"/>
     <id>https://xenwayne.top/posts/296aa3cb/</id>
     <published>2022-03-13T01:29:00.000Z</published>
-    <updated>2025-10-25T14:15:23.854Z</updated>
+    <updated>2025-10-28T08:49:00.580Z</updated>
     
     
       
@@ -466,7 +503,7 @@
     <link href="https://xenwayne.top/posts/b339dc67/"/>
     <id>https://xenwayne.top/posts/b339dc67/</id>
     <published>2021-09-18T13:39:00.000Z</published>
-    <updated>2025-10-25T14:15:23.855Z</updated>
+    <updated>2025-10-28T08:49:00.581Z</updated>
     
     
       
@@ -494,7 +531,7 @@
     <link href="https://xenwayne.top/posts/133a89d9/"/>
     <id>https://xenwayne.top/posts/133a89d9/</id>
     <published>2020-10-04T03:06:00.000Z</published>
-    <updated>2025-10-25T14:15:23.855Z</updated>
+    <updated>2025-10-28T08:49:00.581Z</updated>
     
     
       
@@ -521,7 +558,7 @@
     <link href="https://xenwayne.top/posts/b41cff3a/"/>
     <id>https://xenwayne.top/posts/b41cff3a/</id>
     <published>2020-08-06T12:55:00.000Z</published>
-    <updated>2025-10-25T14:15:23.854Z</updated>
+    <updated>2025-10-28T08:49:00.580Z</updated>
     
     
       
@@ -548,7 +585,7 @@
     <link href="https://xenwayne.top/posts/b16db021/"/>
     <id>https://xenwayne.top/posts/b16db021/</id>
     <published>2020-03-11T16:52:00.000Z</published>
-    <updated>2025-10-25T14:15:23.854Z</updated>
+    <updated>2025-10-28T08:49:00.580Z</updated>
     
     
       
@@ -575,7 +612,7 @@
     <link href="https://xenwayne.top/posts/da05f60f/"/>
     <id>https://xenwayne.top/posts/da05f60f/</id>
     <published>2020-02-24T03:33:00.000Z</published>
-    <updated>2025-10-25T14:15:23.854Z</updated>
+    <updated>2025-10-28T08:49:00.580Z</updated>
     
     
       
@@ -595,35 +632,6 @@
     <category term="EAC" scheme="https://xenwayne.top/tags/EAC/"/>
     
     <category term="反作弊" scheme="https://xenwayne.top/tags/%E5%8F%8D%E4%BD%9C%E5%BC%8A/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS实现背景自适应不改变纵横比</title>
-    <link href="https://xenwayne.top/posts/dec8d4a9/"/>
-    <id>https://xenwayne.top/posts/dec8d4a9/</id>
-    <published>2020-02-06T14:47:00.000Z</published>
-    <updated>2025-10-25T14:15:23.854Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;  一张好看的背景能给一个网页加分不少，通常我们在css里面直接定义“background-image”，画面在移动设备上就可能不会被背景图片占满，直接加上cover也会使背景图片随窗口变形。&lt;br&gt; </summary>
-        
-      
-    
-    
-    
-    <category term="技术分享" scheme="https://xenwayne.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
-    
-    
-    <category term="html" scheme="https://xenwayne.top/tags/html/"/>
-    
-    <category term="css" scheme="https://xenwayne.top/tags/css/"/>
-    
-    <category term="web" scheme="https://xenwayne.top/tags/web/"/>
     
   </entry>
   

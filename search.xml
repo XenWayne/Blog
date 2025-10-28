@@ -33,6 +33,43 @@
     
     
     <entry>
+      <title>清除Edge等chromium浏览器的https缓存</title>
+      <link href="/posts/1bc24c43/"/>
+      <url>/posts/1bc24c43/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Issue"><a href="#Issue" class="headerlink" title="Issue"></a>Issue</h2><p>这个问题在应用部署的过程中常见，具体来说，你先部署了<code>https://example.com/</code>，浏览器访问成功之后，你在服务端取消了https，仅保留http，然后尝试访问<code>http://example.com/</code>，结果浏览器自作主张的将请求重定向到了<code>https://example.com/</code>，导致了访问失败。</p><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>现在新版本的浏览器基本都没有类似”Automatic HTTPS”这种明显的Flags给调整了，大概能想到的几个大方向就是缓存、HSTS相关的事情。</p><h3 id="测试方案-无痕窗口访问"><a href="#测试方案-无痕窗口访问" class="headerlink" title="测试方案: 无痕窗口访问"></a>测试方案: 无痕窗口访问</h3><p>使用浏览器的无痕窗口(InPrivate Mode)，访问<code>http://example.com/</code>，测试能否正常访问。</p><h3 id="清空缓存并进行硬刷新"><a href="#清空缓存并进行硬刷新" class="headerlink" title="清空缓存并进行硬刷新"></a>清空缓存并进行硬刷新</h3><p>这个便捷的Feature应该只在Chromium内核的浏览器中有效，在目标页面按下F12打开开发者工具后，鼠标长按网址栏旁的刷新按钮，选择”清除缓存并进行硬刷新”(Empty Cache and Hard Reload)。 然后再次尝试访问<code>http://example.com/</code>，问题应该能得到解决。<br><img src="https://oss.xenwayne.top/img/2025/10/e7911788c43a01e242f1f197f9f3c060.webp" alt="Empty Cache and Hard Reload"></p><h3 id="HSTS-Policy"><a href="#HSTS-Policy" class="headerlink" title="HSTS Policy"></a>HSTS Policy</h3><p>这应该是最常见的原因了，如果服务端之前设置了HSTS策略，那么浏览器会缓存这个策略。要清楚HSTS缓存，访问<code>chrome://net-internals/#hsts</code> &#x2F; <code>edge://net-internals/#hsts</code>，在”Delete domain security policies”部分输入你的域名，然后点击”Delete”按钮。完成后，重新尝试访问<code>http://example.com/</code>。</p><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><a class="tag-Link" target="_blank" href=" https://kaffa.im/clear-the-301-automatic-redirection-to-https-cache-of-microsoft-edge ">    <div class="tag-link-tips">引用站外地址</div>    <div class="tag-link-bottom">        <div class="tag-link-left"><i class="fa-solid fa-link"></i></div>        <div class="tag-link-right">            <div class="tag-link-title">清除 Microsoft Edge 自动跳转 https 的缓存 </div>            <div class="tag-link-sitename">Microsoft Q&A</div>        </div>        <i class="fa-solid fa-angle-right"></i>    </div>    </a><a class="tag-Link" target="_blank" href=" https://learn.microsoft.com/en-us/answers/questions/988950/edge-redirecting-http-to-https ">    <div class="tag-link-tips">引用站外地址</div>    <div class="tag-link-bottom">        <div class="tag-link-left"><i class="fa-solid fa-link"></i></div>        <div class="tag-link-right">            <div class="tag-link-title">Edge redirecting HTTP to HTTPS </div>            <div class="tag-link-sitename">kaffa.im</div>        </div>        <i class="fa-solid fa-angle-right"></i>    </div>    </a>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 浏览器 </tag>
+            
+            <tag> HTTPS </tag>
+            
+            <tag> 缓存 </tag>
+            
+            <tag> Chromium </tag>
+            
+            <tag> Chrome </tag>
+            
+            <tag> Edge </tag>
+            
+            <tag> HSTS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>虚拟机下ArchLinux-Pipewire音频卡顿的问题</title>
       <link href="/posts/b11fff51/"/>
       <url>/posts/b11fff51/</url>

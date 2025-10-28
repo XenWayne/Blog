@@ -9,14 +9,14 @@
     <atom:link href="https://xenwayne.top/feed/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Web/摄影/全沾工程师🤣/音游人/平面设计/技术宅/LLer/假的车万人/柚子厨/PGP 0x0C7969C9</description>
-    <pubDate>Sat, 25 Oct 2025 14:15:23 GMT</pubDate>
+    <pubDate>Tue, 28 Oct 2025 08:49:00 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
       <title>虚拟机单盘LVM扩容</title>
       <link>https://xenwayne.top/posts/2eca1925/</link>
       <guid>https://xenwayne.top/posts/2eca1925/</guid>
-      <pubDate>Sat, 25 Oct 2025 14:15:23 GMT</pubDate>
+      <pubDate>Tue, 28 Oct 2025 08:49:00 GMT</pubDate>
       
         
         
@@ -40,6 +40,45 @@
       
       
       <comments>https://xenwayne.top/posts/2eca1925/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>清除Edge等chromium浏览器的https缓存</title>
+      <link>https://xenwayne.top/posts/1bc24c43/</link>
+      <guid>https://xenwayne.top/posts/1bc24c43/</guid>
+      <pubDate>Mon, 27 Oct 2025 22:48:43 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h2 id=&quot;Issue&quot;&gt;&lt;a href=&quot;#Issue&quot; class=&quot;headerlink&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://xenwayne.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">技术分享</category>
+      
+      
+      <category domain="https://xenwayne.top/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/">浏览器</category>
+      
+      <category domain="https://xenwayne.top/tags/HTTPS/">HTTPS</category>
+      
+      <category domain="https://xenwayne.top/tags/%E7%BC%93%E5%AD%98/">缓存</category>
+      
+      <category domain="https://xenwayne.top/tags/Chromium/">Chromium</category>
+      
+      <category domain="https://xenwayne.top/tags/Chrome/">Chrome</category>
+      
+      <category domain="https://xenwayne.top/tags/Edge/">Edge</category>
+      
+      <category domain="https://xenwayne.top/tags/HSTS/">HSTS</category>
+      
+      
+      <comments>https://xenwayne.top/posts/1bc24c43/#disqus_thread</comments>
       
     </item>
     
@@ -629,37 +668,6 @@
       
       
       <comments>https://xenwayne.top/posts/da05f60f/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>CSS实现背景自适应不改变纵横比</title>
-      <link>https://xenwayne.top/posts/dec8d4a9/</link>
-      <guid>https://xenwayne.top/posts/dec8d4a9/</guid>
-      <pubDate>Thu, 06 Feb 2020 14:47:00 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;p&gt;  一张好看的背景能给一个网页加分不少，通常我们在css里面直接定义“background-image”，画面在移动设备上就可能不会被背景图片占满，直接加上cover也会使背景图片随窗口变形。&lt;br&gt; </description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://xenwayne.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">技术分享</category>
-      
-      
-      <category domain="https://xenwayne.top/tags/html/">html</category>
-      
-      <category domain="https://xenwayne.top/tags/css/">css</category>
-      
-      <category domain="https://xenwayne.top/tags/web/">web</category>
-      
-      
-      <comments>https://xenwayne.top/posts/dec8d4a9/#disqus_thread</comments>
       
     </item>
     
