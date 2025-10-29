@@ -6,7 +6,7 @@
   <link href="https://xenwayne.top/feed/atom.xml" rel="self"/>
   
   <link href="https://xenwayne.top/"/>
-  <updated>2025-10-28T08:49:00.581Z</updated>
+  <updated>2025-10-29T09:02:36.296Z</updated>
   <id>https://xenwayne.top/</id>
   
   <author>
@@ -17,31 +17,27 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>虚拟机单盘LVM扩容</title>
-    <link href="https://xenwayne.top/posts/2eca1925/"/>
-    <id>https://xenwayne.top/posts/2eca1925/</id>
-    <published>2025-10-28T08:49:00.581Z</published>
-    <updated>2025-10-28T08:49:00.581Z</updated>
+    <title>​AIOps：通过MCP协议为LLM接入Grafana</title>
+    <link href="https://xenwayne.top/posts/838795f3/"/>
+    <id>https://xenwayne.top/posts/838795f3/</id>
+    <published>2025-10-29T02:00:00.000Z</published>
+    <updated>2025-10-29T09:02:36.296Z</updated>
     
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;场景&quot;&gt;&lt;a href=&quot;#场景&quot; class=&quot;headerlink&quot;</summary>
-        
-      
     
     
     
     <category term="技术分享" scheme="https://xenwayne.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
     
     
-    <category term="Linux" scheme="https://xenwayne.top/tags/Linux/"/>
+    <category term="AIOps" scheme="https://xenwayne.top/tags/AIOps/"/>
     
-    <category term="LVM" scheme="https://xenwayne.top/tags/LVM/"/>
+    <category term="Grafana" scheme="https://xenwayne.top/tags/Grafana/"/>
     
-    <category term="系统管理" scheme="https://xenwayne.top/tags/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/"/>
+    <category term="MCP" scheme="https://xenwayne.top/tags/MCP/"/>
+    
+    <category term="大模型" scheme="https://xenwayne.top/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/"/>
+    
+    <category term="LLM" scheme="https://xenwayne.top/tags/LLM/"/>
     
   </entry>
   
@@ -50,7 +46,7 @@
     <link href="https://xenwayne.top/posts/1bc24c43/"/>
     <id>https://xenwayne.top/posts/1bc24c43/</id>
     <published>2025-10-27T22:48:43.000Z</published>
-    <updated>2025-10-28T08:49:00.581Z</updated>
+    <updated>2025-10-29T09:02:36.297Z</updated>
     
     
       
@@ -83,11 +79,40 @@
   </entry>
   
   <entry>
+    <title>虚拟机单盘LVM扩容</title>
+    <link href="https://xenwayne.top/posts/2eca1925/"/>
+    <id>https://xenwayne.top/posts/2eca1925/</id>
+    <published>2025-08-04T22:05:05.000Z</published>
+    <updated>2025-10-29T09:02:36.297Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;场景&quot;&gt;&lt;a href=&quot;#场景&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术分享" scheme="https://xenwayne.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="Linux" scheme="https://xenwayne.top/tags/Linux/"/>
+    
+    <category term="LVM" scheme="https://xenwayne.top/tags/LVM/"/>
+    
+    <category term="系统管理" scheme="https://xenwayne.top/tags/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
     <title>虚拟机下ArchLinux-Pipewire音频卡顿的问题</title>
     <link href="https://xenwayne.top/posts/b11fff51/"/>
     <id>https://xenwayne.top/posts/b11fff51/</id>
     <published>2025-05-31T07:23:14.000Z</published>
-    <updated>2025-10-28T08:49:00.581Z</updated>
+    <updated>2025-10-29T09:02:36.297Z</updated>
     
     
       
@@ -116,7 +141,7 @@
     <link href="https://xenwayne.top/posts/838795f3/"/>
     <id>https://xenwayne.top/posts/838795f3/</id>
     <published>2025-04-08T04:24:41.000Z</published>
-    <updated>2025-10-28T08:49:00.580Z</updated>
+    <updated>2025-10-29T09:02:36.296Z</updated>
     
     
       
@@ -149,7 +174,7 @@
     <link href="https://xenwayne.top/posts/676ecf57/"/>
     <id>https://xenwayne.top/posts/676ecf57/</id>
     <published>2025-03-17T18:58:09.000Z</published>
-    <updated>2025-10-28T08:49:00.580Z</updated>
+    <updated>2025-10-29T09:02:36.296Z</updated>
     
     
       
@@ -180,7 +205,7 @@
     <link href="https://xenwayne.top/posts/6f791b0c/"/>
     <id>https://xenwayne.top/posts/6f791b0c/</id>
     <published>2024-05-24T14:16:52.000Z</published>
-    <updated>2025-10-28T08:49:00.580Z</updated>
+    <updated>2025-10-29T09:02:36.296Z</updated>
     
     
       
@@ -216,7 +241,7 @@
     <link href="https://xenwayne.top/posts/87210117/"/>
     <id>https://xenwayne.top/posts/87210117/</id>
     <published>2024-03-03T08:46:00.000Z</published>
-    <updated>2025-10-28T08:49:00.580Z</updated>
+    <updated>2025-10-29T09:02:36.296Z</updated>
     
     
       
@@ -249,7 +274,7 @@
     <link href="https://xenwayne.top/posts/d651e145/"/>
     <id>https://xenwayne.top/posts/d651e145/</id>
     <published>2023-09-20T11:35:00.000Z</published>
-    <updated>2025-10-28T08:49:00.581Z</updated>
+    <updated>2025-10-29T09:02:36.297Z</updated>
     
     
       
@@ -284,7 +309,7 @@
     <link href="https://xenwayne.top/posts/2ca49b12/"/>
     <id>https://xenwayne.top/posts/2ca49b12/</id>
     <published>2023-09-20T10:38:00.000Z</published>
-    <updated>2025-10-28T08:49:00.580Z</updated>
+    <updated>2025-10-29T09:02:36.296Z</updated>
     
     
       
@@ -311,7 +336,7 @@
     <link href="https://xenwayne.top/posts/c57e2d45/"/>
     <id>https://xenwayne.top/posts/c57e2d45/</id>
     <published>2023-09-13T01:12:00.000Z</published>
-    <updated>2025-10-28T08:49:00.582Z</updated>
+    <updated>2025-10-29T09:02:36.298Z</updated>
     
     
       
@@ -340,7 +365,7 @@
     <link href="https://xenwayne.top/posts/8306fea3/"/>
     <id>https://xenwayne.top/posts/8306fea3/</id>
     <published>2022-09-27T13:56:00.000Z</published>
-    <updated>2025-10-28T08:49:00.580Z</updated>
+    <updated>2025-10-29T09:02:36.296Z</updated>
     
     
       
@@ -375,7 +400,7 @@
     <link href="https://xenwayne.top/posts/7834b51/"/>
     <id>https://xenwayne.top/posts/7834b51/</id>
     <published>2022-08-16T11:57:00.000Z</published>
-    <updated>2025-10-28T08:49:00.582Z</updated>
+    <updated>2025-10-29T09:02:36.298Z</updated>
     
     
       
@@ -404,7 +429,7 @@
     <link href="https://xenwayne.top/posts/2fe1b2e5/"/>
     <id>https://xenwayne.top/posts/2fe1b2e5/</id>
     <published>2022-05-04T11:43:00.000Z</published>
-    <updated>2025-10-28T08:49:00.580Z</updated>
+    <updated>2025-10-29T09:02:36.296Z</updated>
     
     
       
@@ -439,7 +464,7 @@
     <link href="https://xenwayne.top/posts/606c9d02/"/>
     <id>https://xenwayne.top/posts/606c9d02/</id>
     <published>2022-04-14T12:56:00.000Z</published>
-    <updated>2025-10-28T08:49:00.580Z</updated>
+    <updated>2025-10-29T09:02:36.296Z</updated>
     
     
       
@@ -474,7 +499,7 @@
     <link href="https://xenwayne.top/posts/296aa3cb/"/>
     <id>https://xenwayne.top/posts/296aa3cb/</id>
     <published>2022-03-13T01:29:00.000Z</published>
-    <updated>2025-10-28T08:49:00.580Z</updated>
+    <updated>2025-10-29T09:02:36.296Z</updated>
     
     
       
@@ -503,7 +528,7 @@
     <link href="https://xenwayne.top/posts/b339dc67/"/>
     <id>https://xenwayne.top/posts/b339dc67/</id>
     <published>2021-09-18T13:39:00.000Z</published>
-    <updated>2025-10-28T08:49:00.581Z</updated>
+    <updated>2025-10-29T09:02:36.297Z</updated>
     
     
       
@@ -531,7 +556,7 @@
     <link href="https://xenwayne.top/posts/133a89d9/"/>
     <id>https://xenwayne.top/posts/133a89d9/</id>
     <published>2020-10-04T03:06:00.000Z</published>
-    <updated>2025-10-28T08:49:00.581Z</updated>
+    <updated>2025-10-29T09:02:36.297Z</updated>
     
     
       
@@ -558,7 +583,7 @@
     <link href="https://xenwayne.top/posts/b41cff3a/"/>
     <id>https://xenwayne.top/posts/b41cff3a/</id>
     <published>2020-08-06T12:55:00.000Z</published>
-    <updated>2025-10-28T08:49:00.580Z</updated>
+    <updated>2025-10-29T09:02:36.296Z</updated>
     
     
       
@@ -585,7 +610,7 @@
     <link href="https://xenwayne.top/posts/b16db021/"/>
     <id>https://xenwayne.top/posts/b16db021/</id>
     <published>2020-03-11T16:52:00.000Z</published>
-    <updated>2025-10-28T08:49:00.580Z</updated>
+    <updated>2025-10-29T09:02:36.296Z</updated>
     
     
       
@@ -604,34 +629,6 @@
     <category term="网络" scheme="https://xenwayne.top/tags/%E7%BD%91%E7%BB%9C/"/>
     
     <category term="路由器" scheme="https://xenwayne.top/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解决EAC反作弊“A debugger has been found running in your system”</title>
-    <link href="https://xenwayne.top/posts/da05f60f/"/>
-    <id>https://xenwayne.top/posts/da05f60f/</id>
-    <published>2020-02-24T03:33:00.000Z</published>
-    <updated>2025-10-28T08:49:00.580Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;此方法只针对于反作弊启动失败导致游戏无法启动，网银&amp;#x2F;OD等问题另寻高明。&lt;/p&gt;
-&lt;p&gt;  </summary>
-        
-      
-    
-    
-    
-    <category term="游戏" scheme="https://xenwayne.top/categories/%E6%B8%B8%E6%88%8F/"/>
-    
-    
-    <category term="EAC" scheme="https://xenwayne.top/tags/EAC/"/>
-    
-    <category term="反作弊" scheme="https://xenwayne.top/tags/%E5%8F%8D%E4%BD%9C%E5%BC%8A/"/>
     
   </entry>
   
