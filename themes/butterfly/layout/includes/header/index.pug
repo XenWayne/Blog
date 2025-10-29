@@ -62,5 +62,4 @@ header#page-header(class=`${isHomeClass+isFixedClass}` style=bg_img)
   //- header img 版权信息
   if theme.index_img_copyright_info && theme.index_img_copyright_info.enable && (is_home() || !page.cover) && top_img !== false
     a.header-img-copyright(href=theme.index_img_copyright_info.link target="_blank" rel="noopener noreferrer")
-      .header-img-label Header Image
       span= theme.index_img_copyright_info.text

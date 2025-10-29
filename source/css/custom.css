@@ -471,7 +471,7 @@ rt {
 }
 /* !页脚git-commit样式 END */
 
-/* index_img_copyright_info 版权信息样式 START */
+/* !index_img_copyright_info 版权信息样式 START */
 a.header-img-copyright {
     position: absolute;
     right: 20px;
@@ -498,10 +498,14 @@ a.header-img-copyright:hover {
     color: #fff;
 }
 
-.header-img-label {
-    font-size: 10px;
-    color: rgba(255, 255, 255, 0.7);
-    display: inline-block;
-    margin-right: 5px;
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    a.header-img-copyright {
+        right: 10px;
+        bottom: 50px;
+        font-size: 10px;
+        padding: 3px 6px;
+    }
 }
-/* index_img_copyright_info 版权信息样式 END */
+/* !index_img_copyright_info 版权信息样式 END */
