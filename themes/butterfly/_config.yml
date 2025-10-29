@@ -64,6 +64,12 @@ disable_top_img: false
 # The banner image of home page
 index_img: https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/header_gray.webp
 
+# !banner版权信息
+index_img_copyright_info:
+  enable: true
+  text: '©みあぴ / ボトルミク'
+  link: 'https://www.pixiv.net/artworks/76191507'
+
 # If the banner of page not setting, it will show the top_img
 default_top_img: https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/header_gray.webp
 
@@ -261,7 +267,7 @@ aside:
       text: 关于我 | About Me
       link: /about/
   card_announcement: # 站点公告
-    enable: true
+    enable: false
     content: |
       XenWayne's Blog | Hexo Version
   card_recent_post:
