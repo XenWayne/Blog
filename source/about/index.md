@@ -9,55 +9,70 @@ date: 2024-04-27 21:22:57
 
 > Life is a grand DevOps journey, To embark on the journey is more significant than reaching the destination.
 
-　　无论是搜索引擎还是他人的友链将你带到了这里，能在万千Blog相互遇见，实属不易，我会把我学习开发过程中的问题记录下来，希望能帮到你。如果你在浏览过程中发现了不足，欢迎指正。相信我们能碰撞出灵感的火花= =。其实我嘴很笨，写文字对我来说甚至有些痛苦(，但是还是想记录些什么。再次感谢你来访这个用心搭建的Blog。
+　　无论是搜索引擎还是他人的友链将你带到了这里，能在万千站点间相互遇见，实属不易，我会把我工作学习过程中的问题记录下来，希望能帮到你。如果你在浏览过程中发现了不足，欢迎指正。相信我们能碰撞出灵感的火花= =。其实我嘴很笨，写文字对我来说甚至有些痛苦(，但是还是想记录点东西。再次感谢你来访这个用心搭建的Blog。
 
-关于我——森稳XenWayne
+关于我
 ===============
 
-网络常用马甲XenWayne {% label "/zen'weɪn/" default %}，{% label /ゼンウェイン/ blue%}  
+网络常用马甲XenWayne {% label "/zen'weɪn/" default %}，{% label /ゼンウェイン/ blue%}   
 线下常用Wayne {% label /weɪn/ default %}，{% label /ウェイン/ blue%} 
+
+有个虚拟化平台叫Xen，给网络上的虚拟身份加个帽子正好XD。谐音中文cn自然而然就叫森稳啦，没什么特别的。
+人生梦想应该是搞一门二外，搞一门乐器，搞点米，然后手拿相机看遍世界吧(，但人要做到了无牵挂又谈何容易呢。
+
+
 {% note %}
-Mandarin Chinese Native | English CET-6 | Japanese learning
+Language Skill Notice:  
+Mandarin Chinese Native | English CET-6 | Japanese beginner
 {% endnote %}
 
 **您来猜猜我什么成分(**
-> **00后/杂鱼摄影/不打鸟の尼康用户/技术宅/LLer/术力口/假的车万人/沙勒のSensei/柚子厨/音游玩家/人形自走废萌Galgame百科全书**
+> **00后 / 杂鱼摄影 / 不打鸟の尼康用户 / 技术宅 / LLer / 术力口 / 假的车万人 / 沙勒のSensei / 音游玩家 / 人形自走废萌Galgame百科全书 / Web / 系统集成 / ITOps / 全沾工程师🤣 / PJSK / ホカロ / 平面设计 / 爱看点工业糖精**
 
  - 爱好摄影、平面设计、~~折腾~~硬件，热衷于钻研和计算机有关的一切~~除了算法~~；
- - 中国图库签约供稿摄影师（半斤八两罢
+ - 中国图库签约供稿摄影师（时代眼泪了
  - I Love JavaScript.
- - LNU信息学部计科在读
+ - LNU信息学部25届毕业生
  - Adobe全家桶资深用户（迫真）
- - FPS人菜瘾大玩家~~KD0.6没跟你开玩笑~~
- - 在上学~~（指热血高校）~~，入宅作Lovelive. 
- - 为什么要演奏春日影(
- - 白玉老师yyds
+ - 入宅作Lovelive. 二刺螈是我摄入感动的全部来源.jpg
  - 是鸽子（确信）
- - 自信音游人 Phigros | Project Sekai | VOEZ | LL | OSU mania 4k > std | Maimai | Chunithm
- - 前中期圆锥角膜患者 高度不规则散光人= =
- - 
-{% label 另:欢迎圆锥角膜患者任何对我任何形式的咨询，我很乐意分享经验。 green %}
+ - Songs from Hatsune Miku saved me.
+ - Sega系自信音游人 {% label "Project Sekai | OSU mania 4k > std | Maimai | Chunithm" blue %}
+ - 前中期圆锥角膜患者 高度不规则散光人 Menicon RGP资深用户
+ - I use arch by the way(￣▽￣)ノ  
 
 ![osu][1]
 
-Skill List:
-===============
+{% label 另:欢迎圆锥角膜患者任何对我任何形式的咨询，我很乐意分享经验。 green %}
 
-[![SkillIcons](https://skillicons.dev/icons?i=js,html,css,jquery,bootstrap,nodejs,vue,vite,ts,pnpm,md,nginx,mongodb,mysql,ubuntu,arch,debian,linux,windows,docker,php,java,c,ps,pr,au,ai,vscode,idea,cloudflare,github,git,)](https://skillicons.dev)
+------------------
+
+或许你想来看看我都忙活了什么🤔
+{% link 项目 | Project, XenWayne's Blog, /project %}
+
+来看看我推存放处🙏
+{% link 收藏 | Collection, XenWayne's Blog, /collection %}
+
+少数当文艺工作者~~（迫真）~~的时候一些感觉做的还行的东西🖼️
+{% link 影集 | Album, XenWayne's Blog, /album , new %}
+
+Skill List🔧
+
+[![SkillIcons](https://skillicons.dev/icons?i=js,html,css,jquery,bootstrap,nodejs,vue,vite,ts,pnpm,md,nginx,mongodb,mysql,ubuntu,arch,debian,linux,windows,docker,php,java,c,python,ps,pr,au,ai,vscode,idea,cloudflare,github,git,)](https://skillicons.dev)
 
 
-**打字后面加上<.jpg>是奇怪的癖好，可能早期摸PS摸多了疯狂敲后缀名导致的= =** 
+**打字后面加括号是奇怪的癖好，我也不知道为什么= =** 
 
 
 ----------
 是运维人，但是喜欢折腾Web那些东西。PHP、JavaWeb、jQuery什么的都摸过一点，都不熟就是了。
 是计科人，前端是爱好，运维是生活（。
 
-是漫展摄影人，一般都是娱乐无料摄影，有时候会发[图虫][9]，纯粹喜欢研究灯光按快门，标志是大号白色柔光伞和像素Miku= V =，这个过程本身就是一种相互成就，也是给了我认识很多老师的契机，如果有机会遇见也欢迎你戳我的[企鹅🐧][10]，我很乐意通过这种方式与您相识。
+是漫展无料摄影人，有时候会发[图虫][9]，纯粹喜欢研究灯光按快门，标志是大号白色柔光伞和像素Miku= V =，这个过程本身就是一种相互成就，也是给了我认识很多老师的契机，如果有机会遇见也欢迎你戳我的[企鹅🐧][10]，我很乐意通过这种方式与您相识。
 
-剧终综合征，看部番就emo，看治愈番都emo，emo了就想coding，这就是所谓轮回啊（
-很早就被Minecraft吸引到了开发的圈子~~（我永远喜欢小方块er）~~，前前后后折腾过软路由、MC服务器~~被查了不少水表~~，于15年创立一个专注平面设计和Minecraft渲染的一个团体↓
-事实证明我不善于当一个领导者，现在的话算是一个人摆烂吧（= w = ↓。
+剧终综合症，看部番就emo，看治愈番都emo，emo了就想静下心搞点什么，这就是所谓轮回啊（
+很早就被Minecraft吸引到了开发的圈子，前前后后折腾过好多年体素圈子，于15年创立一个专注平面设计和Minecraft渲染的一个团体↓
+事实证明我不善于当一个领导者，现在的话算是一个人摆烂吧，这个标反而更常出现在技术的场合了（= w = ↓。
 ![https://mevisual.top][2]  
 
 
@@ -68,7 +83,7 @@ Skill List:
 ----------
 
 
-　　网络真是个好东西.jpg，各种疑难杂症，每次都是靠着搜索引擎翻来翻去才解决~~或者根本撒手不干~~，看的东西越来越多~~正经东西！~~搞得我浏览器的收藏夹强烈抗议 =V =，所以想着开始写Blog吧，记录历程的同时也能给有同样问题的后来人一个捷径= V=~~虽然这个站SEO差的一比~~，毕竟我有许多问题是靠莴苣们的博客解决的（感谢！）
+　　网络真是个好东西.jpg，各种疑难杂症，每次都是靠着搜索引擎翻来翻去才解决，看的东西越来越多搞得我浏览器的收藏夹强烈抗议，而且现找资料总觉得看起来不舒服，毕竟只有自己知道自己最需要什么。所以想着开始写博客吧，记录历程的同时也能给有同样问题的后来人一个捷径= V=~~虽然这个站SEO差的一比~~，毕竟我有许多问题是靠莴苣们的博客解决的，另一个作用应该是作为一个情绪和思考的出口吧。
 
 
 
@@ -80,39 +95,23 @@ Skill List:
 {% endnote %} 
 
 
-关于这个Blog
+关于这个站点
 ====
-~~框架前前后后折腾过WordPress、Hexo，最后还是喜欢Typecho的开箱即用和简单纯粹。~~ 
 
-~~上云负担不起，而且也并没有觉得方便到哪里去，就只能自己给自己当运维这样子= =，有的时候抽风站点可能会很慢，给你带来了不好的浏览体验还请见谅 =V=。~~
+- **Home Header Image Copyright: [@みあぴ](https://www.pixiv.net/artworks/76191507)**  
+- 评论系统来自[Twikoo](https://twikoo.js.org/)  
+- 站点托管在Github Pages，部分静态资源CDN来自JsDelivr/Cloudflare/npmmirror/unpkg  
+- 部分数据使用MongoDB Atlas | Netlify  
+- 对象存储使用[Cloudflare R2](https://www.cloudflare.com/r2/)  
+- 站点图标来自[FontAwesome](https://fontawesome.com/)  
 
-~~主题基于[Typecho-Butterfly](https://github.com/wehaox/Typecho-Butterfly)魔改。~~
+前前后后折腾过Wordpress、Typecho，后来一度想基于Astro搓一个，但是我需要的很多功能在Hexo的插件系统上实现起来更简单，无论是从造轮子的角度还是API的角度。最后就继续留在Hexo生态里了。主题基于[Butterfly](https://github.com/jerryc127/hexo-theme-butterfly) `v4.13.0`魔改而来，最开始还会定期pull&merge一下，后面改太多了就干脆自己开新分支了XD。
 
-~~由Typecho驱动，主题信息见页脚。程序托管在自己搭建的服务器，DNS解析来自阿里云，CDN来自Cloudflare.~~
-
-↑这些已经是旧时代的事情了( ；∀；)
-
-{%label '更新日志：' blue%} 
-
-- 2024/05/05:
-  - 已经重新迁移至[Hexo](https://hexo.io/)，主题基于[hexo-theme-butterfly](https://butterfly.js.org/)魔改。
-
-- 2024/12/01:
-  - 原实验室|Lab板块变为一级菜单，其下属增加了项目|Project、影集|Album(WIP)、文档库|Doc
-  - 原收藏|Collection新加了个歌词收藏的子目录，目前是用来测试ruby标签的
-  - xenwayne.top/cierra项目迁移到cierra.xenwayne.top
-  - 计划把影集|Album页面的数据集加载继续优化，最好封装一个npm包
-
-- 2024/1/3
-  - 影集|Album的npm包已经发布，[hexo-album-page](https://www.npmjs.com/package/hexo-album-page)。
-
-----------
-
-评论系统来自[Twikoo](https://twikoo.js.org/)。站点托管在Github Pages，CDN来自cdnjs/jsDelivr/Cloudflare/npmmirror/unpkg。
+改了这么多次，数据倒没丢过，域名也是铁打的`xenwayne.top`，主要是当时囊中羞涩🤣，`.top`性价比这一块还是太权威了，后来用这么久了换起来牵扯的东西太多了，也就这样了= =。
 
 关于站点subtitle，灵感原文出自《进一寸有一寸的欢喜：胡适谈读书》: “怕什么真理无穷，进一寸有进一寸的欢喜”。
 
-Header头图:[@あい.miapi](https://www.pixiv.net/artworks/76191507)
+
 
 本站所有内容在未特殊说明的前提下均采用
 

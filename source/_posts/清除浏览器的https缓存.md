@@ -35,7 +35,7 @@ tags:
 
 ### HSTS Policy  
 
-这应该是最常见的原因了，如果服务端之前设置了HSTS策略，那么浏览器会缓存这个策略。要清楚HSTS缓存，访问`chrome://net-internals/#hsts` / `edge://net-internals/#hsts`，在"Delete domain security policies"部分输入你的域名，然后点击"Delete"按钮。完成后，重新尝试访问`http://example.com/`。
+这应该是最常见的原因了，如果服务端之前设置了HSTS策略，那么浏览器会缓存这个策略。要清除HSTS缓存，访问`chrome://net-internals/#hsts` / `edge://net-internals/#hsts`，在"Delete domain security policies"部分输入你的域名，然后点击"Delete"按钮。完成后，重新尝试访问`http://example.com/`。
 
 ## Reference
 {% link "清除 Microsoft Edge 自动跳转 https 的缓存" ,Microsoft Q&A, "https://kaffa.im/clear-the-301-automatic-redirection-to-https-cache-of-microsoft-edge" , new %}
