@@ -264,7 +264,7 @@ aside:
     button:
       enable: true
       icon: fa fa-link
-      text: 关于我 | About Me
+      text: 关于 | About
       link: /about/
   card_announcement: # 站点公告
     enable: false

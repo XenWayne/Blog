@@ -48,13 +48,13 @@ Mandarin Chinese Native | English CET-6 | Japanese beginner
 ------------------
 
 或许你想来看看我都忙活了什么🤔
-{% link 项目 | Project, XenWayne's Blog, /project %}
+{% link 项目 | Project, XenWayne's Blog, /project/ %}
 
 来看看我推存放处🙏
-{% link 收藏 | Collection, XenWayne's Blog, /collection %}
+{% link 收藏 | Collection, XenWayne's Blog, /collection/ %}
 
 少数当文艺工作者~~（迫真）~~的时候一些感觉做的还行的东西🖼️
-{% link 影集 | Album, XenWayne's Blog, /album , new %}
+{% link 影集 | Album, XenWayne's Blog, /album/ , new %}
 
 Skill List🔧
 
