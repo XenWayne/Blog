@@ -145,7 +145,7 @@ fontawesome:
   name: '@fortawesome/fontawesome-free'
   file: css/all.min.css
   other_name: font-awesome
-  version: 6.5.1
+  version: 6.7.2
 egjs_infinitegrid:
   name: '@egjs/infinitegrid'
   other_name: egjs-infinitegrid
@@ -167,17 +167,17 @@ prismjs_js:
   name: prismjs
   file: prism.js
   other_name: prism
-  version: 1.29.0
+  version: 1.30.0
 prismjs_lineNumber_js:
   name: prismjs
   file: plugins/line-numbers/prism-line-numbers.min.js
   other_name: prism
-  version: 1.29.0
+  version: 1.30.0
 prismjs_autoloader:
   name: prismjs
   file: plugins/autoloader/prism-autoloader.min.js
   other_name: prism
-  version: 1.29.0
+  version: 1.30.0
 artalk_js:
   name: artalk
   file: dist/Artalk.js

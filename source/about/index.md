@@ -31,13 +31,15 @@ Mandarin Chinese Native | English CET-6 | Japanese beginner
 
  - 爱好摄影、平面设计、~~折腾~~硬件，热衷于钻研和计算机有关的一切~~除了算法~~；
  - 中国图库签约供稿摄影师（时代眼泪了
+ - 尼康用户/APS-C画幅仙人
  - I Love JavaScript.
- - LNU信息学部25届毕业生
+ - LNU信息学部25届毕业生（还真让我在这找到校友了
  - Adobe全家桶资深用户（迫真）
  - 入宅作Lovelive. 二刺螈是我摄入感动的全部来源.jpg
  - 是鸽子（确信）
  - Songs from Hatsune Miku saved me.
  - Sega系自信音游人 {% label "Project Sekai | OSU mania 4k > std | Maimai | Chunithm" blue %}
+ - 原神启动⚪
  - 前中期圆锥角膜患者 高度不规则散光人 Menicon RGP资深用户
  - I use arch by the way(￣▽￣)ノ  
 
