@@ -48,10 +48,10 @@ Mandarin Chinese Native | English CET-6 | Japanese beginner
 ------------------
 
 或许你想来看看我都忙活了什么🤔
-{% link 项目 | Project, XenWayne's Blog, /project/ %}
+{% link 项目 | Project, XenWayne's Blog, /project/ , new %}
 
 来看看我推存放处🙏
-{% link 收藏 | Collection, XenWayne's Blog, /collection/ %}
+{% link 收藏 | Collection, XenWayne's Blog, /collection/ , new %}
 
 少数当文艺工作者~~（迫真）~~的时候一些感觉做的还行的东西🖼️
 {% link 影集 | Album, XenWayne's Blog, /album/ , new %}
@@ -71,12 +71,12 @@ Skill List🔧
 是漫展无料摄影人，有时候会发[图虫][9]，纯粹喜欢研究灯光按快门，标志是大号白色柔光伞和像素Miku= V =，这个过程本身就是一种相互成就，也是给了我认识很多老师的契机，如果有机会遇见也欢迎你戳我的[企鹅🐧][10]，我很乐意通过这种方式与您相识。
 
 剧终综合症，看部番就emo，看治愈番都emo，emo了就想静下心搞点什么，这就是所谓轮回啊（
-很早就被Minecraft吸引到了开发的圈子，前前后后折腾过好多年体素圈子，于15年创立一个专注平面设计和Minecraft渲染的一个团体↓
+很早就被Minecraft吸引到了开发的圈子，前前后后折腾过好多年体素艺术相关的玩意，于15年创立一个专注平面设计和Minecraft渲染的一个团体↓
 事实证明我不善于当一个领导者，现在的话算是一个人摆烂吧，这个标反而更常出现在技术的场合了（= w = ↓。
 ![https://mevisual.top][2]  
 
 
-<center><a href="https://www.mevisual.top" target="_blank">点此前往觅忆视觉Me.Visual</a></center>
+<center><a href="https://www.mevisual.top" target="_blank">觅忆视觉Me.Visual</a></center>
  
 
 
@@ -103,6 +103,7 @@ Skill List🔧
 - 站点托管在Github Pages，部分静态资源CDN来自JsDelivr/Cloudflare/npmmirror/unpkg  
 - 部分数据使用MongoDB Atlas | Netlify  
 - 对象存储使用[Cloudflare R2](https://www.cloudflare.com/r2/)  
+- 部分图片托管使用[SM.MS](https://sm.ms/)
 - 站点图标来自[FontAwesome](https://fontawesome.com/)  
 
 前前后后折腾过Wordpress、Typecho，后来一度想基于Astro搓一个，但是我需要的很多功能在Hexo的插件系统上实现起来更简单，无论是从造轮子的角度还是API的角度。最后就继续留在Hexo生态里了。主题基于[Butterfly](https://github.com/jerryc127/hexo-theme-butterfly) `v4.13.0`魔改而来，最开始还会定期pull&merge一下，后面改太多了就干脆自己开新分支了XD。
@@ -124,11 +125,11 @@ That's all.请多指教w。
 
   [1]: https://osusig.lolicon.app/sig.php?colour=hex66ccff&uname=XenWayne&mode=3&pp=2&removeavmargin&flagshadow&flagstroke&darktriangles&xpbar&xpbarhex
   [2]: https://s2.loli.net/2024/12/29/iztwhbImYqLWNsS.webp
-  [3]: http://gallery.mevisual.top
+  [3]: https://gallery.mevisual.top
   [4]: https://github.com/xenwayne
   [5]: https://weibo.com/xenwayne
   [6]: https://space.bilibili.com/38675649
-  [7]: http://twitter.com/xenwayne
-  [8]: http://xenwayne.lofter.com
-  [9]: http://xenwayne.tuchong.com
-  [10]: http://user.qzone.qq.com/1695140113
+  [7]: https://x.com/xenwayne
+  [8]: https://xenwayne.lofter.com
+  [9]: https://xenwayne.tuchong.com
+  [10]: https://user.qzone.qq.com/1695140113
