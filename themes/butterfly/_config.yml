@@ -262,7 +262,7 @@ aside:
     enable: true
     description:
     button:
-      enable: true
+      enable: false
       icon: fa fa-link
       text: 关于 | About
       link: /about/
