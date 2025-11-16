@@ -33,6 +33,7 @@ Mandarin Chinese Native | English CET-6 | Japanese beginner
  - 中国图库签约供稿摄影师（时代眼泪了
  - 尼康用户/APS-C画幅仙人
  - I Love JavaScript.
+ - Future Bass 是对的√ 
  - LNU信息学部25届毕业生（还真让我在这找到校友了
  - Adobe全家桶资深用户（迫真）
  - 入宅作Lovelive. 二刺螈是我摄入感动的全部来源.jpg
