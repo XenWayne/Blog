@@ -277,8 +277,8 @@ artitalk:
   title: 说说 | Essay ## 标题
   path: essay/index.html ## 生成路径
   pageSize: 20 ## 显示几条说说
+  markdown: true ## 是否支持markdown语法
   avatar: https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/avatar.webp ## 说说头像
-  plugins: [] ## 插件，具体请看下文
   template: ## 说说模板，可查看仓库中的 main.ejs
   imports: ## 在说说模板的开头和结尾处插入内容
     before:
