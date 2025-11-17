@@ -403,5 +403,5 @@ pdf:
 album:
   enable: true # 是否启用相册插件
   site_title: "影集 | Album | XenWayne's Blog" # 相册页面的标题
-  favicon: 'https://oss.xenwayne.top/img/2025/11/975e22afdc35ae501eb21d1a099110ae.webp' # 站点图标
+  favicon: 'https://s2.loli.net/2025/11/17/VpSJDkdFhHYfbqW.png' # 站点图标
   output_path: album/index.html # 相册页面的渲染输出路径 
