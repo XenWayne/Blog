@@ -18,11 +18,11 @@ importers:
         specifier: ^2.2.1
         version: 2.2.1
       hexo-album-page:
-        specifier: ^1.0.1
-        version: 1.0.2
+        specifier: 1.0.4
+        version: 1.0.4
       hexo-artitalk-static-butterfly:
-        specifier: ^0.0.2
-        version: 0.0.2(ejs@3.1.10)(hexo-fs@5.0.0)
+        specifier: ^0.0.3
+        version: 0.0.3(ejs@3.1.10)(hexo-fs@5.0.0)
       hexo-bilibili-bangumi:
         specifier: ^1.10.2
         version: 1.10.8
@@ -699,14 +699,14 @@ packages:
   hexo-abbrlink@2.2.1:
     resolution: {integrity: sha512-yvazN7bbrIb7p8QU3nJ/8fbDmir1mFroYvUYcJz5xpc6DtszKggschmqZg6WNUdjhDBFyDwksrIUfwQnw0OOuA==}
 
-  hexo-album-page@1.0.2:
-    resolution: {integrity: sha512-g9wFeLrxJ1ObLKI5kCV5LObnoDXt1Ab4eU8E8+vdEJ2a6tMhi4V1Vdc9zqcsBF8TIpSHVSrtcgGrCt4g16dXpw==}
+  hexo-album-page@1.0.4:
+    resolution: {integrity: sha512-hcjV5hf308QJdGbblbEyqWdzWODKcl1BYc4MJsiswTkdmPSzGt8IYU0DCs8f6tJnEyUd702w39uRaarGABS+Wg==}
 
-  hexo-artitalk-static-butterfly@0.0.2:
-    resolution: {integrity: sha512-MgiO9IMoeBMjx+JYEk5nCP7vPq6KaWaeT1xJ8RpFvkZ9hjDz9HSNZhjsonD9YQe0DuWSi/K61CMZMy5DBp66IQ==}
+  hexo-artitalk-static-butterfly@0.0.3:
+    resolution: {integrity: sha512-p+hihlNJuwWRihX3ZdnQyx2symIEPVXKeHUbFCnwE3/M+yv2Fzs6e2y+L775R0UEuaYltr/qvIwcBpT8UWnFxQ==}
     peerDependencies:
       ejs: ^3.1.7
-      hexo-fs: ^4.1.1
+      hexo-fs: ^5.0.0
 
   hexo-bilibili-bangumi@1.10.8:
     resolution: {integrity: sha512-ML4Vn0/S48028JwX3+jbEoOy3Gfa71EOqudzxqxxO9rkzoz/9dPYVHLgjbJtLaUDzEzc+QbD6equ+JyT4BqpWQ==}
@@ -2336,12 +2336,12 @@ snapshots:
       hexo-front-matter: 1.0.0
       hexo-fs: 3.1.0
 
-  hexo-album-page@1.0.2:
+  hexo-album-page@1.0.4:
     dependencies:
       ejs: 3.1.10
       js-yaml: 4.1.0
 
-  hexo-artitalk-static-butterfly@0.0.2(ejs@3.1.10)(hexo-fs@5.0.0):
+  hexo-artitalk-static-butterfly@0.0.3(ejs@3.1.10)(hexo-fs@5.0.0):
     dependencies:
       ejs: 3.1.10
       hexo-fs: 5.0.0
