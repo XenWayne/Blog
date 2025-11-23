@@ -4,14 +4,14 @@ date: 2024-04-27 21:22:57
 ---
 
 
-欢迎Welcome
+欢迎 | Welcome
 ====
 
 > Life is a grand DevOps journey, To embark on the journey is more significant than reaching the destination.
 
 　　无论是搜索引擎还是他人的友链将你带到了这里，能在万千站点间相互遇见，实属不易，我会把我工作学习过程中的问题记录下来，希望能帮到你。如果你在浏览过程中发现了不足，欢迎指正。相信我们能碰撞出灵感的火花= =。其实我嘴很笨，写文字对我来说甚至有些痛苦(，但是还是想记录点东西。再次感谢你来访这个用心搭建的Blog。
 
-关于我
+关于我 | About Me
 ===============
 
 网络常用马甲XenWayne {% label "/zen'weɪn/" default %}，{% label /ゼンウェイン/ blue%}   
@@ -34,29 +34,29 @@ Mandarin Chinese Native | English CET-6 | Japanese beginner
  - 尼康用户/APS-C画幅仙人
  - I Love JavaScript.
  - Future Bass 是对的√ 
- - LNU信息学部25届毕业生（还真让我在这找到校友了
+ - LNU信息学部25届毕业生（这条还真让我在这找到校友了
  - Adobe全家桶资深用户（迫真）
- - 入宅作Lovelive. 二刺螈是我摄入感动的全部来源.jpg
+ - 入宅作Lovelive. 啊虽然但是只看过缪和星，莲的话🤔*月火水木金土日🎵毎日がholiday🎵*
  - 是鸽子（确信）
  - Songs from Hatsune Miku saved me.
- - Sega系自信音游人 {% label "Project Sekai | OSU mania 4k > std | Maimai | Chunithm" blue %}
+ - Sega系自信音游人 {% label "Chunithm | Project Sekai | OSU mania 4k > std | Maimai" blue %}
  - 原神启动⚪
  - 前中期圆锥角膜患者 高度不规则散光人 Menicon RGP资深用户
- - I use arch by the way(￣▽￣)ノ  
+ - I use arch by the way(￣▽￣)ノ  (at vm lol
 
 ![osu][1]
 
-{% label 另:欢迎圆锥角膜患者任何对我任何形式的咨询，我很乐意分享经验。 green %}
+{% label 另:欢迎圆锥角膜患者任何对我任何形式的咨询。 green %}
 
 ------------------
 
-或许你想来看看我都忙活了什么🤔
+或许你想来看看我闲的时候都瞎忙活了什么🤔
 {% link 项目 | Project, XenWayne's Blog, /project/ , new %}
 
 来看看我推存放处🙏
 {% link 收藏 | Collection, XenWayne's Blog, /collection/ , new %}
 
-少数当文艺工作者~~（迫真）~~的时候一些感觉做的还行的东西🖼️
+少数当文艺工作者~~（迫真）~~的一些东西🖼️
 {% link 影集 | Album, XenWayne's Blog, /album/ , new %}
 
 Skill List🔧
@@ -68,10 +68,13 @@ Skill List🔧
 
 
 ----------
-是运维人，但是喜欢折腾Web那些东西。PHP、JavaWeb、jQuery什么的都摸过一点，都不熟就是了。
-是计科人，前端是爱好，运维是生活（。
+主业IT Infrastructure运维，此外喜欢折腾Web那些东西。Vue、PHP、JavaWeb、jQuery什么的都摸过一点，都不熟就是了。  
 
-是漫展无料摄影人，有时候会发[图虫][9]，纯粹喜欢研究灯光按快门，标志是大号白色柔光伞和像素Miku= V =，这个过程本身就是一种相互成就，也是给了我认识很多老师的契机，如果有机会遇见也欢迎你戳我的[企鹅🐧][10]，我很乐意通过这种方式与您相识。
+毕设那会是Uniapp+Nodejs(Koa)+MongoDB+MinIO搓了一个在线校园社区，确实没多少空来干这个事，用JS写全栈一方面是起码在毕业生一众SpringBoot里能显得清奇一点🥲，另一方面是我讨厌在OOP的路上给自己扔太多包袱的Java。那会还是一边在实习当DBA一边写的，引用ilem老师的话，Uniapp这玩意给我的感觉就是一辆跑的很快的破自行车，毕设做完之后再也没敢碰🤣。讲道理做DBA的日子有点痛苦，有些许阴影(，不过说到底DBA也好SRE也好大伙都是被Alert催命的角色吧XD。
+
+> 主要折腾方向: Web应用 / AIOps / 云原生 / 应用现代化 / DevOps / 容器技术 / 系统集成 / 网络工程
+
+副业按快门。是漫展无料摄影人，有时候会发[图虫][9]，纯粹喜欢研究灯光按快门，标志是大号白色柔光伞和像素Miku= V =，这个过程本身就是一种相互成就，也是给了我认识很多老师的契机，如果有机会遇见也欢迎你戳我的[企鹅🐧][10]，我很乐意通过这种方式与您相识。
 
 剧终综合症，看部番就emo，看治愈番都emo，emo了就想静下心搞点什么，这就是所谓轮回啊（
 很早就被Minecraft吸引到了开发的圈子，前前后后折腾过好多年体素艺术相关的玩意，于15年创立一个专注平面设计和Minecraft渲染的一个团体↓
@@ -90,7 +93,7 @@ Skill List🔧
 
 
 
-联系方式Contact
+联系我 | Contact
 =========
 
 {% note %}
@@ -98,7 +101,7 @@ Skill List🔧
 {% endnote %} 
 
 
-关于这个站点
+关于这个站点 | About This Site
 ====
 
 - **Home Header Image Copyright: [@みあぴ](https://www.pixiv.net/artworks/76191507)**  
@@ -109,7 +112,7 @@ Skill List🔧
 - 部分图片托管使用[SM.MS](https://sm.ms/)
 - 站点图标来自[FontAwesome](https://fontawesome.com/)  
 
-前前后后折腾过Wordpress、Typecho，后来一度想基于Astro搓一个，但是我需要的很多功能在Hexo的插件系统上实现起来更简单，无论是从造轮子的角度还是API的角度。最后就继续留在Hexo生态里了。主题基于[Butterfly](https://github.com/jerryc127/hexo-theme-butterfly) `v4.13.0`魔改而来，最开始还会定期pull&merge一下，后面改太多了就干脆自己开新分支了XD。
+前前后后折腾过Wordpress、Typecho、Hexo，后来一度想基于Astro搓一个，但是我需要的很多功能在Hexo的插件系统上实现起来更简单，我也更熟悉，无论是从造轮子的角度还是API的角度。正所谓网站技术框架不是目的，支撑内容才是目的，想了想我后来拓展的这一坨markdown标签的迁移工作，愈发头疼，最后就继续留在Hexo生态里了。主题基于[Butterfly](https://github.com/jerryc127/hexo-theme-butterfly) `v4.13.0`魔改而来，最开始还会定期pull&merge一下，后面改太多了就干脆开新分支不管了XD。
 
 改了这么多次，数据倒没丢过，域名也是铁打的`xenwayne.top`，主要是当时囊中羞涩🤣，`.top`性价比这一块还是太权威了，后来用这么久了换起来牵扯的东西太多了，也就这样了= =。
 
