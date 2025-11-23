@@ -91,6 +91,10 @@ div#post-info {
 }
 
 /* .post-bg 文章页header模糊+暗色遮罩 */
+.post-bg {
+    overflow: hidden;
+}
+
 .post-bg::before {
     background-image: inherit;
     /* 使用父元素的背景图片 */
