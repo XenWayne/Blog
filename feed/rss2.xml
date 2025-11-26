@@ -9,11 +9,48 @@
     <atom:link href="https://xenwayne.top/feed/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Web/摄影/系统集成/ITOps/全沾工程师🤣/音游人/PJSK/ボカロ/平面设计/技术宅/LLer/车万/看点工业糖精</description>
-    <pubDate>Sun, 23 Nov 2025 12:33:42 GMT</pubDate>
+    <pubDate>Wed, 26 Nov 2025 05:39:49 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>使用GrafanaCtl批量备份Grafana仪表盘</title>
+      <title>网络流量可观测性:SNMP + sFlow 数据采集与Grafana可视化实践</title>
+      <link>https://xenwayne.top/posts/1a648fb4/</link>
+      <guid>https://xenwayne.top/posts/1a648fb4/</guid>
+      <pubDate>Mon, 24 Nov 2025 02:53:23 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h2 id=&quot;Foreword&quot;&gt;&lt;a href=&quot;#Foreword&quot; class=&quot;headerlink&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://xenwayne.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">技术分享</category>
+      
+      
+      <category domain="https://xenwayne.top/tags/Grafana/">Grafana</category>
+      
+      <category domain="https://xenwayne.top/tags/%E5%8F%AF%E8%A7%82%E6%B5%8B%E6%80%A7/">可观测性</category>
+      
+      <category domain="https://xenwayne.top/tags/netflow/">netflow</category>
+      
+      <category domain="https://xenwayne.top/tags/sFlow/">sFlow</category>
+      
+      <category domain="https://xenwayne.top/tags/ClickHouse/">ClickHouse</category>
+      
+      <category domain="https://xenwayne.top/tags/Kafka/">Kafka</category>
+      
+      
+      <comments>https://xenwayne.top/posts/1a648fb4/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>使用Grafana CLI批量备份Grafana仪表盘</title>
       <link>https://xenwayne.top/posts/c3b0cefb/</link>
       <guid>https://xenwayne.top/posts/c3b0cefb/</guid>
       <pubDate>Sun, 23 Nov 2025 10:23:48 GMT</pubDate>
@@ -648,35 +685,6 @@
       
       
       <comments>https://xenwayne.top/posts/133a89d9/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>NGINX+OBS+VLC实现低延迟局域网推流</title>
-      <link>https://xenwayne.top/posts/b41cff3a/</link>
-      <guid>https://xenwayne.top/posts/b41cff3a/</guid>
-      <pubDate>Thu, 06 Aug 2020 12:55:00 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h1 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://xenwayne.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">技术分享</category>
-      
-      
-      <category domain="https://xenwayne.top/tags/%E6%8E%A8%E6%B5%81/">推流</category>
-      
-      <category domain="https://xenwayne.top/tags/OBS/">OBS</category>
-      
-      
-      <comments>https://xenwayne.top/posts/b41cff3a/#disqus_thread</comments>
       
     </item>
     

@@ -6,7 +6,7 @@
   <link href="https://xenwayne.top/feed/atom.xml" rel="self"/>
   
   <link href="https://xenwayne.top/"/>
-  <updated>2025-11-23T12:33:42.426Z</updated>
+  <updated>2025-11-26T05:39:49.606Z</updated>
   <id>https://xenwayne.top/</id>
   
   <author>
@@ -17,11 +17,46 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>使用GrafanaCtl批量备份Grafana仪表盘</title>
+    <title>网络流量可观测性:SNMP + sFlow 数据采集与Grafana可视化实践</title>
+    <link href="https://xenwayne.top/posts/1a648fb4/"/>
+    <id>https://xenwayne.top/posts/1a648fb4/</id>
+    <published>2025-11-24T02:53:23.000Z</published>
+    <updated>2025-11-26T05:39:49.606Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Foreword&quot;&gt;&lt;a href=&quot;#Foreword&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术分享" scheme="https://xenwayne.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="Grafana" scheme="https://xenwayne.top/tags/Grafana/"/>
+    
+    <category term="可观测性" scheme="https://xenwayne.top/tags/%E5%8F%AF%E8%A7%82%E6%B5%8B%E6%80%A7/"/>
+    
+    <category term="netflow" scheme="https://xenwayne.top/tags/netflow/"/>
+    
+    <category term="sFlow" scheme="https://xenwayne.top/tags/sFlow/"/>
+    
+    <category term="ClickHouse" scheme="https://xenwayne.top/tags/ClickHouse/"/>
+    
+    <category term="Kafka" scheme="https://xenwayne.top/tags/Kafka/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用Grafana CLI批量备份Grafana仪表盘</title>
     <link href="https://xenwayne.top/posts/c3b0cefb/"/>
     <id>https://xenwayne.top/posts/c3b0cefb/</id>
     <published>2025-11-23T10:23:48.000Z</published>
-    <updated>2025-11-23T12:33:42.426Z</updated>
+    <updated>2025-11-26T05:39:49.606Z</updated>
     
     
       
@@ -52,7 +87,7 @@
     <link href="https://xenwayne.top/posts/d83bdeb5/"/>
     <id>https://xenwayne.top/posts/d83bdeb5/</id>
     <published>2025-10-29T02:00:00.000Z</published>
-    <updated>2025-11-23T12:33:42.426Z</updated>
+    <updated>2025-11-26T05:39:49.606Z</updated>
     
     
       
@@ -85,7 +120,7 @@
     <link href="https://xenwayne.top/posts/1bc24c43/"/>
     <id>https://xenwayne.top/posts/1bc24c43/</id>
     <published>2025-10-27T22:48:43.000Z</published>
-    <updated>2025-11-23T12:33:42.427Z</updated>
+    <updated>2025-11-26T05:39:49.607Z</updated>
     
     
       
@@ -122,7 +157,7 @@
     <link href="https://xenwayne.top/posts/2eca1925/"/>
     <id>https://xenwayne.top/posts/2eca1925/</id>
     <published>2025-08-04T22:05:05.000Z</published>
-    <updated>2025-11-23T12:33:42.427Z</updated>
+    <updated>2025-11-26T05:39:49.607Z</updated>
     
     
       
@@ -151,7 +186,7 @@
     <link href="https://xenwayne.top/posts/b11fff51/"/>
     <id>https://xenwayne.top/posts/b11fff51/</id>
     <published>2025-05-31T07:23:14.000Z</published>
-    <updated>2025-11-23T12:33:42.427Z</updated>
+    <updated>2025-11-26T05:39:49.607Z</updated>
     
     
       
@@ -180,7 +215,7 @@
     <link href="https://xenwayne.top/posts/838795f3/"/>
     <id>https://xenwayne.top/posts/838795f3/</id>
     <published>2025-04-08T04:24:41.000Z</published>
-    <updated>2025-11-23T12:33:42.426Z</updated>
+    <updated>2025-11-26T05:39:49.606Z</updated>
     
     
       
@@ -213,7 +248,7 @@
     <link href="https://xenwayne.top/posts/676ecf57/"/>
     <id>https://xenwayne.top/posts/676ecf57/</id>
     <published>2025-03-17T18:58:09.000Z</published>
-    <updated>2025-11-23T12:33:42.426Z</updated>
+    <updated>2025-11-26T05:39:49.606Z</updated>
     
     
       
@@ -244,7 +279,7 @@
     <link href="https://xenwayne.top/posts/6f791b0c/"/>
     <id>https://xenwayne.top/posts/6f791b0c/</id>
     <published>2024-05-24T14:16:52.000Z</published>
-    <updated>2025-11-23T12:33:42.426Z</updated>
+    <updated>2025-11-26T05:39:49.606Z</updated>
     
     
       
@@ -280,7 +315,7 @@
     <link href="https://xenwayne.top/posts/87210117/"/>
     <id>https://xenwayne.top/posts/87210117/</id>
     <published>2024-03-03T08:46:00.000Z</published>
-    <updated>2025-11-23T12:33:42.426Z</updated>
+    <updated>2025-11-26T05:39:49.606Z</updated>
     
     
       
@@ -313,7 +348,7 @@
     <link href="https://xenwayne.top/posts/d651e145/"/>
     <id>https://xenwayne.top/posts/d651e145/</id>
     <published>2023-09-20T11:35:00.000Z</published>
-    <updated>2025-11-23T12:33:42.427Z</updated>
+    <updated>2025-11-26T05:39:49.607Z</updated>
     
     
       
@@ -348,7 +383,7 @@
     <link href="https://xenwayne.top/posts/2ca49b12/"/>
     <id>https://xenwayne.top/posts/2ca49b12/</id>
     <published>2023-09-20T10:38:00.000Z</published>
-    <updated>2025-11-23T12:33:42.426Z</updated>
+    <updated>2025-11-26T05:39:49.606Z</updated>
     
     
       
@@ -375,7 +410,7 @@
     <link href="https://xenwayne.top/posts/c57e2d45/"/>
     <id>https://xenwayne.top/posts/c57e2d45/</id>
     <published>2023-09-13T01:12:00.000Z</published>
-    <updated>2025-11-23T12:33:42.428Z</updated>
+    <updated>2025-11-26T05:39:49.608Z</updated>
     
     
       
@@ -404,7 +439,7 @@
     <link href="https://xenwayne.top/posts/8306fea3/"/>
     <id>https://xenwayne.top/posts/8306fea3/</id>
     <published>2022-09-27T13:56:00.000Z</published>
-    <updated>2025-11-23T12:33:42.426Z</updated>
+    <updated>2025-11-26T05:39:49.606Z</updated>
     
     
       
@@ -439,7 +474,7 @@
     <link href="https://xenwayne.top/posts/7834b51/"/>
     <id>https://xenwayne.top/posts/7834b51/</id>
     <published>2022-08-16T11:57:00.000Z</published>
-    <updated>2025-11-23T12:33:42.428Z</updated>
+    <updated>2025-11-26T05:39:49.608Z</updated>
     
     
       
@@ -468,7 +503,7 @@
     <link href="https://xenwayne.top/posts/2fe1b2e5/"/>
     <id>https://xenwayne.top/posts/2fe1b2e5/</id>
     <published>2022-05-04T11:43:00.000Z</published>
-    <updated>2025-11-23T12:33:42.426Z</updated>
+    <updated>2025-11-26T05:39:49.606Z</updated>
     
     
       
@@ -503,7 +538,7 @@
     <link href="https://xenwayne.top/posts/606c9d02/"/>
     <id>https://xenwayne.top/posts/606c9d02/</id>
     <published>2022-04-14T12:56:00.000Z</published>
-    <updated>2025-11-23T12:33:42.426Z</updated>
+    <updated>2025-11-26T05:39:49.606Z</updated>
     
     
       
@@ -538,7 +573,7 @@
     <link href="https://xenwayne.top/posts/296aa3cb/"/>
     <id>https://xenwayne.top/posts/296aa3cb/</id>
     <published>2022-03-13T01:29:00.000Z</published>
-    <updated>2025-11-23T12:33:42.426Z</updated>
+    <updated>2025-11-26T05:39:49.606Z</updated>
     
     
       
@@ -567,7 +602,7 @@
     <link href="https://xenwayne.top/posts/b339dc67/"/>
     <id>https://xenwayne.top/posts/b339dc67/</id>
     <published>2021-09-18T13:39:00.000Z</published>
-    <updated>2025-11-23T12:33:42.427Z</updated>
+    <updated>2025-11-26T05:39:49.607Z</updated>
     
     
       
@@ -595,7 +630,7 @@
     <link href="https://xenwayne.top/posts/133a89d9/"/>
     <id>https://xenwayne.top/posts/133a89d9/</id>
     <published>2020-10-04T03:06:00.000Z</published>
-    <updated>2025-11-23T12:33:42.427Z</updated>
+    <updated>2025-11-26T05:39:49.607Z</updated>
     
     
       
@@ -614,33 +649,6 @@
     <category term="IPv6" scheme="https://xenwayne.top/tags/IPv6/"/>
     
     <category term="小米路由" scheme="https://xenwayne.top/tags/%E5%B0%8F%E7%B1%B3%E8%B7%AF%E7%94%B1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>NGINX+OBS+VLC实现低延迟局域网推流</title>
-    <link href="https://xenwayne.top/posts/b41cff3a/"/>
-    <id>https://xenwayne.top/posts/b41cff3a/</id>
-    <published>2020-08-06T12:55:00.000Z</published>
-    <updated>2025-11-23T12:33:42.426Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="技术分享" scheme="https://xenwayne.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
-    
-    
-    <category term="推流" scheme="https://xenwayne.top/tags/%E6%8E%A8%E6%B5%81/"/>
-    
-    <category term="OBS" scheme="https://xenwayne.top/tags/OBS/"/>
     
   </entry>
   
