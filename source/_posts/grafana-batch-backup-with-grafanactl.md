@@ -1,5 +1,5 @@
 ---
-title: 使用GrafanaCtl批量备份Grafana仪表盘
+title: 使用Grafana CLI批量备份Grafana仪表盘
 categories:
   - 技术分享
 tags:
@@ -61,7 +61,7 @@ CURRENT  NAME        GRAFANA SERVER
 *        my-grafana  http://10.10.10.10:3000
 ```
 
-使用`grafanactl config use-context staging`来切换当前上下文。
+使用`grafanactl config use-context my-grafana`来切换当前上下文。
 
 
 ## Backup Dashboards
@@ -73,6 +73,7 @@ grafanactl resources pull --path /tmp/dashboards
 # 默认导出为JSON，如果你想导出为YAML，可以加上-o yaml参数:
 grafanactl resources pull --path /tmp/dashboards -o yaml
 ```
+如果不指定`--path`参数，默认会导出到当前目录下的`resources`目录。  
 
 就像远端仓库一样，你可以把本地的文件推送到Grafana实例：
 
