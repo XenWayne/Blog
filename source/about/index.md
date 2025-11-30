@@ -27,7 +27,7 @@ Mandarin Chinese Native | English CET-6 | Japanese beginner
 {% endnote %}
 
 **您来猜猜我什么成分(**
-> **00后 / 杂鱼摄影 / 不打鸟の尼康用户 / 技术宅 / LLer / 术力口 / 假的车万人 / 沙勒のSensei / 音游玩家 / 人形自走废萌Galgame百科全书 / Web / 系统集成 / ITOps / 全沾工程师🤣 / PJSK / ボカロ / 平面设计 / 爱看点工业糖精**
+> **00后 / 杂鱼摄影 / 不打鸟の尼康用户 / 技术宅 / LLer / ボカロ / 假的车万人 / 沙勒のSensei / 音游玩家 / 人形自走废萌Galgame百科全书 / Web / 系统集成 / ITOps / 全沾工程师🤣 / PJSK / ボカロ / 平面设计 / 爱看点工业糖精**
 
  - 爱好摄影、平面设计、~~折腾~~硬件，热衷于钻研和计算机有关的一切~~除了算法~~；
  - 中国图库签约供稿摄影师（时代眼泪了
@@ -38,7 +38,6 @@ Mandarin Chinese Native | English CET-6 | Japanese beginner
  - Adobe全家桶资深用户（迫真）
  - 入宅作Lovelive. 啊虽然但是只看过缪和星，莲的话🤔*月火水木金土日🎵毎日がholiday🎵*
  - 是鸽子（确信）
- - Songs from Hatsune Miku saved me.
  - Sega系自信音游人 {% label "Chunithm | Project Sekai | OSU mania 4k > std | Maimai" blue %}
  - 原神启动⚪
  - 前中期圆锥角膜患者 高度不规则散光人 Menicon RGP资深用户
