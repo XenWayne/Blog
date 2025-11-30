@@ -38,7 +38,7 @@ nvme0n1 259:0    0   80G  0 disk
 我们的目标是将多出来的空间全部划分`rl-root`逻辑卷。
 
 ### 2.扩容物理分区
-扩容物理分区`nvme0n1p2`，这里以使用cfdisk工具。
+扩容物理分区`nvme0n1p2`，这里使用cfdisk工具。
 ```bash
 [xenwayne@localhost ~]$ sudo cfdisk /dev/nvme0n1
 ```
