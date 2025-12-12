@@ -17,7 +17,7 @@
     "hexo-abbrlink": "^2.2.1",
     "hexo-album-page": "1.0.4",
     "hexo-artitalk-static-butterfly": "^0.0.3",
-    "hexo-bilibili-bangumi": "^1.10.2",
+    "hexo-bilibili-bangumi": "^2.0.1",
     "hexo-browsersync": "^0.3.0",
     "hexo-deployer-git": "^4.0.0",
     "hexo-diagrams-net-butterfly": "^0.0.2",
