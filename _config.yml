@@ -318,7 +318,7 @@ bangumi: # 追番设置
   color:
   webp: true
   progress: true
-  progressBar: true
+  progressBar: false
   extraOrder:
   order: latest
   proxy:
