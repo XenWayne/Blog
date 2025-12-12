@@ -314,7 +314,7 @@ bangumi: # 追番设置
   loading:
   showMyComment: true
   pagination: false
-  metaColor:
+  metaColor: '#555'
   color:
   webp: true
   progress: true
