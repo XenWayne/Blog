@@ -652,7 +652,7 @@ docker run -d
  -e CLICKHOUSE_PASSWORD=<自定义密码> \
   clickhouse/clickhouse-server
 ```
-运行后可以通过http://<ip>:8123进入ClickHouse自带的一个管理界面，可以通过Web SQL UI连接到实例，并查看初始化脚本是否应用成功:
+运行后可以通过http://ip:8123进入ClickHouse自带的一个管理界面，可以通过Web SQL UI连接到实例，并查看初始化脚本是否应用成功:
 ![](https://oss.xenwayne.top/img/2025/11/ea832a3cb22b5d19759838e4cb1e2389.webp)  
 
 顺带一提，如果你要在ClickHouse中直接查询IP相关的列，你会得到乱码:
