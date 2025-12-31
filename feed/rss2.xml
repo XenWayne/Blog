@@ -9,8 +9,34 @@
     <atom:link href="https://xenwayne.top/feed/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Web/摄影/系统集成/ITOps/全沾工程师🤣/音游人/PJSK/ボカロ/平面设计/技术宅/LLer/车万/看点工业糖精</description>
-    <pubDate>Mon, 29 Dec 2025 00:24:32 GMT</pubDate>
+    <pubDate>Wed, 31 Dec 2025 08:54:30 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>秉烛沧浪远——2025年终总结</title>
+      <link>https://xenwayne.top/posts/74fb2272/</link>
+      <guid>https://xenwayne.top/posts/74fb2272/</guid>
+      <pubDate>Wed, 31 Dec 2025 03:30:06 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;2025年的最后一天了，朋友们。&lt;br&gt;提笔的起因是刷到了皇姑区图书馆公众号发的2025年终总结，思绪万千，从今年开始我也搞一搞这个节目吧，希望来年我还能有精力继续(&lt;/p&gt;
+&lt;p&gt;正好早些时候搁手里的unraid里跑了一个immich，那就先正好一边翻相册一边理理吧。&lt;/</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://xenwayne.top/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/">碎碎念</category>
+      
+      
+      
+      <comments>https://xenwayne.top/posts/74fb2272/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>网络流量可观测性:SNMP + sFlow 数据采集与Grafana可视化实践</title>
@@ -656,35 +682,6 @@
       
       
       <comments>https://xenwayne.top/posts/b339dc67/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>记一次与小米路由IPV6防火墙的折腾经历</title>
-      <link>https://xenwayne.top/posts/133a89d9/</link>
-      <guid>https://xenwayne.top/posts/133a89d9/</guid>
-      <pubDate>Sun, 04 Oct 2020 03:06:00 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;p&gt;早些时候新买了台小米的AX1800路由，家里莫得Wifi6设备，纯粹是&lt;del&gt;馋那三个月腾讯加速器会员&lt;/del&gt;，有了IPV6公网IP之后就开始忙活网站迁移之类的问题，结果还没开始就结束了&amp;#x3D;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://xenwayne.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">技术分享</category>
-      
-      
-      <category domain="https://xenwayne.top/tags/IPv6/">IPv6</category>
-      
-      <category domain="https://xenwayne.top/tags/%E5%B0%8F%E7%B1%B3%E8%B7%AF%E7%94%B1/">小米路由</category>
-      
-      
-      <comments>https://xenwayne.top/posts/133a89d9/#disqus_thread</comments>
       
     </item>
     
