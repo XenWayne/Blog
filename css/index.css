@@ -3128,9 +3128,9 @@ h1.page-title + .tag-cloud-list {
 .avatar-img {
   overflow: hidden;
   margin: 0 auto;
-  width: 110px;
-  height: 110px;
-  border-radius: 70px;
+  width: 200px;
+  height: 200px;
+  border-radius: 110px;
 }
 .avatar-img img {
   width: 100%;
