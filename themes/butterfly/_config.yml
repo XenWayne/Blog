@@ -51,11 +51,11 @@ social:
 # --------------------------------------
 
 # Favicon（网站图标）
-favicon: https://fastly.jsdelivr.net/gh/XenWayne/sitefile/img/avatar_alpha.png
+favicon: https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/avatar_alpha.png
 
 # Avatar (頭像)
 avatar:
-  img: https://fastly.jsdelivr.net/gh/XenWayne/sitefile/img/avatar.webp
+  img: https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/avatar.webp
   effect: false
 
 # Disable all banner image
