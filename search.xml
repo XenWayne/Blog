@@ -4,6 +4,43 @@
   
     
     <entry>
+      <title>关于Chromium内核浏览器对图像缩放产生锯齿的问题</title>
+      <link href="/posts/51a85628/"/>
+      <url>/posts/51a85628/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Issues"><a href="#Issues" class="headerlink" title="Issues"></a>Issues</h1><p>在更换网页的部分图片时，在部分图片需要尺寸重映射至更小的尺寸，例如使用<code>object-fit: cover</code>时，Chromium内核的浏览器（Chrome、Edge等）对图像进行缩放处理的默认行为导致图像在缩小后出现明显的锯齿状边缘，但通过手动指定<code>width</code>和<code>height</code>则貌似不会触发该现象，我在Firefox和手头安卓的webview上并没有复现相同的问题，这种现象似乎在高分辨率显示器上尤为明显。</p><div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://oss.xenwayne.top/img/2026/05/eb14162fa11e90fd5aec1d30c3712367.webp","alt":""},{"url":"https://oss.xenwayne.top/img/2026/05/c771f833d2367c626a6212f3b5f4da15.webp","alt":""}]</div>      <div class="gallery-items">      </div>    </div><a class="tag-Link" target="_blank" href=" https://codepen.io/brianpeiris/pen/PoVroPX ">    <div class="tag-link-tips">引用站外地址</div>    <div class="tag-link-bottom">        <div class="tag-link-left"><i class="fa-solid fa-link"></i></div>        <div class="tag-link-right">            <div class="tag-link-title">Poor interpolation demo </div>            <div class="tag-link-sitename"> codepen.io </div>        </div>        <i class="fa-solid fa-angle-right"></i>    </div>    </a><p> <code>Chromium Issue 40230839</code>记录了类似的问题,并附带一个复现demo。</p><a class="tag-Link" target="_blank" href=" https://issues.chromium.org/issues/40230839 ">    <div class="tag-link-tips">引用站外地址</div>    <div class="tag-link-bottom">        <div class="tag-link-left"><i class="fa-solid fa-link"></i></div>        <div class="tag-link-right">            <div class="tag-link-title">Chromium Issue 40230839 </div>            <div class="tag-link-sitename"> Object-fit: cover makes the image pixelated </div>        </div>        <i class="fa-solid fa-angle-right"></i>    </div>    </a><p>我把原帖的复现demo稍加修改贴出来，如果此刻你正在使用Chromium内核的浏览器，在你点击下面的蓝色按钮时，你应当看到图片在被添加<code>object-fit: cover</code>属性后，出现焦外虚化尤其锐的现象。</p><iframe src="/assets/chromium-image-pixelated-render_demo1.html" width="100%" height="600px" frameborder="0" loading="lazy" allowfullscreen></iframe><div class="note info flat"><p>Demo图片来自Unsplash，大小4.21MB,分辨率3456*5184,加载可能不畅。</p></div><h1 id="Cause"><a href="#Cause" class="headerlink" title="Cause"></a>Cause</h1><p>首先搜到了<a href="https://kanochan.net/archives/3323.html">kanochan</a>在2023年的博客，看起来跟我遇到的问题完全一致，顺藤摸瓜又找到了相关的Chromium issue。</p><p>简单总结issue的讨论，该问题和Chrome的渲染引擎行为有关，Chrome 在使用 <code>object-fit: cover</code> 时，貌似禁用了 Mipmap 多级纹理过滤，强制使用原图线性采样，导致极端缩放下出现锯齿、糊、像素化。官方测试最早的Bad Build为<code>Chromium 102.0.4961.0</code>，相关提交<a href="https://chromium-review.googlesource.com/c/chromium/src/+/3538212">Sharpen mipmaps with OOP-R</a>。</p><p>本文写作时，该Issue的优先级为P2，直至2026年2月20日，该Issue仍在讨论。</p><h1 id="Workaround"><a href="#Workaround" class="headerlink" title="Workaround"></a>Workaround</h1><p>MDN文档提到了<code>image-rendering</code>属性，这个属性控制图片的渲染方式，但<code>smooth</code>这个值截至本文写作，仍为实验性特性，Chromium尚不支持，至于他对解决这个问题是否有帮助，只能放到将来讨论了。  </p><p>1.<a href="https://stackoverflow.com/questions/71251416/google-chrome-strange-image-artifacts-pixelated-broken">StackOverFlow一个帖子</a>提到，似乎可以在客户端层面关闭<code>chrome://flags/#enable-gpu-rasterization (使用GPU光栅化图像)</code>。</p><p>2.最简单也是最粗暴的办法，对于大小固定的场景，避免使用<code>cover</code>，转而设置固定的宽高值，亦或是在图片源文件上做文章，准备和容器尺寸一致的原图片，避免浏览器缩放图片。</p><p>3.经过我尝试，对<code>img</code>使用<code>transform: translate3d(0, 0, 0) scale(1.0001)</code>或者<code>will-change: transform</code>,可以消除该问题。究其原因，应该是<code>transform</code>相关属性触发了GPU渲染管线高质量重采样相关的逻辑，即使是<code>will-change</code>这种提前宣告的属性，也一样会触发相关逻辑，我准备了一个demo:</p><iframe src="/assets/chromium-image-pixelated-render_demo2.html" width="100%" height="400px" frameborder="0" loading="lazy" allowfullscreen></iframe><h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><a class="tag-Link" target="_blank" href=" https://issues.chromium.org/issues/40230839 ">    <div class="tag-link-tips">引用站外地址</div>    <div class="tag-link-bottom">        <div class="tag-link-left"><i class="fa-solid fa-link"></i></div>        <div class="tag-link-right">            <div class="tag-link-title">Chromium Issue 40230839 </div>            <div class="tag-link-sitename"> Object-fit: cover makes the image pixelated </div>        </div>        <i class="fa-solid fa-angle-right"></i>    </div>    </a><a class="tag-Link" target="_blank" href=" https://issues.chromium.org/issues/40258544 ">    <div class="tag-link-tips">引用站外地址</div>    <div class="tag-link-bottom">        <div class="tag-link-left"><i class="fa-solid fa-link"></i></div>        <div class="tag-link-right">            <div class="tag-link-title">Chromium Issue 40258544 </div>            <div class="tag-link-sitename"> background-size: cover caused pixelated image </div>        </div>        <i class="fa-solid fa-angle-right"></i>    </div>    </a><a class="tag-Link" target="_blank" href=" https://kanochan.net/archives/3323.html ">    <div class="tag-link-tips">引用站外地址</div>    <div class="tag-link-bottom">        <div class="tag-link-left"><i class="fa-solid fa-link"></i></div>        <div class="tag-link-right">            <div class="tag-link-title">关于CSS缩小图像会产生锯齿的原因探讨 </div>            <div class="tag-link-sitename"> KanoChan の VERSE </div>        </div>        <i class="fa-solid fa-angle-right"></i>    </div>    </a><a class="tag-Link" target="_blank" href=" https://developer.mozilla.org/zh-CN/docs/Web/CSS/Reference/Properties/image-rendering ">    <div class="tag-link-tips">引用站外地址</div>    <div class="tag-link-bottom">        <div class="tag-link-left"><i class="fa-solid fa-link"></i></div>        <div class="tag-link-right">            <div class="tag-link-title">CSS image-rendering 属性 </div>            <div class="tag-link-sitename"> MDN Web Docs </div>        </div>        <i class="fa-solid fa-angle-right"></i>    </div>    </a><a class="tag-Link" target="_blank" href="https://piunikaweb.com/2022/04/19/google-chrome-images-distorted-pixelated-after-latest-update-for-some/">    <div class="tag-link-tips">引用站外地址</div>    <div class="tag-link-bottom">        <div class="tag-link-left"><i class="fa-solid fa-link"></i></div>        <div class="tag-link-right">            <div class="tag-link-title">Google Chrome images distorted & pixelated after latest update for some (workarounds inside) </div>            <div class="tag-link-sitename"> piunikaweb </div>        </div>        <i class="fa-solid fa-angle-right"></i>    </div>    </a>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> html </tag>
+            
+            <tag> css </tag>
+            
+            <tag> web </tag>
+            
+            <tag> Chromium </tag>
+            
+            <tag> Chrome </tag>
+            
+            <tag> Edge </tag>
+            
+            <tag> 前端 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>秉烛沧浪远——2025年终总结</title>
       <link href="/posts/74fb2272/"/>
       <url>/posts/74fb2272/</url>
@@ -138,17 +175,17 @@
       
         <tags>
             
-            <tag> 浏览器 </tag>
-            
-            <tag> HTTPS </tag>
-            
-            <tag> 缓存 </tag>
-            
             <tag> Chromium </tag>
             
             <tag> Chrome </tag>
             
             <tag> Edge </tag>
+            
+            <tag> 浏览器 </tag>
+            
+            <tag> HTTPS </tag>
+            
+            <tag> 缓存 </tag>
             
             <tag> HSTS </tag>
             
@@ -359,9 +396,9 @@
             
             <tag> Nginx </tag>
             
-            <tag> CORS </tag>
-            
             <tag> 前端 </tag>
+            
+            <tag> CORS </tag>
             
             <tag> 跨域 </tag>
             

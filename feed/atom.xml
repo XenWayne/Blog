@@ -6,7 +6,7 @@
   <link href="https://xenwayne.top/feed/atom.xml" rel="self"/>
   
   <link href="https://xenwayne.top/"/>
-  <updated>2026-05-04T03:28:53.102Z</updated>
+  <updated>2026-05-05T15:09:48.670Z</updated>
   <id>https://xenwayne.top/</id>
   
   <author>
@@ -17,11 +17,48 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>关于Chromium内核浏览器对图像缩放产生锯齿的问题</title>
+    <link href="https://xenwayne.top/posts/51a85628/"/>
+    <id>https://xenwayne.top/posts/51a85628/</id>
+    <published>2026-05-04T15:45:27.000Z</published>
+    <updated>2026-05-05T15:09:48.670Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Issues&quot;&gt;&lt;a href=&quot;#Issues&quot; class=&quot;headerlink&quot; title=&quot;Issues&quot;&gt;&lt;/a&gt;Issues&lt;/h1&gt;&lt;p&gt;在更换网页的部分图片时，在部分图片需要尺寸重映射至更小的尺寸，例如使用&lt;code&gt;object-fit:</summary>
+        
+      
+    
+    
+    
+    <category term="技术分享" scheme="https://xenwayne.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="html" scheme="https://xenwayne.top/tags/html/"/>
+    
+    <category term="css" scheme="https://xenwayne.top/tags/css/"/>
+    
+    <category term="web" scheme="https://xenwayne.top/tags/web/"/>
+    
+    <category term="Chromium" scheme="https://xenwayne.top/tags/Chromium/"/>
+    
+    <category term="Chrome" scheme="https://xenwayne.top/tags/Chrome/"/>
+    
+    <category term="Edge" scheme="https://xenwayne.top/tags/Edge/"/>
+    
+    <category term="前端" scheme="https://xenwayne.top/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
     <title>秉烛沧浪远——2025年终总结</title>
     <link href="https://xenwayne.top/posts/74fb2272/"/>
     <id>https://xenwayne.top/posts/74fb2272/</id>
     <published>2025-12-31T03:30:06.000Z</published>
-    <updated>2026-05-04T03:28:53.102Z</updated>
+    <updated>2026-05-05T15:09:48.672Z</updated>
     
     
       
@@ -45,7 +82,7 @@
     <link href="https://xenwayne.top/posts/1a648fb4/"/>
     <id>https://xenwayne.top/posts/1a648fb4/</id>
     <published>2025-11-24T02:53:23.000Z</published>
-    <updated>2026-05-04T03:28:53.101Z</updated>
+    <updated>2026-05-05T15:09:48.671Z</updated>
     
     
       
@@ -80,7 +117,7 @@
     <link href="https://xenwayne.top/posts/c3b0cefb/"/>
     <id>https://xenwayne.top/posts/c3b0cefb/</id>
     <published>2025-11-23T10:23:48.000Z</published>
-    <updated>2026-05-04T03:28:53.101Z</updated>
+    <updated>2026-05-05T15:09:48.670Z</updated>
     
     
       
@@ -111,7 +148,7 @@
     <link href="https://xenwayne.top/posts/d83bdeb5/"/>
     <id>https://xenwayne.top/posts/d83bdeb5/</id>
     <published>2025-10-29T02:00:00.000Z</published>
-    <updated>2026-05-04T03:28:53.100Z</updated>
+    <updated>2026-05-05T15:09:48.670Z</updated>
     
     
       
@@ -144,7 +181,7 @@
     <link href="https://xenwayne.top/posts/1bc24c43/"/>
     <id>https://xenwayne.top/posts/1bc24c43/</id>
     <published>2025-10-27T22:48:43.000Z</published>
-    <updated>2026-05-04T03:28:53.102Z</updated>
+    <updated>2026-05-05T15:09:48.672Z</updated>
     
     
       
@@ -160,17 +197,17 @@
     <category term="技术分享" scheme="https://xenwayne.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
     
     
-    <category term="浏览器" scheme="https://xenwayne.top/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
-    
-    <category term="HTTPS" scheme="https://xenwayne.top/tags/HTTPS/"/>
-    
-    <category term="缓存" scheme="https://xenwayne.top/tags/%E7%BC%93%E5%AD%98/"/>
-    
     <category term="Chromium" scheme="https://xenwayne.top/tags/Chromium/"/>
     
     <category term="Chrome" scheme="https://xenwayne.top/tags/Chrome/"/>
     
     <category term="Edge" scheme="https://xenwayne.top/tags/Edge/"/>
+    
+    <category term="浏览器" scheme="https://xenwayne.top/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+    <category term="HTTPS" scheme="https://xenwayne.top/tags/HTTPS/"/>
+    
+    <category term="缓存" scheme="https://xenwayne.top/tags/%E7%BC%93%E5%AD%98/"/>
     
     <category term="HSTS" scheme="https://xenwayne.top/tags/HSTS/"/>
     
@@ -181,7 +218,7 @@
     <link href="https://xenwayne.top/posts/2eca1925/"/>
     <id>https://xenwayne.top/posts/2eca1925/</id>
     <published>2025-08-04T22:05:05.000Z</published>
-    <updated>2026-05-04T03:28:53.102Z</updated>
+    <updated>2026-05-05T15:09:48.672Z</updated>
     
     
       
@@ -210,7 +247,7 @@
     <link href="https://xenwayne.top/posts/b11fff51/"/>
     <id>https://xenwayne.top/posts/b11fff51/</id>
     <published>2025-05-31T07:23:14.000Z</published>
-    <updated>2026-05-04T03:28:53.102Z</updated>
+    <updated>2026-05-05T15:09:48.672Z</updated>
     
     
       
@@ -239,7 +276,7 @@
     <link href="https://xenwayne.top/posts/838795f3/"/>
     <id>https://xenwayne.top/posts/838795f3/</id>
     <published>2025-04-08T04:24:41.000Z</published>
-    <updated>2026-05-04T03:28:53.100Z</updated>
+    <updated>2026-05-05T15:09:48.670Z</updated>
     
     
       
@@ -272,7 +309,7 @@
     <link href="https://xenwayne.top/posts/676ecf57/"/>
     <id>https://xenwayne.top/posts/676ecf57/</id>
     <published>2025-03-17T18:58:09.000Z</published>
-    <updated>2026-05-04T03:28:53.100Z</updated>
+    <updated>2026-05-05T15:09:48.670Z</updated>
     
     
       
@@ -303,7 +340,7 @@
     <link href="https://xenwayne.top/posts/6f791b0c/"/>
     <id>https://xenwayne.top/posts/6f791b0c/</id>
     <published>2024-05-24T14:16:52.000Z</published>
-    <updated>2026-05-04T03:28:53.100Z</updated>
+    <updated>2026-05-05T15:09:48.670Z</updated>
     
     
       
@@ -339,7 +376,7 @@
     <link href="https://xenwayne.top/posts/87210117/"/>
     <id>https://xenwayne.top/posts/87210117/</id>
     <published>2024-03-03T08:46:00.000Z</published>
-    <updated>2026-05-04T03:28:53.100Z</updated>
+    <updated>2026-05-05T15:09:48.670Z</updated>
     
     
       
@@ -372,7 +409,7 @@
     <link href="https://xenwayne.top/posts/d651e145/"/>
     <id>https://xenwayne.top/posts/d651e145/</id>
     <published>2023-09-20T11:35:00.000Z</published>
-    <updated>2026-05-04T03:28:53.102Z</updated>
+    <updated>2026-05-05T15:09:48.672Z</updated>
     
     
       
@@ -390,9 +427,9 @@
     
     <category term="Nginx" scheme="https://xenwayne.top/tags/Nginx/"/>
     
-    <category term="CORS" scheme="https://xenwayne.top/tags/CORS/"/>
-    
     <category term="前端" scheme="https://xenwayne.top/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="CORS" scheme="https://xenwayne.top/tags/CORS/"/>
     
     <category term="跨域" scheme="https://xenwayne.top/tags/%E8%B7%A8%E5%9F%9F/"/>
     
@@ -407,7 +444,7 @@
     <link href="https://xenwayne.top/posts/2ca49b12/"/>
     <id>https://xenwayne.top/posts/2ca49b12/</id>
     <published>2023-09-20T10:38:00.000Z</published>
-    <updated>2026-05-04T03:28:53.100Z</updated>
+    <updated>2026-05-05T15:09:48.670Z</updated>
     
     
       
@@ -434,7 +471,7 @@
     <link href="https://xenwayne.top/posts/c57e2d45/"/>
     <id>https://xenwayne.top/posts/c57e2d45/</id>
     <published>2023-09-13T01:12:00.000Z</published>
-    <updated>2026-05-04T03:28:53.103Z</updated>
+    <updated>2026-05-05T15:09:48.672Z</updated>
     
     
       
@@ -463,7 +500,7 @@
     <link href="https://xenwayne.top/posts/8306fea3/"/>
     <id>https://xenwayne.top/posts/8306fea3/</id>
     <published>2022-09-27T13:56:00.000Z</published>
-    <updated>2026-05-04T03:28:53.100Z</updated>
+    <updated>2026-05-05T15:09:48.670Z</updated>
     
     
       
@@ -498,7 +535,7 @@
     <link href="https://xenwayne.top/posts/7834b51/"/>
     <id>https://xenwayne.top/posts/7834b51/</id>
     <published>2022-08-16T11:57:00.000Z</published>
-    <updated>2026-05-04T03:28:53.103Z</updated>
+    <updated>2026-05-05T15:09:48.672Z</updated>
     
     
       
@@ -527,7 +564,7 @@
     <link href="https://xenwayne.top/posts/2fe1b2e5/"/>
     <id>https://xenwayne.top/posts/2fe1b2e5/</id>
     <published>2022-05-04T11:43:00.000Z</published>
-    <updated>2026-05-04T03:28:53.101Z</updated>
+    <updated>2026-05-05T15:09:48.671Z</updated>
     
     
       
@@ -562,7 +599,7 @@
     <link href="https://xenwayne.top/posts/606c9d02/"/>
     <id>https://xenwayne.top/posts/606c9d02/</id>
     <published>2022-04-14T12:56:00.000Z</published>
-    <updated>2026-05-04T03:28:53.100Z</updated>
+    <updated>2026-05-05T15:09:48.670Z</updated>
     
     
       
@@ -597,7 +634,7 @@
     <link href="https://xenwayne.top/posts/296aa3cb/"/>
     <id>https://xenwayne.top/posts/296aa3cb/</id>
     <published>2022-03-13T01:29:00.000Z</published>
-    <updated>2026-05-04T03:28:53.100Z</updated>
+    <updated>2026-05-05T15:09:48.670Z</updated>
     
     
       
@@ -618,34 +655,6 @@
     <category term="Unicode" scheme="https://xenwayne.top/tags/Unicode/"/>
     
     <category term="字符编码" scheme="https://xenwayne.top/tags/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解决Win10文件改动不自动刷新的问题</title>
-    <link href="https://xenwayne.top/posts/b339dc67/"/>
-    <id>https://xenwayne.top/posts/b339dc67/</id>
-    <published>2021-09-18T13:39:00.000Z</published>
-    <updated>2026-05-04T03:28:53.102Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;今天搁寝室里搞表格，新建&amp;#x2F;删除&amp;#x2F;剪切&amp;#x2F;复制&amp;#x2F;重命名等操作都需要手动刷新一下才能看到文件更改，就连桌面的回收站图标都需要刷新一下才改变状态，网上的教程实在是有点杂，现综合多方解决方案如下（按推荐优先级排序）：&lt;/p&gt;
-&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="技术分享" scheme="https://xenwayne.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
-    
-    
-    <category term="Windows" scheme="https://xenwayne.top/tags/Windows/"/>
-    
-    <category term="Win10" scheme="https://xenwayne.top/tags/Win10/"/>
     
   </entry>
   

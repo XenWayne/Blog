@@ -1,0 +1,104 @@
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Image rendering problem</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+
+            body {
+                background-color: whitesmoke;
+                height: 100vh;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .ua-container {
+                font-size: 13px;
+                padding: 0.5rem;
+                background: #fff;
+                border-bottom: 1px solid #eee;
+                flex-shrink: 0;
+                max-height: 100px;
+                overflow: hidden;
+                white-space: pre-wrap;
+            }
+
+            #app {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                flex: 1;
+                overflow: hidden;
+            }
+
+            .container {
+                aspect-ratio: 9/15;
+                max-height: 75%;
+                max-width: 100%;
+                width: auto;
+                overflow: hidden;
+                border-radius: 1rem;
+            }
+
+            .image {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            .toggle-btn {
+                padding: 1rem 1.5rem;
+                font-weight: bold;
+                background: lightskyblue;
+                border: none;
+                border-radius: 0.5rem;
+                cursor: pointer;
+                transition: transform 200ms ease;
+            }
+
+            .toggle-btn:active {
+                transform: scale(0.9);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="ua-container">当前Browser UA: </br><span id="ua"></span></div>
+        <div id="app">
+            <div class="container">
+                <img class="image"
+                    src="https://images.unsplash.com/photo-1452570053594-1b985d6ea890?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format"
+                    alt="close up of a yellow and blue macaw" />
+            </div>
+            <button class="toggle-btn">Remove object-fit: cover;</button>
+        </div>
+        <script>
+            const ua = document.getElementById('ua');
+            ua.innerText = navigator.userAgent.replaceAll(") ", ')\n');
+
+            const image = document.querySelector('.image');
+            const toggleBtn = document.querySelector('.toggle-btn');
+
+            toggleBtn.addEventListener('click', () => {
+                if (image.style.objectFit) {
+                    image.style.objectFit = '';
+                    toggleBtn.innerText = 'Remove object-fit: cover;';
+                } else {
+                    image.style.objectFit = 'unset';
+                    toggleBtn.innerText = 'Add object-fit: cover;';
+                }
+            });
+        </script>
+    </body>
+
+    </html>
