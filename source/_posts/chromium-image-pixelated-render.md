@@ -1,5 +1,6 @@
 ---
 title: 关于Chromium内核浏览器对图像缩放产生锯齿的问题
+cover: https://oss.xenwayne.top/img/2026/05/eb14162fa11e90fd5aec1d30c3712367.webp
 categories:
   - 技术分享
 tags:
@@ -57,6 +58,162 @@ MDN文档提到了`image-rendering`属性，这个属性控制图片的渲染方
 3.经过我尝试，对`img`使用`transform: translate3d(0, 0, 0) scale(1.0001)`或者`will-change: transform`,可以消除该问题。究其原因，应该是`transform`相关属性触发了GPU渲染管线高质量重采样相关的逻辑，即使是`will-change`这种提前宣告的属性，也一样会触发相关逻辑，我准备了一个demo:
 
 {% iframe /assets/chromium-image-pixelated-render_demo2.html 100% 400px %}
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image rendering comparison</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+        body {
+            background: #222;
+            color: white;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
+        #userAgent {
+            white-space: pre;
+            font-size: 14px;
+            margin-bottom: 22px;
+            max-height: 65px;
+        }
+        .comparison-row {
+            display: flex;
+            gap: 28px;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .comparison-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 14px;
+        }
+        .label {
+            font-size: 16px;
+            text-align: center;
+            max-width: 150px;
+        }
+        code {
+            background: #333;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        img {
+            width: 160px;
+            height: 160px;
+        }
+        .cover, .cover-fix, .cover-will-change {
+            height: 161px;
+            object-fit: cover;
+        }
+        .cover-fix {
+            transform: translate3d(0, 0, 0) scale(1.0001);
+        }
+        .cover-will-change {
+            will-change: transform;
+        }
+        @media (max-width: 700px) {
+            img {
+                width: 120px;
+                height: 120px;
+            }
+            .cover, .cover-fix, .cover-will-change {
+                height: 121px;
+            }
+            .comparison-row {
+                gap: 15px;
+            }
+            .comparison-item {
+                gap: 8px;
+            }
+            .label {
+                font-size: 12px;
+                max-width: 110px;
+            }
+            code {
+                font-size: 11px;
+            }
+            #userAgent {
+                font-size: 11px;
+                max-height: 45px;
+                margin-bottom: 15px;
+            }
+        }
+        @media (max-width: 480px) {
+            img {
+                width: 90px;
+                height: 90px;
+            }
+            .cover, .cover-fix, .cover-will-change {
+                height: 91px;
+            }
+            .comparison-row {
+                gap: 10px;
+            }
+            .comparison-item {
+                gap: 6px;
+            }
+            .label {
+                font-size: 10px;
+                max-width: 90px;
+            }
+            code {
+                font-size: 9px;
+                padding: 1px 4px;
+            }
+            #userAgent {
+                font-size: 10px;
+                max-height: 40px;
+                margin-bottom: 12px;
+            }
+            body {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="userAgent"></div>
+
+    <div class="comparison-row">
+        <div class="comparison-item">
+            <div class="label">Poor: </br><code>object-fit: cover</code></div>
+            <img class="cover" src="https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/avatar.webp" />
+        </div>
+        <div class="comparison-item">
+            <div class="label">Good: </br>no <code>object-fit</code></div>
+            <img src="https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/avatar.webp" />
+        </div>
+        <div class="comparison-item">
+            <div class="label">Fixed: </br><code>translate3d(0,0,0) scale(1.0001)</code></div>
+            <img class="cover-fix" src="https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/avatar.webp" />
+        </div>
+        <div class="comparison-item">
+            <div class="label">Fixed: </br><code>will-change</code></div>
+            <img class="cover-will-change" src="https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/avatar.webp" />
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("userAgent").textContent = navigator.userAgent.replaceAll(") ", ')\n');
+    </script>
+</body>
+</html>
+```
 
 
 # Reference
