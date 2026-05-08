@@ -26,8 +26,14 @@
                 border-bottom: 1px solid #eee;
                 flex-shrink: 0;
                 max-height: 100px;
-                overflow: hidden;
+                overflow-y: auto;
                 white-space: pre-wrap;
+                word-break: break-all;
+                scrollbar-width: none; /* Firefox */
+                -ms-overflow-style: none; /* IE/Edge */
+            }
+            .ua-container::-webkit-scrollbar {
+                display: none; /* Chrome/Safari */
             }
 
             #app {

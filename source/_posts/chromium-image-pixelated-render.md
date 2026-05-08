@@ -83,10 +83,17 @@ MDN文档提到了`image-rendering`属性，这个属性控制图片的渲染方
             padding: 10px;
         }
         #userAgent {
-            white-space: pre;
+            white-space: pre-wrap;
+            word-break: break-all;
             font-size: 14px;
-            margin-bottom: 22px;
-            max-height: 65px;
+            margin: 0 0 20px 0;
+            max-height: 100px;
+            overflow-y: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        #userAgent::-webkit-scrollbar {
+            display: none;
         }
         .comparison-row {
             display: flex;
@@ -147,11 +154,6 @@ MDN文档提到了`image-rendering`属性，这个属性控制图片的渲染方
             code {
                 font-size: 11px;
             }
-            #userAgent {
-                font-size: 11px;
-                max-height: 45px;
-                margin-bottom: 15px;
-            }
         }
         @media (max-width: 480px) {
             img {
@@ -174,11 +176,6 @@ MDN文档提到了`image-rendering`属性，这个属性控制图片的渲染方
             code {
                 font-size: 9px;
                 padding: 1px 4px;
-            }
-            #userAgent {
-                font-size: 10px;
-                max-height: 40px;
-                margin-bottom: 12px;
             }
             body {
                 padding: 8px;
