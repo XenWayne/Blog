@@ -16,7 +16,6 @@ menu:
   实验室|Lab || fas fa-flask:
     项目|Project: /project/ || fas fa-project-diagram
     追番|Bangumi: /bangumi/ || fas fa-film
-    游戏|Gamelist: /gamelist/ || fas fa-gamepad
     收藏|Collection: /collection/ || fas fa-heart
     影集|Album: /album/ || fas fa-images || _blank
     知识库|Knowledge Base: https://kb.xenwayne.top/ || fas fa-book

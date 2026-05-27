@@ -329,7 +329,7 @@ bangumi: # 追番设置
     key: value
   coverMirror:
 game: # 游戏设置，仅支持source: bgmv0
-  enable: true
+  enable: false
   path: /gamelist/index.html
   source: bgmv0
   vmid: xenwayne
