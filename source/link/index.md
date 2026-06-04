@@ -49,5 +49,5 @@ toc: false
 > 【RSS】[https://xenwayne.top/feed/rss2.xml](/feed/rss2.xml)
 > 【ATOM】[https://xenwayne.top/feed/atom.xml](/feed/atom.xml)
 > **网站图标**：
-> 【WebP】https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/avatar.webp
-> 【png】https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/avatar.png
+> 【WebP】https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/avatar.webp
+> 【png】https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/avatar.png
