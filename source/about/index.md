@@ -14,8 +14,13 @@ date: 2024-04-27 21:22:57
 关于我 | About Me
 ===============
 
-网络常用马甲XenWayne {% label "/zen'weɪn/" default %}，{% label /ゼンウェイン/ blue%}   
-线下常用Wayne {% label /weɪn/ default %}，{% label /ウェイン/ blue%} 
+<div style="text-align: center; font-size: 1.6em; line-height: 1.6;">
+    森稳 | <ruby>Wayne<rt>ウェイン</rt></ruby> <ruby>Wu<rt>ウー</rt></ruby> | <ruby>Kure Takato<rt>くれ たかと</rt></ruby>
+</div>  
+
+
+网络常用马甲 XenWayne {% label "/zen'weɪn/" default %}，{% label /ゼンウェイン/ blue%}   
+
 
 有个虚拟化平台叫Xen，给网络上的虚拟身份加个帽子正好XD。谐音中文cn自然而然就叫森稳啦，没什么特别的。
 人生梦想应该是搞一门二外，搞一门乐器，搞点米，然后手拿相机看遍世界吧(，但人要做到了无牵挂又谈何容易呢。
@@ -41,7 +46,7 @@ Mandarin Chinese Native | English CET-6 | Japanese beginner
  - Sega系自信音游人 {% label "Chunithm | Project Sekai | OSU mania 4k > std | Maimai" blue %}
  - 原神启动⚪
  - 前中期圆锥角膜患者 高度不规则散光人 Menicon RGP资深用户
- - I use arch by the way(￣▽￣)ノ  (at vm lol
+ - I use arch by the way(￣▽￣)ノ  (at wsl , loooool :3)
 
 ![osu][1]
 
@@ -55,7 +60,7 @@ Mandarin Chinese Native | English CET-6 | Japanese beginner
 来看看我推存放处🙏
 {% link 收藏 | Collection, XenWayne's Blog, /collection/ , new %}
 
-少数当文艺工作者~~（迫真）~~的一些东西🖼️
+少数当文艺工作者~~（迫真）~~时候的一些东西🖼️
 {% link 影集 | Album, XenWayne's Blog, /album/ , new %}
 
 Skill List🔧
@@ -67,9 +72,9 @@ Skill List🔧
 
 
 ----------
-主业IT Infrastructure运维，此外喜欢折腾Web那些东西。Vue、PHP、JavaWeb、jQuery什么的都摸过一点，都不熟就是了。  
+主业网络工程师 / IT Infrastructure 苦命运维，此外喜欢折腾Web那些东西。Vue、PHP、JavaWeb、jQuery什么的都摸过一点，都不熟就是了。  
 
-毕设那会是Uniapp+Nodejs(Koa)+MongoDB+MinIO搓了一个在线校园社区，确实没多少空来干这个事，用JS写全栈一方面是起码在毕业生一众SpringBoot里能显得清奇一点🥲，另一方面是我讨厌在OOP的路上给自己扔太多包袱的Java。那会还是一边在实习当DBA一边写的，引用ilem老师的话，Uniapp这玩意给我的感觉就是一辆跑的很快的破自行车，毕设做完之后再也没敢碰🤣。讲道理做DBA的日子有点痛苦，有些许阴影(，不过说到底DBA也好SRE也好大伙都是被Alert催命的角色吧XD。
+上学那会是Uniapp+Nodejs(Koa)+MongoDB+MinIO搓了一个在线校园社区，确实没多少空来干这个事，用JS写全栈一方面是起码在毕业生一众SpringBoot里能显得清奇一点🥲，另一方面是我讨厌在OOP的路上给自己扔太多包袱的Java。那会还是一边在实习当DBA一边写的，引用ilem老师的话，Uniapp这玩意给我的感觉就是一辆跑的很快的破自行车，毕设做完之后再也没敢碰🤣。讲道理做DBA的日子有点痛苦，有些许阴影(，不过说到底DBA也好SRE也好大伙都是被Alert催命的角色吧XD。
 
 > 主要折腾方向: Web应用 / AIOps / 云原生 / 应用现代化 / DevOps / 容器技术 / 系统集成 / 网络工程
 
