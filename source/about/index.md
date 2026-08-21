@@ -9,7 +9,7 @@ date: 2024-04-27 21:22:57
 
 > Life is a grand DevOps journey, To embark on the journey is more significant than reaching the destination.
 
-　　无论是搜索引擎还是他人的友链将你带到了这里，能在万千站点间相互遇见，实属不易，我会把我工作学习过程中的问题记录下来，希望能帮到你。如果你在浏览过程中发现了不足，欢迎指正。相信我们能碰撞出灵感的火花= =。其实我嘴很笨，写文字对我来说甚至有些痛苦(，但是还是想记录点东西。再次感谢你来访这个用心搭建的Blog。
+　　无论是搜索引擎还是他人的友链将你带到了这里，能在万千站点间相互遇见，实属不易，我会把我工作学习过程中的问题记录下来，希望能帮到你。如果你在浏览过程中发现了不足，欢迎指正。其实我嘴很笨，写文字对我来说甚至有些痛苦，但说到底还是想记录点东西。再次感谢你来访这个用心搭建的Blog。
 
 关于我 | About Me
 ===============
@@ -27,7 +27,7 @@ date: 2024-04-27 21:22:57
 
 
 {% note %}
-Language Skill Notice:  
+Language Skill:  
 Mandarin Chinese Native | English CET-6 | Japanese beginner
 {% endnote %}
 
@@ -50,7 +50,7 @@ Mandarin Chinese Native | English CET-6 | Japanese beginner
 
 ![osu][1]
 
-{% label 另:欢迎圆锥角膜患者任何对我任何形式的咨询。 green %}
+{% label 另:欢迎圆锥角膜患者对我任何形式的咨询。 green %}
 
 ------------------
 
@@ -68,10 +68,11 @@ Skill List🔧
 [![SkillIcons](https://skillicons.dev/icons?i=js,html,css,jquery,bootstrap,nodejs,vue,vite,ts,pnpm,md,nginx,mongodb,mysql,ubuntu,arch,debian,linux,windows,docker,php,java,c,python,ps,pr,au,ai,vscode,idea,cloudflare,github,git,)](https://skillicons.dev)
 
 
-**打字后面加括号是奇怪的癖好，我也不知道为什么= =** 
+**打字后面加括号是奇怪的癖好，我也不知道为什么，可能我是硅基生命吧（** 
 
 
 ----------
+基础研究对我来说枯燥无比，与之相对的，我对技术如何推动解决实际问题更感兴趣。  
 主业网络工程师 / IT Infrastructure 苦命运维，此外喜欢折腾Web那些东西。Vue、PHP、JavaWeb、jQuery什么的都摸过一点，都不熟就是了。  
 
 上学那会是Uniapp+Nodejs(Koa)+MongoDB+MinIO搓了一个在线校园社区，确实没多少空来干这个事，用JS写全栈一方面是起码在毕业生一众SpringBoot里能显得清奇一点🥲，另一方面是我讨厌在OOP的路上给自己扔太多包袱的Java。那会还是一边在实习当DBA一边写的，引用ilem老师的话，Uniapp这玩意给我的感觉就是一辆跑的很快的破自行车，毕设做完之后再也没敢碰🤣。讲道理做DBA的日子有点痛苦，有些许阴影(，不过说到底DBA也好SRE也好大伙都是被Alert催命的角色吧XD。
@@ -93,7 +94,7 @@ Skill List🔧
 ----------
 
 
-　　网络真是个好东西.jpg，各种疑难杂症，每次都是靠着搜索引擎翻来翻去才解决，看的东西越来越多搞得我浏览器的收藏夹强烈抗议，而且现找资料总觉得看起来不舒服，毕竟只有自己知道自己最需要什么。所以想着开始写博客吧，记录历程的同时也能给有同样问题的后来人一个捷径= V=~~虽然这个站SEO差的一比~~，毕竟我有许多问题是靠莴苣们的博客解决的，另一个作用应该是作为一个情绪和思考的出口吧。
+　　网络真是个好东西.jpg，各种疑难杂症，每次都是靠着搜索引擎翻来翻去才解决，看的东西越来越多搞得我浏览器的收藏夹强烈抗议，而且现找资料总觉得看起来不舒服，毕竟只有自己知道自己最需要什么。所以想着开始写博客吧，记录历程的同时也能给有同样问题的后来人一个捷径~~虽然这个站SEO差的一比~~，毕竟我有许多问题是靠莴苣们的博客解决的，另一个作用应该是作为一个情绪和思考的出口吧。
 
 
 
