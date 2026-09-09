@@ -298,7 +298,7 @@ artitalk:
 bangumi: # 追番设置
   enable: true
   source: bgmv0
-  bgmInfoSource: 'bgmApi'
+  bgmInfoSource: 'bgmv0'
   path: /bangumi/index.html
   # vmid: 519493 #bgm api使用用户id
   vmid: xenwayne #bgmv0 api使用用户名
@@ -319,7 +319,7 @@ bangumi: # 追番设置
   color:
   webp: true
   progress: true
-  progressBar: true
+  progressBar: false
   extraOrder:
   order: latest
   proxy:
@@ -327,7 +327,7 @@ bangumi: # 追番设置
     port: ''
   extra_options:
     key: value
-  coverMirror:
+  coverMirror: 'https://image.baidu.com/search/down?url='  # 图片镜像服务
 game: # 游戏设置，仅支持source: bgmv0
   enable: false
   path: /gamelist/index.html
