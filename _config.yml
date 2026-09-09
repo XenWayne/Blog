@@ -279,7 +279,7 @@ artitalk:
   path: essay/index.html ## 生成路径
   pageSize: 20 ## 显示几条说说
   markdown: true ## 是否支持markdown语法
-  avatar: https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/avatar.webp ## 说说头像
+  avatar: https://gcore.jsdelivr.net/gh/XenWayne/sitefile@master/img/avatar.webp ## 说说头像
   template: ## 说说模板，可查看仓库中的 main.ejs
   imports: ## 在说说模板的开头和结尾处插入内容
     before:
@@ -298,7 +298,7 @@ artitalk:
 bangumi: # 追番设置
   enable: true
   source: bgmv0
-  bgmInfoSource: 'bgmApi'
+  bgmInfoSource: 'bgmv0'
   path: /bangumi/index.html
   # vmid: 519493 #bgm api使用用户id
   vmid: xenwayne #bgmv0 api使用用户名
@@ -311,8 +311,8 @@ bangumi: # 追番设置
   show: 1
   lazyload: false
   srcValue: '__image__'
-  lazyloadAttrName: 'data-src=__image__'
-  loading:
+  # lazyloadAttrName: 'data-src=__image__'
+  swup: true
   showMyComment: true
   pagination: false
   metaColor: '#555'
