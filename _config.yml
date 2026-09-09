@@ -317,7 +317,7 @@ bangumi: # 追番设置
   pagination: false
   metaColor: '#555'
   color:
-  webp: true
+  webp: true # 仅支持bili源
   progress: true
   progressBar: false
   extraOrder:
@@ -327,7 +327,7 @@ bangumi: # 追番设置
     port: ''
   extra_options:
     key: value
-  coverMirror: 'https://image.baidu.com/search/down?url='  # 图片镜像服务
+  # coverMirror: # 图片镜像服务
 game: # 游戏设置，仅支持source: bgmv0
   enable: false
   path: /gamelist/index.html
