@@ -312,14 +312,14 @@ bangumi: # 追番设置
   lazyload: false
   srcValue: '__image__'
   # lazyloadAttrName: 'data-src=__image__'
-  swup: true
+  swup: false
   showMyComment: true
   pagination: false
   metaColor: '#555'
   color:
   webp: true
   progress: true
-  progressBar: false
+  progressBar: true
   extraOrder:
   order: latest
   proxy:
