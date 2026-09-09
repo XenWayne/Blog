@@ -298,7 +298,7 @@ artitalk:
 bangumi: # 追番设置
   enable: true
   source: bgmv0
-  bgmInfoSource: 'bgmv0'
+  bgmInfoSource: 'bgmApi'
   path: /bangumi/index.html
   # vmid: 519493 #bgm api使用用户id
   vmid: xenwayne #bgmv0 api使用用户名
