@@ -1,5 +1,6 @@
 {
     "todo-tree.tree.scanMode": "workspace",
     "trae.tab.enableRename": false,
-    "trae.tab.enableAutoImport": false
+    "trae.tab.enableAutoImport": false,
+    "better-todo-tree.tree.scanMode": "workspace"
 }
