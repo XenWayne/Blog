@@ -149,3 +149,25 @@ document.addEventListener('pjax:success', function () {
 var snow = new snowFall({ maxFlake: 60 });
 snow.start();
 //! 下雪样式 END//
+
+//! 修复画廊导致页面抖动
+// 切断 egjs 画廊的自我反馈（评论区抖动）
+(() => {
+  const strip = (n) => {
+    if (n.nodeType !== 1) return;
+    if (n.matches?.('img[data-grid-maintained-target]'))
+      n.removeAttribute('data-grid-maintained-target');
+    n.querySelectorAll?.('img[data-grid-maintained-target]')
+      .forEach((i) => i.removeAttribute('data-grid-maintained-target'));
+  };
+  const bind = () => document.querySelectorAll('.gallery-container').forEach((g) => {
+    if (g.dataset.jgPatched) return;
+    g.dataset.jgPatched = '1';
+    new MutationObserver((ms) => ms.forEach((m) => m.addedNodes.forEach(strip)))
+      .observe(g, { subtree: true, childList: true });
+    g.querySelectorAll('img[data-grid-maintained-target]')
+      .forEach((i) => i.removeAttribute('data-grid-maintained-target'));
+  });
+  bind();
+  document.addEventListener('pjax:complete', bind);   // pjax 重新渲染后再挂一次
+})();
